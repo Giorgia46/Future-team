@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #FFE7DB;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<div id="header_container"> <!-- primo blocco container !-->
+
+       <div id="imagedisfondo"> <!-- immagine di sfondo header !-->
+
+           <div id="header_grid0">
+
+               <div id="box_interno" style="display:block">
+
+                   <img id="logo" src="img/logo.png" alt="logoHomePage">
+               </div>
+
+               <div id="header_box"> <!-- rettangolo header !-->
+
+                   <div id="loghino" style="display: block">
+                       <img src="img/loghino.png" alt="loghino">
+                   </div>
+                        <div id="menu"> <!-- tre link di rimando alle pagine !-->
+                            <ul>
+                               <li> <a href="Homepage.html">Home</a></li>
+                               <li> <a href="La_Serie.html">La serie</a></li>
+                               <li> <a href="Gallery.html">Gallery</a></li>
+                            </ul>
+                        </div>
+               </div>
+
+           </div> <!-- FINE rettangolo header !-->
+
+
+       </div> <!-- FINE immagine di sfondo header !-->
+
+        <div id="image440x220" >
+            <div id="header_gridimage">
+                <img id="image1" src="img/440x220_homepage1.png" alt="clancy1">
+                <img id="image2" src="img/440x220_homepage2.png" alt="clancy2">
+            </div>
+        </div>
+
+</div> <!-- FINE primo blocco container !-->
+
+
+<div id="intro">
+
+    <div id="header_grid_image3"> <!-- griglia immagini intro !-->
+
+
+        <div id="illustration1"> <!-- icona clancy 1 !-->
+            <img src="img/Illustration_clancy1.png" alt="illustration1">
+        </div>
+
+        <div id="laccio">
+            <img src="img/laccio.png" alt="laccio">
+        </div>
+
+        <img id="image3" src="img/440x220_homepage3.png.png" alt="clancy3">
+        <img id="image4" src="img/440x220_homepage4.png" alt="clancy4">
+        <img id="image5" src="img/440x220_homepage5.png" alt="clancy5">
+
+        <p id="scritta1">Attraversando <strong>mondi psichedelici</strong> nel suo simulatore di universi, <strong style="color: rgba(251, 122, 144, 1);">Clancy</strong>, uno <strong>space caster</strong>, esplora domande esistenziali su <strong>vita, morte</strong> e <strong>tutto il resto</strong>.</p>
+
+        <p id="scritta2">Un viaggio fantastico tra <strong>pensiero</strong> e <strong>spiritualità</strong> di Pendleton Ward, ideatore di "<strong>Adventure Time</strong>", e del comico Duncan Trussell. <br> Una serie originale <strong>Netflix</strong>.</p>
+
+    </div> <!-- FINE griglia immagini intro !-->
+</div>
+
+
+<div id="spazio"> </div>
+
+
+<div id="trailer_image">
+
+        <div id="rectangle_marsupio" > </div>
+
+            <div id="grid_marsupio">
+
+                <div id="image_video" > <!-- conteiner !-->
+                    <img id="image_marsupio" src="img/image_video.png" alt="image video marsupio" >
+                    <video id="trailer_video" autoplay muted>
+                        <source src="video/trailer_marsupio.mp4" type="video/mp4">
+                    </video>
+                </div> <!-- FINE conteiner !-->
+
+                <img id="clancymarsupio" src="img/Illustration_clancy2.png" alt="illustration2">
+            </div>
+
+    <div id="answer1">
+        <div id="header_grid_domanda1">
+
+            <img id="illustration_clancy3" src="img/Illustration_clancy3.png" alt="illustration3">
+            <!-- domanda 1 !-->
+
+                <div id="domanda1">
+                    <h3> Sei pronto ad aprire la tua mente? </h3>
+                </div>
+
+                <!-- FINE domanda 1 !-->
+
+                <div id="button_risposta1">
+                    <a href="La_Serie.html">Scopri tutte le mie interviste </a>
+                </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div id="div_gif"> <!-- container del blocco gif rettangolo e pulsante !-->
+    <div id="rettangolo_colorato"> <!-- rettangolo rosa !-->  </div> <!-- fine gruppo gif !-->
+        <div id="griglia_bottone_gallery">
+
+            <div id="button_gallery">
+                <a href="Gallery.html">Scopri la gallery</a>
+            </div>
+
+
+        </div>
+
+            <div id="gif_container"> <!-- gruppo gif !-->
+
+                <div id="griglia_gif"> <!-- griglia container !-->
+
+                    <img id="gif1" src="img/gif_episodio3.gif" alt="episodio3">
+                    <img id="gif2" src="img/gif_episodio4.gif" alt="episodio4">
+                    <img id="gif3" src="img/gif_esplosione.gif" alt="esplosione">
+                    <img id="gif4" src="img/gif_luci.gif" alt="luci">
+
+
+                 </div> <!-- rettangolo rosa !-->
+
+            </div> <!-- griglia container !-->
+</div> <!-- FINE container del blocco gif rettangolo e pulsante !-->
+
+
+<div id="blocco_wikipedia">
+    <div id="griglia_wikipedia">
+
+            <div id="button_wikipedia">
+                <a href="https://it.wikipedia.org/wiki/The_Midnight_Gospel" target="_blank">WIKIPEDIA</a>
+            </div>
+
+
+
+        <div id="scritte_wiki">
+                <div id="titolo_wiki"> <h1>THE MIDNIGHT GOSPEL</h1></div>
+                <div id="testo_wikipedia"> <p>Scopri le risposte di <span style="color: #FB7A90; font-weight:bold ;">Clancy</span> alle più importanti <strong> domande sulla vita</strong>, <strong>il significato dei sogni</strong>, la <strong>psiche</strong>, la <strong>trascendenza</strong>, la <strong>meditazione</strong>, le <strong>esperienze psichedeliche</strong>, fino ai valori sociali, politici, spirituali e alla <strong>morte</strong>.</p></div>
+        </div>
+
+
+        <img src="img/Group_wikipedia.png" alt="blocco wikipedia">
+
+    </div>
+</div>
+
+<!-- SECONDO DIALOGO !-->
+<div id="answer2">
+    <div id="header_grid_domanda2">
+
+        <img id="illustration_clancy4" src="img/Illustration_clancy4.png" alt="illustration4">
+        <img id="illustration_clancy5" src="img/Illustration_clancy5.png" alt="illustration5">
+
+        <!-- domanda 2 !-->
+
+        <div id="domanda2">
+            <h3>Quante volte mi sono trasformato?</h3>
+        </div>
+
+    </div>   <!-- FINE griglia domanda 2 !-->
+
+    <div id="header_grid_risposta2"> <!-- griglia risposta 2 !-->
+
+            <div id="button_risposta2">
+                <a href="La_Serie.html">Vai a vedere tutto il cast</a>
+            </div>
+
+
+    </div>
+
+</div>
+
+<div id="rettangolo_fucsia">Rimani sempre aggiornato: seguici sui social!</div>
+
+<div id="footer">
+    <div id="rettangolo_colorato_footer">
+
+        <div id="griglia_footer">
+
+                <div id="footersx">
+
+                        <h1 id="titolo_footer"><a href="Homepage.html">THE MIDNIGHT GOSPEL</a></h1>
+                        <p id="textsx_footer">The Midnight Gospel è una serie animata statunitense creata da Pendleton Ward originale Netflix.</p>
+
+                    <div id="iconesocial">
+
+                        <a href="https://www.instagram.com/themidnightgospel/" target="_blank">
+                            <img src="img/ig_icon.png" alt="icona ig">
+                        </a>
+
+                        <a href="https://twitter.com/MidnightGospel" target="_blank">
+                            <img src="img/twitter_icon.png" alt="icona twitter">
+                        </a>
+
+                        <a href="https://www.facebook.com/MIdnighGospel/" target="_blank">
+                            <img src="img/fb_icon.png" alt="icona fb">
+                        </a>
+
+                        <a href="https://www.netflix.com/it/title/80987903" target="_blank">
+                            <img id="netflix" src="img/netflix_icon.png" alt="netflix icon">
+                        </a>
+
+                    </div>
+                </div>
+
+                    <div id="footerdx">
+                        <div id="linea"></div>
+
+                        <div id="text_footer">
+                            <ul>
+                                <li>
+                                    <a href="Homepage.html">
+                                        Homepage
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="La_Serie.html">
+                                        The Midnight Gospel
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a id="trama" href="La_Serie.html">
+                                        <img src="img/Group-1.png" alt="Icona Trama">
+                                       Trama
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a id="cast" href="La_Serie.html#blocco-cast">
+                                        <img src="img/Group.png" alt="icona Cast">
+                                        Cast
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a id="curiosita" href="La_Serie.html#blocco-curiosità">
+                                        <img src="img/Group-2.png" alt="Icona Curiosità">
+                                        Curiosità
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Gallery.html">
+                                        Gallery
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
