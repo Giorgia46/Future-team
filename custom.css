@@ -53,6 +53,7 @@ h3 {font-family: "Righteous", sans-serif;}
 p  {font-family: "Poppins", sans-serif;}
 a  {font-family: "Poppins", sans-serif;}
 
+
 .nav-link {
 	font-family: "Poppins", sans-serif;
 	font-weight: 600;
@@ -66,4 +67,8 @@ a  {font-family: "Poppins", sans-serif;}
 	background-image: url("img/menu.png")!important;
 }
 
- 
+
+/*********FOOTER********/
+.form-control::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
