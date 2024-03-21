@@ -50,6 +50,8 @@ table {
 h1 {font-family: "Righteous", sans-serif;}
 h2 {font-family: "Righteous", sans-serif;}
 h3 {font-family: "Righteous", sans-serif;}
+/**h4 provvisorio per metterlo nel footer**/
+h4 {font-family: "Poppins", sans-serif; font-weight: bold;}
 p  {font-family: "Poppins", sans-serif;}
 a  {font-family: "Poppins", sans-serif;}
 
@@ -67,8 +69,21 @@ a  {font-family: "Poppins", sans-serif;}
 	background-image: url("img/menu.png")!important;
 }
 
+/*********CUSTOM PROPERTIES********/
+:root{
+	--primary-color: #CF3F30;
+	--light-color: #FAFAFA;
+}
 
+.light-text{
+	color: var(--light-color);
+}
 /*********FOOTER********/
 .form-control::placeholder {
     font-family: 'Poppins', sans-serif;
 }
+
+footer{
+	background-color: var(--primary-color);
+}
+
