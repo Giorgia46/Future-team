@@ -75,21 +75,40 @@ a  {font-family: "Poppins", sans-serif;}
 :root{
 	--primary-color: #CF3F30;
 	--light-color: #FAFAFA;
+	--tertiary-color: #1E9EA1;
 }
 
 .light-text{
 	color: var(--light-color);
+}
+
+.red-bg{
+	background-color: var(--primary-color);
 }
 /*********FOOTER********/
 .form-control::placeholder {
     font-family: 'Poppins', sans-serif;
 }
 
-footer{
-	background-color: var(--primary-color);
-}
-
 .footer-link a{
 	color: var(--light-color);
 	text-decoration: none;
 }
+
+.round-btn{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: var(--tertiary-color);
+	border: none;
+	cursor: pointer;
+}
+
+footer ul{
+	line-height: 160%;
+}
+
+footer h4{
+	padding-bottom: 5%;
+}
+
