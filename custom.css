@@ -86,6 +86,11 @@ a  {font-family: "Poppins", sans-serif;}
 	background-color: var(--primary-color);
 }
 /*********FOOTER********/
+
+footer{
+	background-image: url('img/footer-bg.svg'); 
+	background-size: cover;
+}
 .form-control::placeholder {
     font-family: 'Poppins', sans-serif;
 }
