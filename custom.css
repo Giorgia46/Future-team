@@ -14,7 +14,11 @@
 
 h1 {
 	font-family: "Righteous", sans-serif;
+<<<<<<< Updated upstream
 	Line-height: 140%;
+=======
+	line-height: 140%;
+>>>>>>> Stashed changes
 	font-size: 4rem;
 	color: var(--secondary-color);
 
