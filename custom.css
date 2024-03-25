@@ -50,7 +50,7 @@ table {
 h1 {font-family: "Righteous", sans-serif;}
 h2 {font-family: "Righteous", sans-serif;}
 h3 {font-family: "Righteous", sans-serif;}
-h4 {font-family: "Poppins", sans-serif;} /**h4 provvisorio per metterlo nel footer**/
+h5 {font-family: "Poppins", sans-serif;} /**h4 provvisorio per metterlo nel footer**/
 p  {font-family: "Poppins", sans-serif;}
 a  {font-family: "Poppins", sans-serif;}
 
@@ -74,46 +74,94 @@ a  {font-family: "Poppins", sans-serif;}
 /*********CUSTOM PROPERTIES********/
 :root{
 	--primary-color: #CF3F30;
+	--secondary-color: #094A4C;
 	--light-color: #FAFAFA;
 	--tertiary-color: #1E9EA1;
+	--text-color: #121212;
 }
 
-.light-text{
+.text-light{
 	color: var(--light-color);
 }
 
-.red-bg{
+.bg-red{
 	background-color: var(--primary-color);
 }
 /*********FOOTER********/
 
 footer{
-	background-image: url('img/footer-bg.svg'); 
+	background-image: url('img/footer-bg-mobile.svg'); 
+	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+@media (min-width: 768px) {
+	footer{
+		background-image: url('img/footer-bg-desktop.svg'); 
+	}
+	
+}
+
+
 .form-control::placeholder {
     font-family: 'Poppins', sans-serif;
+}
+
+.newsletter{
+	height: 50px;
+	background-color: var(--light-color);
+	z-index: 0;
 }
 
 .footer-link a{
 	color: var(--light-color);
 	text-decoration: none;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
 }
+
+.footer-link a:hover{
+	color: var(--secondary-color);
+}
+
 
 .round-btn{
 	width: 50px;
 	height: 50px;
-	border-radius: 50%;
 	background-color: var(--tertiary-color);
 	border: none;
 	cursor: pointer;
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
 }
+
+.round-btn:hover{
+	background-color: var(--secondary-color);
+}
+
+.input-group .form-control:focus{
+	z-index: 0;
+    box-shadow: 0 0 0 0.25rem rgba(141, 25, 4, 0.25);
+}
+
+.input-group input[type="email"] {
+    font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+}
+
+
+.input-group .round-btn {
+    z-index: 1;
+}
+  
 
 footer ul{
 	line-height: 160%;
 }
 
-footer h4{
+footer h5{
 	padding-bottom: 5%;
 }
 
