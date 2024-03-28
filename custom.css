@@ -156,6 +156,15 @@ footer{
     z-index: 1;
 }
   
+.alert-success {
+    color: var(--light-color);
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+
+
+}
 
 footer ul{
 	line-height: 160%;

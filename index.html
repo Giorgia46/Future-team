@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="custom.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
  
     <!--link-->
 
@@ -69,16 +72,20 @@
           <a href="#"><img src="img/logo-footer.svg" alt="Logo AertherCraft Creations" class="img-fluid col-6 col-md-4 col-lg-3 mt-5"></a>
       </div>
       <div class="row">
-          <div class="col-12 col-md-10 col-lg-4 text-light pt-4">
+          <div class="col-12 col-md-9 col-lg-4 text-light pt-4">
               <p>
                   Iscriviti alla newsletter e ricevi consigli d'arredo personalizzati
               </p>
               <div class="input-group pt-4 mb-4 position-relative">
-                <button class="round-btn rounded-circle position-absolute end-0 top-4" type="button" id="button-addon2">
+                <button class="round-btn rounded-circle position-absolute end-0 top-4" type="button" id="button-addon2" onclick="subscribe()">
                     <img src="img/right-arrow.svg" alt="Invia">
                 </button>
-                <input type="email" class="form-control rounded-pill newsletter ps-4" placeholder="Inserisci la tua mail..." aria-label="Inserisci la tua mail" aria-describedby="button-addon2">
+                <input type="email" class="form-control rounded-pill newsletter ps-4" placeholder="Inserisci la tua mail..." aria-label="Inserisci la tua mail" aria-describedby="successMessage">
+                <div id="successMessage" class="alert alert-success d-none rounded-pill position-absolute col-12" role="alert">
+                  <p>Grazie per esserti iscritto alla nostra newsletter!</p>
+                </div>
               </div>
+             
             </div>
           <div class="col-6 col-md-4 col-lg-2 offset-lg-2 text-light mb-5">
               <h5 class="semi-bold">Company</h5>
