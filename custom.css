@@ -1,6 +1,51 @@
 @charset "utf-8";
 /* CSS Document */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 /*************COSTUM*************/
 
 :root{
@@ -10,15 +55,34 @@
 	--text-color: #121212;
 }
 
+.call-to-action {
+	width: 214px;
+	height: 50px;
+	border-radius: 80px!important;
+	background-color: var(--primary-color);
+	border: none!important;
+}
+
+.call-to-action a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: var(--light-color);
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
+	
+}
+
+.call-to-action:hover {
+	background-color: #9C3025;
+	transition: 1s;
+	
+}
+
 /*********TYPOGRAPHY********/
 
 h1 {
 	font-family: "Righteous", sans-serif;
-<<<<<<< Updated upstream
 	Line-height: 140%;
-=======
-	line-height: 140%;
->>>>>>> Stashed changes
 	font-size: 4rem;
 	color: var(--secondary-color);
 
@@ -28,14 +92,14 @@ h2 {
 	font-family: "Righteous", sans-serif;
     font-size: 3rem;
 	line-height: 140%;
-	color: var(--secondary-color);
+	color: var(--secondary-color)!important;
 }
 
 h3 {
 	font-family: "Righteous", sans-serif;
     font-size: 2rem; 
 	line-height: 140%;
-	color: var(--secondary-color);
+	color: var(--secondary-color)!important;
 }
 
 h4 {
@@ -84,8 +148,8 @@ a  {
   }
   .menu-btn{
 	position: fixed;
-	right: 20px;
-	/* left: 20px; */
+	right: 20x;
+	left:80%;
 	top: 13px;
 	height: 50px;
 	width: 50px;
@@ -169,11 +233,11 @@ a  {
   }
 
  .menu{
-	background-color: var(--light-color);
+	background-color: var(--light-color)!important;
 	position: fixed;
  } 
   .space-menu {
-	margin-right: 5.938rem;
+	margin-right: 4.375rem;
   }
   
   .menu-desktop{
@@ -192,5 +256,3 @@ a  {
 	opacity: 60%;
 	transition: 0.5s;
   }
-
-
