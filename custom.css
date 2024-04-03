@@ -174,3 +174,12 @@ footer h5{
 	padding-bottom: 5%;
 }
 
+.social-icon path{
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+.social-icon:hover path {
+	fill: var(--secondary-color);
+}
+
