@@ -1,7 +1,7 @@
 NEXT STEPS
 
-Correzione menù
-Modificare js in head (rimando cartella)
-Modifica file pagine con correzioni
-Check tot
-Fare Branch
+1. Correzione menù (cambiare nome file "logo.svg" -> "logo-menu.svg")
+2. Modificare js in head (rimando cartella)
+3. Modifica file pagine con correzioni
+4. Check tot
+5. Fare Branch
