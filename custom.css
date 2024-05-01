@@ -101,7 +101,6 @@ h2 {
 	color: var(--secondary-color)!important;
 }
 
-
 h3 {
 	font-family: "Righteous", sans-serif;
     font-size: 2rem; 
@@ -131,6 +130,24 @@ p  {
 
 a  {
 	font-family: "Poppins", sans-serif;
+}
+
+/*lg*/
+@media screen and (max-width: 992px) and (min-width: 766px) {
+	h2 {font-size:2.5rem;}
+	h4{font-size: 1.25rem;}
+}
+
+/*md*/
+@media screen and (max-width: 765px) and (min-width: 577px) {
+	h2 {font-size:2.25rem;}
+	h4{font-size: 1.125rem;
+}
+}
+
+/*sm*/
+@media screen and (max-width: 576px) {
+	h2 {font-size:1.75rem;}
 }
 
 /***************************MENU*****************************/
@@ -413,10 +430,6 @@ footer h5{
 		font-size: 4.375rem;
 	}
 
-	.header-home h4{
-		font-size: 1.25rem;
-	}
-
 	.header-home {
 		margin-top: 100px;
 	}
@@ -427,10 +440,6 @@ footer h5{
 @media screen and (max-width: 768px) and (min-width: 577px) {
 	.header-home h1{
 		font-size: 3.125rem;
-	}
-
-	.header-home h4{
-		font-size: 1.125rem;
 	}
 
 	.header-home {
@@ -476,10 +485,6 @@ footer h5{
 		left: 0px;
 		width: 100%;
 	}
-
-	.essence-home h2 {
-		font-size: 2.5rem;
-	}
 	
 }
 
@@ -492,10 +497,6 @@ footer h5{
 		width: 100%;
 	}
 
-	.essence-home h2 {
-		font-size: 2.25rem;
-	}
-
 	.call-to-action {
 		width: 180px;
 	}
@@ -504,9 +505,7 @@ footer h5{
 
 /*sm*/
 @media screen and (max-width: 576px) and (min-width: 394px) {
-	.essence-home h2 {
-		font-size: 1.75rem;
-	}
+
 	.essence-home-wrapper {
 		position: absolute;
 		top: 515px;
@@ -521,9 +520,6 @@ footer h5{
 
 /*xsm*/
 @media screen and (max-width: 393px) {
-	.essence-home h2 {
-		font-size: 1.75rem;
-	}
 	.essence-home-wrapper {
 		position: absolute;
 		top: 555px;
@@ -603,6 +599,8 @@ footer h5{
 	background-size: auto;
 	height: 816px;
 	background-color: var(--primary-color);
+	margin-bottom: -60px;
+	margin-top: -10px;
 }
 
 .portfolio-home-wrapper h2 {
@@ -620,50 +618,15 @@ footer h5{
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: auto;
-		height: 1000px;
+		height: 1200px;
+		margin-top: -100px;
 		background-color: var(--primary-color);
 	}
 
-	.portfolio-home-wrapper h2 {
-		font-size: 2.25rem;
-	}
-
-}
-
-/*
-.portfolio-home-wrapper {
-	background-color: var(--primary-color);
-	background-image: url(img/onda-home-verdone.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto;
-	height: 816px;
-	margin-bottom: -90px;
-	
-}
-
-.portfolio-home-wrapper h2 {
-	color: var(--light-color)!important;
-}
-
-.portfolio-home-wrapper p {
-	color: var(--light-color)!important;
-	font-weight: 400!important;
-}
-
-
-@media screen and (max-width: 765px) {
-
-	.portfolio-home-wrapper {
-		padding-top: 50px;
-
-	}
-
-	.portfolio-home-wrapper h2 {
-		font-size: 1.75rem;
-	}
-
 	.portfolio-home {
-		margin-top: 50px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		
 	}
-}*/
+
+}
