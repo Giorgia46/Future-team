@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    // Salva l'ordine originale dei prodotti
-    var originalOrder = $('.products-container').html();
-
+    
     // Funzione per cambiare il colore della preview del prodotto
     function changeProductPreviewColor(card, variant, productName) {
         var basePath = 'img/furniture/';
@@ -65,6 +63,9 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+    // Salva l'ordine originale dei prodotti
+    var originalOrder = $('.products-container').html();
+    
     // Funzione per filtrare e ordinare i prodotti
     function filterAndSortProducts() {
         var sortBy = $('#sort-by').val();
