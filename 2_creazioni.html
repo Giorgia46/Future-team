@@ -94,24 +94,24 @@
   </div>
 <!--end menu-->
     <!--inizio banner creazioni-->
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-5 position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2 class="pt-5">Creazioni</h2>
-                    <p class="d-none d-lg-block">
-                        Le nostre creazioni presentano un design unico e materiali di altissima qualità, 
-                        realizzate a mano dai nostri artigiani. Con le loro forme eccentriche e i colori 
+                <div class="col-12 col-md-6 mt-5">
+                    <h2 class="mt-5 mb-3">Creazioni</h2>
+                    <p class="d-none d-lg-block mb-5">
+                        Le nostre creazioni presentano un design unico e materiali di altissima <strong>qualità</strong>, 
+                        realizzate a mano dai nostri <strong>artigiani</strong>. Con le loro forme eccentriche e i colori 
                         vivaci daranno un aspetto artistico ma raffinato ai tuoi ambienti.
                     </p>
-                    <p class="d-block d-lg-none">
+                    <p class="d-block d-lg-none mb-5">
                         Con le loro forme eccentriche e i colori vivaci daranno un aspetto artistico 
                         ma raffinato ai tuoi ambienti.
                     </p>
-                    <img src="img/creazioni-bg2.png" alt="Poltrona marshmellow" class="img-fluid col-10 offset-2 offset-md-0 col-md-8">
+                    <img src="img/creazioni-bg2.png" alt="Poltrona marshmellow" class="img-fluid col-10 offset-2 offset-md-0 col-md-12 col-lg-8">
                 </div>
-                <div class="col-md-6">
-                    <img src="img/creazioni-bg1.png" alt="Poltrone sospese" class="d-none d-md-block img-fluid">
+                <div class="col-md-6 col-lg-7 col-xl-8 position-absolute top-1 end-0">
+                    <img srcset="img/creazioni-bg1-md.png 540w, img/creazioni-bg1-lg.png" alt="Poltrone sospese" class="d-none d-md-block img-fluid" id="floating-chairs">
                 </div>
                 
             </div>
@@ -121,8 +121,8 @@
 
 
     <!--inizio sezione filtri-->
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid mt-5">
+        <div class="container mt-5">
             <h3>Tutte le creazioni</h3>
             <div class="row">
                 <div class="col-12 d-flex flex-nowrap overflow-auto gap-3 pt-3">
@@ -592,9 +592,34 @@
 
     </div>
     <!--fine card prodotti-->
-    
+
+    <!--inizio sezione mobili su misura-->
+    <div class="container-fluid" id="custom-furniture-container">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-12 col-lg-7" id="custom-furniture-text">
+                    <h3 class="text-light mb-3">Cerchi un mobile su misura?</h3>
+                    <p class="text-light mb-2">Se hai delle esigenze o dei gusti particolati, <strong>Aethercraft Creations</strong> mette a disposizione anche un <strong>servizio 
+                        per la creazione di mobili su misura</strong>, dalla scelta del design a quella dei materiali pregiati.
+                    </p>
+                    <p class="text-light mb-5">
+                        <strong>Richiedi una consulenza</strong> con i nostri migliori designer e artigiani per rendere realtà 
+                        il mobile dei tuoi sogni!
+                    </p>
+                    <button class="call-to-action text-light"><a>Prenota ora</a></button>
+                </div>
+            
+                <div  class="d-none d-lg-block col-lg-5" id="custom-furniture-img">
+                    <img srcset="img/custom-furniture-md.png 450w, img/custom-furniture-lg.png 580w" alt="Mobile su misura" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--fine sezione mobili su misura-->
+
     <!---------------------------------------inizio footer------------------------------------------>
-    <footer class="pt-5 pb-5 container-fluid footer-link">
+    <footer class="pt-5 pb-5 container-fluid footer-link bg-secondary">
         <div class="container pt-5">
             <div>
                 <a href="index.html"><img src="img/logo-footer.svg" alt="Logo AertherCraft Creations" class="img-fluid col-6 col-md-4 col-lg-3 mt-5"></a>
