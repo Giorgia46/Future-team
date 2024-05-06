@@ -270,3 +270,476 @@ a  {
     }
 
 }
+
+  /*********FOOTER********/
+
+footer{
+	background-image: url('img/footer-bg-mobile.svg'); 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	footer{
+		background-image: url('img/footer-bg-desktop.svg'); 
+	}
+	
+}
+
+.form-control::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.newsletter{
+	height: 50px;
+	background-color: var(--light-color);
+	z-index: 0;
+}
+
+.footer-link a{
+	color: var(--light-color);
+	text-decoration: none;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+.footer-link a:hover{
+	color: var(--secondary-color);
+}
+
+.round-btn{
+	width: 50px;
+	height: 50px;
+	background-color: var(--tertiary-color);
+	border: none;
+	cursor: pointer;
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+.round-btn:hover{
+	background-color: var(--secondary-color);
+}
+
+.input-group .form-control:focus{
+	z-index: 0;
+    box-shadow: 0 0 0 0.25rem rgba(141, 25, 4, 0.25);
+}
+
+.input-group input[type="email"] {
+    font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+}
+
+.input-group .round-btn {
+    z-index: 1;
+}
+  
+.alert-success {
+    color: var(--light-color);
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+}
+
+footer ul{
+	line-height: 160%;
+}
+
+footer h5{
+	padding-bottom: 5%;
+}
+
+.social-icon path{
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+.social-icon:hover path {
+	fill: var(--secondary-color);
+}
+
+
+
+
+
+/*******PORTFOLIO*********/
+
+p strong {
+    font-weight: bold;
+     
+}
+
+
+@media screen and (max-width:992px) {       /*dai 992x in giu*/
+	
+	#immagine_iniziale {
+		display: none;
+	}
+
+	#large {
+		display: none;
+	
+	}
+
+	#small {
+		display:block ;
+	
+	}
+	
+
+
+	.anteprima_progetti_carousel {
+		display: block;
+	}
+
+	
+}
+
+
+@media screen and (min-width:993px) {       /*dai 993px in su*/
+	
+	#small {
+		display:none ;
+	
+	}
+
+	.anteprima_progetti_carousel {
+		display: none;
+	}
+
+}
+
+
+/*md*/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+	.start-portfolio h1 {
+		font-size:3.125rem;
+	}
+
+	.portfolio_progetti h2{
+		font-size:2.375rem;
+	}
+}
+
+/*sm*/
+@media screen and (max-width: 576px) {
+
+	.start-portfolio h1 {
+		font-size:2.25rem;
+	}
+
+	.portfolio_progetti h2{
+		font-size:1.75rem;
+	}
+}
+
+.portfolio_progetti{
+	background-image: url(img/bgimg_portfolio1.svg);
+	height: 600px;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position:center center;
+	background-size: cover;
+	margin-bottom: 100px;
+	
+}
+
+.portfolio_progetti h2 {
+	color: #FAFAFA !important; 
+	margin-top: 30px;
+
+	
+}
+
+.portfolio-desktop {
+	margin-top: 50px;
+}
+
+.portfolio-mobile {
+	margin-top: 50px;
+}
+.txtwave h3 {
+	color:#FAFAFA !important;
+}
+
+
+
+/******carosello********/
+
+.img-wrapper h3 {
+	color:#FAFAFA !important;
+}
+.splide__arrow {
+  
+	background: #FAFAFA!important;
+	opacity: 1!important;
+}
+
+.splide__arrow svg {
+    fill: var(--secondary-color)!important;
+
+}
+
+.splide__pagination {
+	bottom: -3.5em!important;
+}
+
+.card-img {
+	background-color: transparent!important;
+	border:none;
+}
+
+
+
+
+
+
+
+/*******bubble2020*********/
+
+#id_anno {
+	color: #C5D3D4; 
+	font-family: Righteous ;
+	font-size: 4.375rem; 
+	font-style: normal;
+	font-weight: 400 ;
+	line-height: 140% ;
+}
+
+
+/*md*/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+	
+	#id_anno {
+		font-size:3.063rem;
+	}
+	
+	#id_progetto {
+		font-size: 2.375rem;
+	}
+}
+
+/*sm*/
+@media screen and (max-width: 576px) {
+
+	#id_anno {
+		font-size:1.75rem;
+	}
+
+	#id_progetto {
+		font-size: 1.75rem;
+	}
+
+	
+}
+
+
+@media screen and (max-width:992px) {       /*dai 992px in giu*/
+	
+
+	.imgbubble1 {
+		display: none;
+	}
+
+	
+}
+
+
+
+.imgfluidbubble1 {
+	height: auto;
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+}
+
+
+#designer {
+	color: #CF3F30;
+	
+}
+
+/*******luminescence2021*********/
+
+
+.luminescence_2021{
+	margin-bottom: 6.25rem;
+}
+
+
+
+
+@media screen and (max-width:992px) {       /*dai 992px in giu*/
+	
+
+	.imgluminescence1 {
+		display: none;
+	}
+
+
+}
+
+
+
+
+.imgfluidluminescence1 {
+	height: auto;
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+
+/*******cloudproject2022*********/
+
+
+.cloud_2022{
+	margin-bottom: 6.25rem;
+}
+
+
+
+@media screen and (max-width:992px) {       /*dai 992px in giu*/
+	
+
+	.imgcloud1 {
+		display: none;
+	}
+
+}
+
+
+
+
+.imgfluidcloud1 {
+	height: auto;
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+
+/*******eccentricproject2023*********/
+
+
+.eccentric_2023{
+	margin-bottom: 6.25rem;
+}
+
+
+
+@media screen and (max-width:992px) {       /*dai 992px in giu*/
+
+	.imgeccentric1 {
+		display: none;
+	}
+
+	
+
+}
+
+
+
+
+.imgfluideccentric1 {
+	height: auto;
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.eccentric2_2023{
+	margin-bottom: 6.25rem;
+}
+
+
+
+
+/***BOTTONE IMMAGINI***/
+
+.circle-button {
+    width: 44px;
+    height: 44px;
+	top: 300px;
+	left: 280px;
+    flex-shrink: 0;
+    background-color: var(--Arancione, #CF3F30);
+    border: none;
+    border-radius: 50%;
+    cursor:pointer ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #fff;
+	position: relative;
+	z-index: 1;
+
+}
+
+.circle-button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+.rectangle {
+    display: none;
+    position: relative;
+	top: 300px;
+	left: 280px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+	width: 240px;
+	border-radius: 40px ;
+	border: 1px 0px 0px 0px;
+	background: #EAE6E6;
+	transition: visibility 0s, opacity 0.3s linear;
+	visibility: hidden;
+}
+
+
+
+
+.rectangle.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    outline: none;
+    z-index: 1001;
+	color: var(--text-color);
+}
+
+.close-button:hover {
+    color: red;
+}
