@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3_pagina-prodotto-chaise-longue</title>
+    <title>AetherCraft Creations</title>
 
     <!--link-->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="custom.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
-    <!--link-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.8/dist/css/splide.min.css">
+    <script src="https://unpkg.com/@splidejs/splide@3.0.8/dist/js/splide.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/chaise.js"></script>
 
-    <!--link icone-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!--link icone-->
+
+    <!--link-->
 
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,66 +44,429 @@
 
 <body>
 
-<nav>
-    <div class="container-fluid menu">
+<!--menu-->
+<div class="container-fluid menu">
+    <div class="container">
+        <nav class="navbar d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html"><img src="img/logo-menu.svg"></a>
+            <ul class="nav-menu">
 
-        <div class="container">
+                <li class="nav-item voice-menu">
+                    <div class="d-flex align-items-center justify-content-between border-menu">
+                        <div class="d-flex"><a href="index.html" class="nav-link">HOME</a></div>
+                        <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+                    </div>
+                </li>
 
-            <div class="menu-mobile d-block d-lg-none">
-                <input type="checkbox" id="active">
-                <label for="active" class="menu-btn"> <i class="fas fa-bars"></i></label>
-                <div class="wrapper">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="1_essenza.html">ESSENZA</a></li>
-                        <li><a href="2_creazioni.html">CREAZIONI</a></li>
-                        <li><a href="4_portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="5_contatti.html">CONTATTI</a></li>
-                    </ul>
+                <li class="nav-item voice-menu">
+                    <div class="d-flex align-items-center justify-content-between border-menu">
+                        <div class="d-flex"><a href="1_essenza.html" class="nav-link">ESSENZA</a></div>
+                        <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+                    </div>
+                </li>
+
+                <li class="nav-item voice-menu">
+                    <div class="d-flex align-items-center justify-content-between border-menu">
+                        <div class="d-flex"><a href="2_creazioni.html" class="nav-link">CREAZIONI</a></div>
+                        <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+                    </div>
+                </li>
+
+                <li class="nav-item voice-menu">
+                    <div class="d-flex align-items-center justify-content-between border-menu">
+                        <div class="d-flex"><a href="3_portofolio.html" class="nav-link">PORTFOLIO</a></div>
+                        <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+                    </div>
+                </li>
+
+                <li class="nav-item voice-menu">
+                    <div class="d-flex align-items-center justify-content-between border-menu">
+                        <div class="d-flex"><a href="4_contatti.html" class="nav-link">CONTATTI</a></div>
+                        <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--end menu-->
+
+<!--CHAISE LONGUE ONDA-->
+<div class="container-fluid pt-5 position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 img-chaise">
+                <img id="chaiselounge" src="img/orange-chair-lg.png" srcset="img/orange-chair-lg.png 640px, img/orange-chair-md.png 533px, img/orange-chair-sm.png 377px"  alt="chaise longue onda"> </div>
+
+            <div class="col-12 col-lg-5 offset-lg-1 text-right description-right">
+                <h3 class="mb-3">Chaise Longue Onda</h3>
+                <strong>Designed by Nick Roux</strong>
+                <p class="mt-3">Con il suo <strong> design unico ed eccentrico </strong>, la “Chaise Longue Onda” è ciò che il suo designer Nick Roux definisce come “il suo pezzo forte”.</p>
+                <p class="mt-3 mb-3">Grazie alla sua <strong> struttura a strati </strong>riesce a conferire un aspetto retro e chic alla zona living, senza rinunciare alla comodità di una poltrona. Infatti la Chaise Longue Onda <strong>si modifica in base al corpo di chi vi si siede </strong>, avvolgendolo con cura e adattandosi perfettamente alla sua forma.</p>
+
+                <div class="row align-items-center">
+                    <div class="col-9 col-lg-6">
+                        <strong>Disponibile in:</strong>
+                    </div>
+                    <div class="col-3 col-lg-6">
+                        <div class="d-flex justify-content-end">
+                            <h3 class="price-tag text-light rounded-pill text-center">€899</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>	<!--end of div mobile menu-->
-
-            <div class="menu-desktop navbar navbar-expand-lg navbar-light p-0">
-                <a class="navbar-brand pt-3 pb-3" href="index.html"><img src="img/logo.svg" alt="logo"></a>
-
-                <div class="collapse navbar-collapse justify-content-end background" id="navbarSupportedContent">
-
-                    <ul class="navbar-nav text-right">
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="index.html">HOME</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="1_essenza.html">ESSENZA</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="2_creazioni.html">CREAZIONI</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="4_portfolio.html">PORTFOLIO</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2" href="5_contatti.html">CONTATTI</a>
-                        </li>
-                    </ul>
-
+                <div class="color-selector mb-3">
+                    <span class="color-circle bg-red" onclick="changeProductColor('red')"></span>
+                    <span class="color-circle bg-orange" onclick="changeProductColor('orange')"></span>
+                    <span class="color-circle bg-blue" onclick="changeProductColor('blue')"></span>
                 </div>
 
-            </div> <!--end of div menu desktop-->
+                <subtitle> Specifiche: </subtitle>
+                <div class="col-12 col-lg- accordion accordion-flush mt-3">
+                    <div class="accordion-item mb-1">
+                        <div class="accordion-header rounded" id="flush-headingDimensions">
+                            <button class="accordion-button collapsed specifications" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDimensions" aria-expanded="false" aria-controls="flush-collapseDimensions">
+                                <strong>Dimensioni e peso</strong>
+                            </button>
+                        </div>
+                        <div id="flush-collapseDimensions" class="accordion-collapse collapse" aria-labelledby="flush-headingDimensions" data-bs-parent="#accordionFlush">
+                            <div class="accordion-body">Altezza:69cm Lunghezza:170cm Larghezza:56cm Peso:3kg </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-1">
+                        <div class="accordion-header rounded" id="flush-headingMaterials">
+                            <button class="accordion-button collapsed specifications" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMaterials" aria-expanded="false" aria-controls="flush-collapseMaterials">
+                                <strong>Materiali</strong>
+                            </button>
+                        </div>
+                        <div id="flush-collapseMaterials" class="accordion-collapse collapse" aria-labelledby="flush-headingMaterials" data-bs-parent="#accordionFlush">
+                            <div class="accordion-body">La chaise longue onda è stata progettata con un gel intelligente che si adatta dinamicamente alla forma del corpo grazie a sensori di pressione integrati. Questi sensori rilevano il peso e la posizione del corpo e attivano il gel per adattarsi in modo ottimale, fornendo un comfort personalizzato.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header rounded" id="flush-headingFunctions">
+                            <button class="accordion-button collapsed specifications" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFunctions" aria-expanded="false" aria-controls="flush-collapseFunctions">
+                                <strong>Funzionalità</strong>
+                            </button>
+                        </div>
+                        <div id="flush-collapseFunctions" class="accordion-collapse collapse" aria-labelledby="flush-headingFunctions" data-bs-parent="#accordionFlush">
+                            <div class="accordion-body">La magia di questa chaise loungue risiede nel suo materiale tecnologico: il gel intelligente che, dotato di capacità straordinaria, trasforma ogni momento di riposo in un'esperienza personalizzata e avvolgente. Grazie a sensori di precisione integrati, risponde istantaneamente al contatto umano, adattandosi dinamicamente alla forma del corpo con una precisione sorprendente. Ogni centimetro è progettato per abbracciare delicatamente il corpo, avvolgendolo con cura e offrendo un sostegno ottimale, come un abbraccio su misura. Il gel intelligente regola anche la temperatura, mantenendo costantemente una sensazione di freschezza durante le calde giornate estive e un calore accogliente nelle serate più fresche. Inoltre, la sua struttura permeabile all'aria assicura una circolazione ottimale, evitando il surriscaldamento e mantenendo sempre una sensazione di freschezza sulla pelle. La Chaise Longue Onda è dotata anche di un sistema di riconoscimento biometrico avanzato, in grado di memorizzare le preferenze di ogni individuo. Una volta seduti, si adatta automaticamente al profilo unico del corpo dell'utente, garantendo un comfort personalizzato ad ogni utilizzo.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-        </div> <!--end of div container-->
+<!--showroom-->
+<div class="row">
+    <img src="img/onda-azzurra-pp.png" height="211"/>
+</div>
 
-    </div> <!--end of div container-fluid-->
+<div class="container-fluid showroom d-none d-md-none d-lg-block" id="showroom-container">
+    <div class="container">
+        <div class="row">
+            <subtitle> Puoi trovare questa creazione nei nostri showroom</subtitle>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-2 text-center">
+                <img src="img/milano.png" srcset="img/milano-lg.png 157w, img/milano-md.png 136w, img/milano-sm.png 118w" alt="Milano showroom" class="img-fluid rounded-circle">
+                <strong>Milano 1</strong>
+                <p>Via Santa Marta 11</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/roma.png" srcset="img/roma-lg.png 157w, img/roma-md.png 136w, img/roma-sm.png 118w" alt="Roma showroom" class="img-fluid rounded-circle">
+                <strong>Roma</strong>
+                <p>Via del Corso 20</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/parigi.png" srcset="img/parigi-lg.png 157w, img/parigi-md.png 136w, img/parigi-sm.png 118w" alt="Parigi showroom" class="img-fluid rounded-circle">
+                <strong>Parigi</strong>
+                <p>Rue Saint Honoré 214</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/newyork.png" srcset="img/newyork-lg.png 157w, img/newyork-md.png 136w, img/newyork-sm.png 118w" alt="New York showroom" class="img-fluid rounded-circle">
+                <p>New York</p>
+                <p>Park Avenue 80</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/pechino.png" srcset="img/pechino-lg.png 157w, img/pechino-md.png 136w, img/pechino-sm.png 118w" alt="Pechino showroom" class="img-fluid rounded-circle">
+                <strong>Pechino</strong>
+                <p>Wangfujing</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/georgetown.png" srcset="img/georgetown-lg.png 157w, img/georgetown-md.png 136w, img/georgetown-sm.png 118w" alt="Georgetown showroom" class="img-fluid rounded-circle">
+                <strong>Georgetown</strong>
+                <p>King Street 125</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-</nav>
 
+<!--carousel showroom-->
+<div class="carousel-showroom d-block d-lg-none">
+    <div class="text-center">
+        <div class="it-carousel-wrapper it-carousel-landscape-abstract it-full-carousel it-standard-image splide mb-5 " data-bs-carousel-splide>
+            <div class="splide__track">
+                <ul class="splide__list">
 
+                    <li class="splide__slide">
+                        <div class="it-single-slide-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card card-img no-after">
+                                    <div class="img-responsive-wrapper">
+                                        <div class="img-responsive">
+                                            <div class="img-wrapper">
+                                                <img srcset="img/milano-sm.png, img/milano-md.png 136w" alt="Showroom Milano">
+                                                <strong>Milano</strong>
+                                                <p>Via Santa Marta 11</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
+                    <li class="splide__slide">
+                        <div class="it-single-slide-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card card-img no-after">
+                                    <div class="img-responsive-wrapper">
+                                        <div class="img-responsive">
+                                            <div class="img-wrapper">
+                                                <img srcset="img/roma-sm.png, img/roma-md.png" alt="Showroom Roma">
+                                                <strong>Roma</strong>
+                                                <p>Via del Corso 20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
+                    <li class="splide__slide">
+                        <div class="it-single-slide-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card card-img no-after">
+                                    <div class="img-responsive-wrapper">
+                                        <div class="img-responsive">
+                                            <div class="img-wrapper">
+                                                <img srcset="img/parigi-sm.png, img/parigi-md.png" alt="Showroom Parigi">
+                                                <strong>Parigi</strong>
+                                                <p>Rue Saint Honoré 214</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
+                    <li class="splide__slide">
+                        <div class="it-single-slide-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card card-img no-after">
+                                    <div class="img-responsive-wrapper">
+                                        <div class="img-responsive">
+                                            <div class="img-wrapper">
+                                                <img srcset="img/newyork-sm.png, img/newyork-md.png" alt="Showroom New York">
+                                                <strong>New York</strong>
+                                                <p>Park Avenue 80</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="it-single-slide-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card card-img no-after">
+                                    <div class="img-responsive-wrapper">
+                                        <div class="img-responsive">
+                                            <div class="img-wrapper">
+                                                <img srcset="img/pechino-sm.png, img/pechino-md.png" alt="Showroom Pechino">
+                                                <strong>Pechino</strong>
+                                                <p>Wangfujing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="it-single-slide-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card card-img no-after">
+                                    <div class="img-responsive-wrapper">
+                                        <div class="img-responsive">
+                                            <div class="img-wrapper">
+                                                <img srcset="img/georgetown-sm.png, img/georgetown-md.png" alt="Showroom Georgetown">
+                                                <strong>Georgetown</strong>
+                                                <p>King Street 125</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--form-->
+<div class="container form">
+    <div class="row">
+        <div class="col-12 col-lg-6 col-left">
+            <h3>Prendi un appuntamento</h3>
+            <p>Prenota una consulenza con i nostri esperti per personalizzare il tuo ambiente secondo i tuoi gusti.</p>
+
+            <form class="needs-validation" novalidate>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="formNome" placeholder="NOME*" style="height:48px" required>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Per favore, inserisci il tuo nome.
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" id="formCognome" placeholder="COGNOME*" style="height:48px" required>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Per favore, inserisci il tuo cognome.
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="EMAIL*" style="height:48px" required>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Per favore, inserisci un indirizzo email valido.
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <input type="tel" class="form-control" id="Telefono" placeholder="TELEFONO*" style="height:48px" required pattern="[0-9]{10}">
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Per favore, inserisci un numero di telefono valido (massimo 10 cifre).
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" id="Azienda" placeholder="AZIENDA" style="height:48px">
+                </div>
+                <div class="form-group mt-3 mb-4">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MESSAGGIO*" rows="3" style="height:120px; padding:15px" required></textarea>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Per favore, inserisci un messaggio.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">INVIA</button>
+                <span id="successMessage" class="text-success ml-2 d-none">Grazie per averci scritto, il nostro team le risponderà presto</span>
+            </form>
+        </div>
+
+        <div class="d-none d-lg-block col-lg-6 col-right">
+            <img class="img-fluid img-form" max-width="613px" max-height="761px" src="img/photo-form.png" srcset="img/photo-form.png 820w, img/photo-form.png 814w, img/photo-form.png 409w" sizes="(max-width: 767px) 340px, (max-width: 861px) 450px, (max-width: 890px) 580px, (max-width: 987px) 600px, 800px" alt="foto form">
+        </div>
+    </div>
+</div>
+
+<!--related furniture-->
+<div class="container-fluid" id="related-furniture-container">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="mb-3">Creazioni correlate</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!--poltrona stravagante-->
+            <div class="col col-6 col-lg-4 col-xl-3">
+                <div id="extravagant-armchair" class="card product-card" data-type="armchair" data-collection="extravagant" data-price="1499" data-color="multicolor">
+                    <span class="sold-out">ESAURITO</span>
+                    <img srcset="img/furniture/extravagant-armchair-sm.png 160w, img/furniture/extravagant-armchair-md.png 200w, img/furniture/extravagant-armchair-lg.png 240w" alt="Poltrona Stravagante" class="card-img-top">
+                    <div>
+                        <div class="card-body">
+                            <p class="card-text text-light">Poltrona Stravagante</p>
+                            <h3 class="text-light">1.499€</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--sedia stravagante-->
+            <div class="col col-6 col-lg-4 col-xl-3">
+                <div id="extravagant-chair" class="card product-card" data-type="chair" data-collection="extravagant" data-price="999" data-color="multicolor">
+                    <span class="sold-out">ESAURITO</span>
+                    <img srcset="img/furniture/extravagant-chair-sm.png 160w, img/furniture/extravagant-chair-md.png 200w, img/furniture/extravagant-chair-lg.png 240w" alt="Sedia Stravagante" class="card-img-top">
+                    <div>
+                        <div class="card-body">
+                            <p class="card-text text-light">Sedia Stravagante</p>
+                            <h3 class="text-light">999€</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--tavolo stravagante-->
+            <div class="col col-6 col-lg-4 col-xl-3">
+                <div id="extravagant-table" class="card product-card" data-type="table" data-collection="extravagant" data-price="2499" data-color="multicolor">
+                    <span class="sold-out">ESAURITO</span>
+                    <img srcset="img/furniture/extravagant-table-sm.png 160w, img/furniture/extravagant-table-md.png 200w, img/furniture/extravagant-table-lg.png 240w" alt="Tavolo Stravagante" class="card-img-top">
+                    <div>
+                        <div class="card-body">
+                            <p class="card-text text-light">Tavolo Stravagante</p>
+                            <h3 class="text-light">2.499€</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--divano stravagante-->
+            <div class="col col-6 col-lg-4 col-xl-3 mb-5">
+                <div id="extravagant-sofa" class="card product-card" data-type="sofa" data-collection="extravagant" data-price="4999" data-color="blue,green,yellow">
+                    <span class="sold-out">ESAURITO</span>
+                    <img srcset="img/furniture/extravagant-sofa-blue-sm.png 160w, img/furniture/extravagant-sofa-blue-md.png 200w, img/furniture/extravagant-sofa-blue-lg.png 240w" alt="Divano Stravagante" class="card-img-top">
+                    <div>
+                        <div class="card-body">
+                            <p class="card-text text-light">Divano Stravagante</p>
+                            <h3 class="text-light">4.999€</h3>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-2 ms-3 dot-group">
+                        <span class="dot variant-option blue-filter-bg active" data-variant="blue"></span>
+                        <span class="dot variant-option green-filter-bg" data-variant="green"></span>
+                        <span class="dot variant-option yellow-filter-bg" data-variant="yellow"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--fine pagina prodotto-->
 
 <!--inizio footer-->
 <footer class="pt-5 pb-5 container-fluid footer-link">
