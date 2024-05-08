@@ -369,7 +369,7 @@ footer h5{
 /*******PORTFOLIO*********/
 
 p strong {
-    font-weight: bold;
+    font-weight: 600;
      
 }
 
@@ -439,7 +439,7 @@ p strong {
 
 .portfolio_progetti{
 	background-image: url(img/bgimg_portfolio1.svg);
-	height: 600px;
+	height: 700px;
 	background-repeat: no-repeat;
 	width: 100%;
 	background-position:center center;
@@ -668,13 +668,609 @@ p strong {
 
 
 
-/***BOTTONE IMMAGINI***/
+/***BOTTONE e RETTANGOLI IMG***/
+
+
+/*xl*/
+@media screen and (min-width: 1200px) {
+	
+	.click {
+		position: absolute;
+		top: 150px;
+		left: 110px;
+	}
+
+	.click2 {
+		position: absolute;
+		top: 160px;
+		left: 390px;
+	}
+
+	.click3 {
+		position: absolute;
+		top: 150px;
+		left: 110px;
+	}
+
+	.click4 {
+		position: absolute;
+		top: 160px;
+		left: 390px;
+	}
+
+	.click5 {
+		position: absolute;
+		top: 150px;
+		left: 110px;
+	}
+
+	.click6 {
+		position: absolute;
+		top: 160px;
+		left: 503px;
+	}
+
+	.click7 {
+		position: absolute;
+		top: 150px;
+		left: 110px;
+	}
+
+	.click8 {
+		position: absolute;
+		top: 160px;
+		left: 430px;
+	}
+
+	.circle-button {
+		width: 44px;
+		height: 44px;
+	}
+
+
+	.scheda1 {
+		position: absolute;
+		top: 20%;
+		left: 6%;
+	}
+
+	.scheda2 {
+		position: absolute;
+		top: 21%;
+		left: 52%;
+	}
+
+	.scheda3 {
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda4 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+	.scheda5 {
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda6 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+	.scheda7 {
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda8 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+	.rectangle {
+		width: 240px;
+	}
+
+
+
+}
+
+
+/*lg*/
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+	
+	.click {
+		position: absolute;
+		top: 130px;
+		left: 100px;
+	}
+
+	.click2 {
+		position: absolute;
+		top: 130px;
+		left: 335px;
+	}
+
+	.click3 {
+		position: absolute;
+		top: 130px;
+		left: 100px;
+	}
+
+	.click4 {
+		position: absolute;
+		top: 130px;
+		left: 335px;
+	}
+
+	.click5 {
+		position: absolute;
+		top: 130px;
+		left: 100px;
+	}
+
+	.click6 {
+		position: absolute;
+		top: 130px;
+		left: 425px;
+	}
+
+	.click7 {
+		position: absolute;
+		top: 130px;
+		left: 100px;
+	}
+
+	.click8 {
+		position: absolute;
+		top: 130px;
+		left: 360px;
+	}
+
+	.circle-button {
+		width: 40px;
+		height: 40px;
+	}
+
+	.scheda1 {
+		position: absolute;
+		top: 18%;
+		left: 6%;
+	}
+
+	.scheda2 {
+		position: absolute;
+		top: 21%;
+		left: 52%;
+	}
+
+
+	.scheda3 {
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda4 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+	.scheda5 {
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda6 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+	.scheda7 {
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda8 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+
+	.rectangle {
+		width: 240px;
+	}
+	
+
+}
+
+
+/*md*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	.click {
+		position: absolute;
+		top: 164px;
+		left: 116px;
+	}
+
+	.click2 {
+		position: absolute;
+		top: 175px;
+		left: 427px;
+	}
+
+	.click3 {
+		position: absolute;
+		top: 164px;
+		left: 116px;
+	}
+
+	.click4 {
+		position: absolute;
+		top: 175px;
+		left: 427px;
+	}
+
+	.click5 {
+		position: absolute;
+		top: 164px;
+		left: 116px;
+	}
+
+	.click6 {
+		position: absolute;
+		top: 175px;
+		left: 540px;
+	}
+
+	.click7 {
+		position: absolute;
+		top: 164px;
+		left: 116px;
+	}
+
+	.click8 {
+		position: absolute;
+		top: 175px;
+		left: 470px;
+	}
+
+
+	.circle-button {
+		width: 44px;
+		height: 44px;
+	}
+
+	.scheda1 {
+		position: absolute;
+		top: 18%;
+		left: 6%;
+	}
+
+	.scheda2 {
+		position: absolute;
+		top: 21%;
+		left: 52%;
+	}
+
+	.scheda3{
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda4 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+	.scheda5{
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda6 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+	.scheda7{
+		position: absolute;
+		top: 14%;
+		left: 6%;
+	}
+
+	.scheda8 {
+		position: absolute;
+		top: 14%;
+		left: 52%;
+	}
+
+
+	
+
+	.rectangle {
+		width: 240px;
+	}
+	
+
+}
+
+
+
+
+/*sm*/
+@media screen and (max-width: 768px) and (min-width: 556px){
+
+	.click {
+		position: absolute;
+		top: 128px;
+		left: 90px;
+	}
+
+
+	.click2 {
+		position: absolute;
+		top: 130px;
+		left: 317px;
+	}
+
+	.click3 {
+		position: absolute;
+		top: 128px;
+		left: 90px;
+	}
+
+
+	.click4 {
+		position: absolute;
+		top: 130px;
+		left: 317px;
+	}
+
+
+	.click5 {
+		position: absolute;
+		top: 128px;
+		left: 90px;
+	}
+
+
+	.click6 {
+		position: absolute;
+		top: 130px;
+		left: 405px;
+	}
+
+
+	.click7 {
+		position: absolute;
+		top: 128px;
+		left: 90px;
+	}
+
+
+	.click8 {
+		position: absolute;
+		top: 130px;
+		left: 355px;
+	}
+
+
+	.circle-button {
+		width: 33px;
+		height: 33px;
+	}
+
+	#plusicon {
+        width: 16px;
+        height: 16px;
+    }
+
+	.scheda1 {
+		position: absolute;
+		top: 18%;
+		left: 6%;
+	}
+
+	.scheda2 {
+		position: absolute;
+		top: 21%;
+		left: 52%;
+	}
+
+	.scheda3 {
+		position: absolute;
+		top: 6%;
+		left: 6%;
+	}
+
+	.scheda4 {
+		position: absolute;
+		top: 6%;
+		left: 52%;
+	}
+
+	.scheda5 {
+		position: absolute;
+		top: 6%;
+		left: 6%;
+	}
+
+	.scheda6 {
+		position: absolute;
+		top: 6%;
+		left: 52%;
+	}
+
+
+	.scheda7 {
+		position: absolute;
+		top: 6%;
+		left: 6%;
+	}
+
+	.scheda8 {
+		position: absolute;
+		top: 6%;
+		left: 52%;
+	}
+
+
+	.rectangle {
+		width: 230px;
+	}
+
+	
+	
+}
+
+/*xs*/
+@media screen and (max-width: 556px) {
+
+	.click {
+		position: absolute;
+		top: 113px;
+		left: 83px;
+	}
+
+	.click2 {
+		position: absolute;
+		top: 132px;
+		left: 310px;
+	}
+
+	.click3 {
+		position: absolute;
+		top: 113px;
+		left: 83px;
+	}
+
+	.click4 {
+		position: absolute;
+		top: 132px;
+		left: 310px;
+	}
+
+	.click5 {
+		position: absolute;
+		top: 113px;
+		left: 83px;
+	}
+
+	.click6 {
+		position: absolute;
+		top: 132px;
+		left: 405px;
+	}
+
+	.click7 {
+		position: absolute;
+		top: 113px;
+		left: 83px;
+	}
+
+	.click8 {
+		position: absolute;
+		top: 132px;
+		left: 355px;
+	}
+
+	
+	.circle-button {
+		width: 33px;
+		height: 33px;
+	}
+	
+	#plusicon {
+        width: 16px;
+        height: 16px;
+    }
+
+	.scheda1 {
+		position: absolute;
+		top: 12%;
+		left: 10%;
+	}
+
+
+	.scheda2 {
+		position: absolute;
+		top: 21%;
+		left: 55%;
+	}
+
+
+	.scheda3 {
+		position: absolute;
+		top: 6%;
+		left: 6%;
+	}
+
+
+	.scheda4 {
+		position: absolute;
+		top: 6%;
+		left: 52%;
+	}
+
+	.scheda5 {
+		position: absolute;
+		top: 6%;
+		left: 6%;
+	}
+
+
+	.scheda6 {
+		position: absolute;
+		top: 6%;
+		left: 52%;
+	}
+
+	.scheda7 {
+		position: absolute;
+		top: 6%;
+		left: 6%;
+	}
+
+
+	.scheda8 {
+		position: absolute;
+		top: 6%;
+		left: 52%;
+	}
+
+
+	
+	.rectangle {
+		width: 230px;
+	}
+
+}
+
+
+
+
+
 
 .circle-button {
-    width: 44px;
-    height: 44px;
-	top: 300px;
-	left: 280px;
     flex-shrink: 0;
     background-color: var(--Arancione, #CF3F30);
     border: none;
@@ -684,35 +1280,27 @@ p strong {
     align-items: center;
     justify-content: center;
     fill: #fff;
-	position: relative;
 	z-index: 1;
 
 }
 
 .circle-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
-
-
 
 
 .rectangle {
     display: none;
-    position: relative;
-	top: 300px;
-	left: 280px;
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
     z-index: 1000;
-	width: 240px;
 	border-radius: 40px ;
 	border: 1px 0px 0px 0px;
 	background: #EAE6E6;
 	transition: visibility 0s, opacity 0.3s linear;
 	visibility: hidden;
 }
-
 
 
 
@@ -726,14 +1314,15 @@ p strong {
 
 .close-button {
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 10px;
+    right: 15px;
     width: 30px;
     height: 30px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
+	font-weight: bold;
     line-height: 1;
     outline: none;
     z-index: 1001;
