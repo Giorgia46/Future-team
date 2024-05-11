@@ -14,10 +14,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.8/dist/css/splide.min.css">
     <script src="https://unpkg.com/@splidejs/splide@3.0.8/dist/js/splide.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/creations.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/carousel.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/chaise.js"></script>
 
 
@@ -97,18 +96,24 @@
 </div>
 <!--end menu-->
 
-<!--CHAISE LONGUE ONDA-->
+<!--CHAISE LONGUE STRAVAGANTE-->
+
+<div class="col-12 d-lg-none text-right description-right">
+    <h3 class="mb-3">Chaise Longue Stravagante</h3>
+    <strong>Designed by Nick Roux</strong>
+</div>
+
 <div class="container-fluid pt-5 position-relative">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 img-chaise">
-                <img id="chaiselounge" src="img/orange-chair-lg.png" srcset="img/orange-chair-lg.png 640px, img/orange-chair-md.png 533px, img/orange-chair-sm.png 377px"  alt="chaise longue onda"> </div>
+                <img id="chaiselounge" src="img/orange-chair-lg.png" srcset="img/orange-chair-lg.png 640px, img/orange-chair-md.png 533px, img/orange-chair-sm.png 377px"  alt="chaise longue stravagante"> </div>
 
             <div class="col-12 col-lg-5 offset-lg-1 text-right description-right">
-                <h3 class="mb-3">Chaise Longue Onda</h3>
-                <strong>Designed by Nick Roux</strong>
-                <p class="mt-3">Con il suo <strong> design unico ed eccentrico </strong>, la “Chaise Longue Onda” è ciò che il suo designer Nick Roux definisce come “il suo pezzo forte”.</p>
-                <p class="mt-3 mb-3">Grazie alla sua <strong> struttura a strati </strong>riesce a conferire un aspetto retro e chic alla zona living, senza rinunciare alla comodità di una poltrona. Infatti la Chaise Longue Onda <strong>si modifica in base al corpo di chi vi si siede </strong>, avvolgendolo con cura e adattandosi perfettamente alla sua forma.</p>
+                <h3 class="mb-3 d-none d-lg-block">Chaise Longue Stravagante</h3>
+                <strong class="d-none d-lg-block">Designed by Nick Roux</strong>
+                <p class="mt-3">Con il suo <strong> design unico ed eccentrico </strong>, la Chaise Longue Stravagante è ciò che il suo designer Nick Roux definisce come “il suo pezzo forte”.</p>
+                <p class="mt-3 mb-3">Grazie alla sua <strong> struttura a strati </strong>riesce a conferire un aspetto retro e chic alla zona living, senza rinunciare alla comodità di una poltrona. Infatti la Chaise Longue Stravagante <strong>si modifica in base al corpo di chi vi si siede </strong>, avvolgendolo con cura e adattandosi perfettamente alla sua forma.</p>
 
                 <div class="row align-items-center">
                     <div class="col-9 col-lg-6">
@@ -121,12 +126,12 @@
                     </div>
                 </div>
                 <div class="color-selector mb-3">
-                    <span class="color-circle bg-red" onclick="changeProductColor('red')"></span>
-                    <span class="color-circle bg-orange" onclick="changeProductColor('orange')"></span>
-                    <span class="color-circle bg-blue" onclick="changeProductColor('blue')"></span>
+                    <span class="color-circle red-filter-bg" onclick="changeProductColor('red')"></span>
+                    <span class="color-circle orange-filter-bg" onclick="changeProductColor('orange')"></span>
+                    <span class="color-circle blue-filter-bg" onclick="changeProductColor('blue')"></span>
                 </div>
 
-                <subtitle> Specifiche: </subtitle>
+                <h4 class="specificatins-title"> Specifiche: </h4>
                 <div class="col-12 col-lg- accordion accordion-flush mt-3">
                     <div class="accordion-item mb-1">
                         <div class="accordion-header rounded" id="flush-headingDimensions">
@@ -145,7 +150,7 @@
                             </button>
                         </div>
                         <div id="flush-collapseMaterials" class="accordion-collapse collapse" aria-labelledby="flush-headingMaterials" data-bs-parent="#accordionFlush">
-                            <div class="accordion-body">La chaise longue onda è stata progettata con un gel intelligente che si adatta dinamicamente alla forma del corpo grazie a sensori di pressione integrati. Questi sensori rilevano il peso e la posizione del corpo e attivano il gel per adattarsi in modo ottimale, fornendo un comfort personalizzato.</div>
+                            <div class="accordion-body">La Chaise Longue Stravagante è stata progettata con un gel intelligente che si adatta dinamicamente alla forma del corpo grazie a sensori di pressione integrati. Questi sensori rilevano il peso e la posizione del corpo e attivano il gel per adattarsi in modo ottimale, fornendo un comfort personalizzato.</div>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -165,170 +170,46 @@
 </div>
 
 <!--showroom-->
-<div class="row">
-    <img src="img/onda-azzurra-pp.png" height="211"/>
-</div>
-
-<div class="container-fluid showroom d-none d-md-none d-lg-block" id="showroom-container">
+<div class="container-fluid showroom overflow-auto pt-5 mt-5" id="showroom-container">
     <div class="container">
         <div class="row">
-            <subtitle> Puoi trovare questa creazione nei nostri showroom</subtitle>
+            <h4 class="text-light"> Puoi trovare questa creazione nei nostri showroom </h4>
         </div>
         <div class="row justify-content-center mt-5">
             <div class="col-md-2 text-center">
                 <img src="img/milano.png" srcset="img/milano-lg.png 157w, img/milano-md.png 136w, img/milano-sm.png 118w" alt="Milano showroom" class="img-fluid rounded-circle">
-                <strong>Milano 1</strong>
-                <p>Via Santa Marta 11</p>
+                <p class="city">Milano</p>
+                <p class="address">Via Santa Marta 11</p>
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/roma.png" srcset="img/roma-lg.png 157w, img/roma-md.png 136w, img/roma-sm.png 118w" alt="Roma showroom" class="img-fluid rounded-circle">
-                <strong>Roma</strong>
-                <p>Via del Corso 20</p>
+                <p class="city">Roma</p>
+                <p class="address">Via del Corso 20</p>
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/parigi.png" srcset="img/parigi-lg.png 157w, img/parigi-md.png 136w, img/parigi-sm.png 118w" alt="Parigi showroom" class="img-fluid rounded-circle">
-                <strong>Parigi</strong>
-                <p>Rue Saint Honoré 214</p>
+                <p class="city">Parigi</p>
+                <p class="address">Rue Saint Honoré 214</p>
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/newyork.png" srcset="img/newyork-lg.png 157w, img/newyork-md.png 136w, img/newyork-sm.png 118w" alt="New York showroom" class="img-fluid rounded-circle">
-                <p>New York</p>
-                <p>Park Avenue 80</p>
+                <p class="city">New York</p>
+                <p class="address">Park Avenue 80</p>
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/pechino.png" srcset="img/pechino-lg.png 157w, img/pechino-md.png 136w, img/pechino-sm.png 118w" alt="Pechino showroom" class="img-fluid rounded-circle">
-                <strong>Pechino</strong>
-                <p>Wangfujing</p>
+                <p class="city">Pechino</p>
+                <p class="address">Wangfujing</p>
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/georgetown.png" srcset="img/georgetown-lg.png 157w, img/georgetown-md.png 136w, img/georgetown-sm.png 118w" alt="Georgetown showroom" class="img-fluid rounded-circle">
-                <strong>Georgetown</strong>
-                <p>King Street 125</p>
+                <p class="city">Georgetown</p>
+                <p class="address">King Street 125</p>
             </div>
         </div>
     </div>
 </div>
 
-
-<!--carousel showroom-->
-<div class="carousel-showroom d-block d-lg-none">
-    <div class="text-center">
-        <div class="it-carousel-wrapper it-carousel-landscape-abstract it-full-carousel it-standard-image splide mb-5 " data-bs-carousel-splide>
-            <div class="splide__track">
-                <ul class="splide__list">
-
-                    <li class="splide__slide">
-                        <div class="it-single-slide-wrapper">
-                            <div class="card-wrapper">
-                                <div class="card card-img no-after">
-                                    <div class="img-responsive-wrapper">
-                                        <div class="img-responsive">
-                                            <div class="img-wrapper">
-                                                <img srcset="img/milano-sm.png, img/milano-md.png 136w" alt="Showroom Milano">
-                                                <strong>Milano</strong>
-                                                <p>Via Santa Marta 11</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="splide__slide">
-                        <div class="it-single-slide-wrapper">
-                            <div class="card-wrapper">
-                                <div class="card card-img no-after">
-                                    <div class="img-responsive-wrapper">
-                                        <div class="img-responsive">
-                                            <div class="img-wrapper">
-                                                <img srcset="img/roma-sm.png, img/roma-md.png" alt="Showroom Roma">
-                                                <strong>Roma</strong>
-                                                <p>Via del Corso 20</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="splide__slide">
-                        <div class="it-single-slide-wrapper">
-                            <div class="card-wrapper">
-                                <div class="card card-img no-after">
-                                    <div class="img-responsive-wrapper">
-                                        <div class="img-responsive">
-                                            <div class="img-wrapper">
-                                                <img srcset="img/parigi-sm.png, img/parigi-md.png" alt="Showroom Parigi">
-                                                <strong>Parigi</strong>
-                                                <p>Rue Saint Honoré 214</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="splide__slide">
-                        <div class="it-single-slide-wrapper">
-                            <div class="card-wrapper">
-                                <div class="card card-img no-after">
-                                    <div class="img-responsive-wrapper">
-                                        <div class="img-responsive">
-                                            <div class="img-wrapper">
-                                                <img srcset="img/newyork-sm.png, img/newyork-md.png" alt="Showroom New York">
-                                                <strong>New York</strong>
-                                                <p>Park Avenue 80</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="splide__slide">
-                        <div class="it-single-slide-wrapper">
-                            <div class="card-wrapper">
-                                <div class="card card-img no-after">
-                                    <div class="img-responsive-wrapper">
-                                        <div class="img-responsive">
-                                            <div class="img-wrapper">
-                                                <img srcset="img/pechino-sm.png, img/pechino-md.png" alt="Showroom Pechino">
-                                                <strong>Pechino</strong>
-                                                <p>Wangfujing</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="splide__slide">
-                        <div class="it-single-slide-wrapper">
-                            <div class="card-wrapper">
-                                <div class="card card-img no-after">
-                                    <div class="img-responsive-wrapper">
-                                        <div class="img-responsive">
-                                            <div class="img-wrapper">
-                                                <img srcset="img/georgetown-sm.png, img/georgetown-md.png" alt="Showroom Georgetown">
-                                                <strong>Georgetown</strong>
-                                                <p>King Street 125</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!--form-->
 <div class="container form">
@@ -402,7 +283,7 @@
     <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-md-3">
-                <h3 class="mb-3">Creazioni correlate</h3>
+                <h3 class=" mt-5 mb-3">Creazioni correlate</h3>
             </div>
         </div>
         <div class="row">
@@ -469,7 +350,7 @@
 <!--fine pagina prodotto-->
 
 <!--inizio footer-->
-<footer class="pt-5 pb-5 container-fluid footer-link">
+<footer class="pt-5 pb-5 container-fluid footer-link background-lightblue">
     <div class="container pt-5">
         <div>
             <a href="index.html"><img src="img/logo-footer.svg" alt="Logo AertherCraft Creations" class="img-fluid col-6 col-md-4 col-lg-3 mt-5"></a>
