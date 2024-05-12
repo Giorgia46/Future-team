@@ -11,12 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="custom.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.8/dist/css/splide.min.css">
-    <script src="https://unpkg.com/@splidejs/splide@3.0.8/dist/js/splide.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/contatti_button.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.8/dist/css/splide.min.css">
+    <script src="https://unpkg.com/@splidejs/splide@3.0.8/dist/js/splide.min.js"></script>
 
     <!--link-->
 
@@ -50,35 +51,35 @@
 
                 <li class="nav-item voice-menu">
                     <div class="d-flex align-items-center justify-content-between border-menu">
-                        <div class="d-flex"><a href="index.html" class="nav-link">HOME</a></div>
+                        <div class="d-flex"><a href="#" class="nav-link">HOME</a></div>
                         <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
                     </div>
                 </li>
 
                 <li class="nav-item voice-menu">
                     <div class="d-flex align-items-center justify-content-between border-menu">
-                        <div class="d-flex"><a href="1_essenza.html" class="nav-link">ESSENZA</a></div>
+                        <div class="d-flex"><a href="#" class="nav-link">ESSENZA</a></div>
                         <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
                     </div>
                 </li>
 
                 <li class="nav-item voice-menu">
                     <div class="d-flex align-items-center justify-content-between border-menu">
-                        <div class="d-flex"><a href="2_creazioni.html" class="nav-link">CREAZIONI</a></div>
+                        <div class="d-flex"><a href="#" class="nav-link">CREAZIONI</a></div>
                         <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
                     </div>
                 </li>
 
                 <li class="nav-item voice-menu">
                     <div class="d-flex align-items-center justify-content-between border-menu">
-                        <div class="d-flex"><a href="3_portofolio.html" class="nav-link">PORTFOLIO</a></div>
+                        <div class="d-flex"><a href="#" class="nav-link">PORTFOLIO</a></div>
                         <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
                     </div>
                 </li>
 
                 <li class="nav-item voice-menu">
                     <div class="d-flex align-items-center justify-content-between border-menu">
-                        <div class="d-flex"><a href="4_contatti.html" class="nav-link">CONTATTI</a></div>
+                        <div class="d-flex"><a href="#" class="nav-link">CONTATTI</a></div>
                         <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
                     </div>
                 </li>
@@ -112,20 +113,44 @@
     </div>
 
     <div class="header-telephon-wrapper d-flex justify-content-end ">
-        <img class="img-fluid img-divano" max-width="730px" max-height="540px"
+        <img class="img-fluid img-divano" max-width="693px" max-height="550px"
              src="img/telephone.png"
-             srcset="img/telephone-large.png 820w, img/telephone-medium.png 814w, img/telephone-small.png 409w"
+             srcset="img/telephone-large.png 820w, img/telephone-medium.png 800w, img/telephone-small.png 400w"
              sizes="(max-width: 767px) 340px, (max-width: 861px) 450px, (max-width: 890px) 580px, (max-width: 987px) 600px, 800px"
              alt="telefono">
     </div>
 
-    <div class="container map-img" >
-        <div class="row">
-            <div class="col-12">
-                <img class="img-fluid" widht="100%"
-                     src="img/map.png"
-                     alt="descrizione">
+    <div class="container-fluid map">
+        <div class="container map-intern">
+
+        <!-- Bottone 1 -->
+            <div class="clickC">
+                <button id="specificheBtn1" class="circle-button">
+                    <svg id="plusicon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
+        <!-- Fine Bottone 1 -->
+
+        <!-- Rettangolo nascosto -->
+            <div class="scheda1contatti">
+                <div id="rect1" class="rectangle">
+                    <button id="closeBtn1" class="close-button">×</button>
+                    <h2 class="mt-1 mb-1" style="color: var(--secondary-color)"> <strong>MILANO</strong></h2>
+                        <br><strong>Assistenza ordini</strong><br>
+                        <br><mail>OrdMI@aethercraftcreations.com</mail><br>
+                        <br><strong>Assistenza legale</strong><br>
+                        <br><mail>LegMI@aethercraftcreations.com</mail><br>
+                        <br><strong>Assistenza spedizioni</strong><br>
+                        <br><mail>SpeMI@aethercraftcreations.com</mail><br>
+
+                    </h2>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
@@ -154,20 +179,23 @@
     <div class="container-fluid showroom">
         <div class="container">
         <div class="row">
-                <div class="col-6">
+                <div class="col-6 showroom-sx">
                     <img class="img-fluid"
                         src="img/showroom.png"
                         alt="showroom">
                 </div>
 
-                <div class="col-6 showroom-text">
-                    <h2>Sedi e showroom</h2>
-                    <p><strong>Sede legale:</strong> Strada Provinciale Almisano 7, Milano (MI), Italy
-                    <br>T. +39 0444/696349
-                    <br>info@aethercraftcreations.com
-                    <br><strong>Uffici:</strong> Milano, Roma, New York
-                    <br><strong>Showroom:</strong> MIlano, Parigi, New York, Georgetown, Pechino </p>
-                </dvi>
+            <div class="col-5 offset-1 showroom-text">
+                <h2>Sedi e showroom</h2>
+                <p><strong>Sede legale:</strong> Strada Provinciale Almisano 7, Milano (MI), Italy
+                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;T. +39 0444/696349
+                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;info@aethercraftcreations.com
+                </p>
+                <p style="margin-top:16px"><strong>Uffici:</strong> Milano, Roma, New York</p>
+                <p style="margin-top:16px"><strong>Showroom:</strong> Milano, Parigi, New York, Georgetown, Pechino</p>
+            </div>
+
+
         </div>
         </div>
     </div>
@@ -227,8 +255,9 @@
                             Per favore, inserisci un messaggio.
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">INVIA</button>
-                    <span id="successMessage" class="text-success ml-2 d-none">Grazie per averci scritto, il nostro team le risponderà presto</span>
+                    <button type="submit" class="btn btn-primary mt-3"><p>INVIA</p></button>
+                    <span id="successMessage1" class="text-success ml-2 d-none">Grazie per averci scritto, il nostro team le risponderà presto</span>
+                    // NON FUNZIONA IL MESSAGGIO DI RINGRAZIAMENTO
                 </form>
 
             </div>
@@ -237,7 +266,7 @@
                      src="img/photo-form.png"
                      srcset="img/photo-form.png 820w, img/photo-form.png 814w, img/photo-form.png 409w"
                      sizes="(max-width: 767px) 340px, (max-width: 861px) 450px, (max-width: 890px) 580px, (max-width: 987px) 600px, 800px"
-                     alt="foto form"
+                     alt="foto form">
             </div>
         </div>
     </div>

@@ -56,28 +56,21 @@ table {
 	--tertiary-color: #1E9EA1;
 }
 
-.call-to-action {
-	width: 214px;
-	height: 50px;
-	border-radius: 80px!important;
-	background-color: var(--primary-color);
-	border: none!important;
-	transition: background-color 0.3s ease;
-}
-
-.call-to-action a {
+.custom-button {
+	background-color: var(--primary-color); /* Colore di base */
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
 	text-decoration: none;
-	font-size: 1rem;
-	color: var(--light-color);
-	font-weight: 600;
-	font-family: "Poppins", sans-serif;
-
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 80px;
+	transition: background-color 0.8s;
 }
 
-.call-to-action:hover {
+.custom-button:hover {
 	background-color: #9C3025;
-	transition: 1s;
-
 }
 
 .text-light p{
@@ -100,7 +93,6 @@ h2 {
 	line-height: 120%;
 	color: var(--secondary-color)!important;
 }
-
 
 h3 {
 	font-family: "Righteous", sans-serif;
@@ -131,6 +123,36 @@ p  {
 
 a  {
 	font-family: "Poppins", sans-serif;
+	font-size: 1.125rem;
+}
+
+p strong {
+	font-weight: 600;
+}
+
+button {
+	font-family: "Poppins", sans-serif!important;
+	font-weight: 600;
+}
+
+/*lg*/
+@media screen and (max-width: 992px) and (min-width: 766px) {
+	h2 {font-size:2.5rem;}
+	h4{font-size: 1.25rem;}
+}
+
+/*md*/
+@media screen and (max-width: 765px) and (min-width: 577px) {
+	h1 {font-size:3.125rem;}
+	h2 {font-size:2.25rem;}
+	h4{font-size: 1.125rem;}
+}
+
+/*sm*/
+@media screen and (max-width: 576px) {
+	h1 {font-size:2.25rem;}
+	h2 {font-size:1.75rem;}
+	a {font-size: 0.75rem;}
 }
 
 /***************************MENU*****************************/
@@ -270,141 +292,6 @@ a  {
 	}
 
 }
-/***************HOME****************/
-
-/*header home*/
-
-.header-home {
-	position: relative;
-	height: auto;
-	margin-top: 126px;
-	margin-bottom: 300px;
-	background-color: fuchsia;
-}
-
-.header-home-wrapper {
-	height: auto;
-	position:absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-}
-
-
-.header-home h1{
-	font-size: 6.50rem;
-	line-height: 99%;
-	color: var(--secondary-color);
-}
-
-.header-home h4{
-	color: var(--secondary-color);
-}
-
-.header-img {
-	margin-top: 70px;
-}
-
-@media screen and (max-width: 1199px) and (min-width: 992px) {
-	.header-home h1{
-		font-size: 5rem;
-	}
-}
-
-@media screen and (max-width: 991px) and (min-width: 768px) {
-	.header-home h1{
-		font-size: 4rem;
-	}
-
-	.essence-home h2 {
-		font-size: 2rem;
-	}
-}
-
-@media screen and (max-width: 767px) and (min-width: 515px) {
-	.header-home h1{
-		font-size: 3rem;
-	}
-
-	.header-home h4{
-		font-size: 1rem;
-	}
-
-	.header-home {
-		position: relative;
-		height: auto;
-		margin-top: 90px;
-	}
-
-	.essence-home h2 {
-		font-size: 2rem;
-	}
-
-
-}
-
-@media screen and (max-width: 514px) {
-	.header-home h1{
-		font-size: 2.25rem;
-	}
-
-	.header-home h4{
-		font-size: 1rem;
-	}
-
-	.header-home {
-		position: relative;
-		height: auto;
-		margin-top: 90px;
-	}
-
-	.essence-home h2 {
-		font-size: 1.75rem;
-	}
-
-
-}
-
-/*essenza home*/
-
-.essence-home {
-	position: relative;
-	margin-bottom: 300px;
-}
-
-.essence-home-wrapper {
-	position: absolute;
-	top: 640px;
-	left: 0;
-	width: 100%;
-}
-
-@media screen and (max-width: 765px) {
-	.essence-home-wrapper {
-		position: absolute;
-		top: 480px;
-		left: -100px;
-		width: 100%;
-	}
-}
-
-/*prodotti in evidenza home*/
-
-.carousel-item {
-	display: flex;
-	justify-content: space-between;
-}
-
-.carousel-item .col-3 {
-	flex: 0 0 24%; /* Occupa il 24% della larghezza del contenitore */
-	max-width: 24%;
-	padding: 0;
-}
-
-.carousel-item img {
-	max-width: 100%;
-	height: auto;
-}
 
 /***************CONTATTI****************/
 
@@ -415,6 +302,10 @@ a  {
 	height: auto;
 	margin-top: 110px;
 	margin-bottom: 231px;
+}
+
+.header-contatti p{
+	margin-top: 20px;
 }
 
 .header-telephon-wrapper {
@@ -432,16 +323,240 @@ a  {
 
 .img-divano {
 	margin-top: 37px;
+	height: 601px;
+	width: 695px;
 }
 
 
 /*map contatti*/
 
-.map-img {
+.map {
 	position: relative;
-	height: auto;
-	margin-bottom: 60px;
+	margin-bottom: 97px;
+	height: 630px;
+	width: 1259px;
 }
+
+.map-intern{
+	background-image: url('img/map.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+/***QUESTO NON HO CAPITO A COSA SERVE FRA ***/
+@media screen and (min-width: 1200px) {
+	.clickC {
+		position: absolute;
+		top: 240px;
+		left: 655px;
+	}
+}
+
+/***BOTTONE e RETTANGOLI IMG***/
+
+/*xl*/
+@media screen and (min-width: 1200px) {
+
+	.clickC {
+		position: absolute;
+		top: 400px;
+		right: 770px;
+	}
+
+	.circle-button {
+		width: 44px;
+		height: 44px;
+	}
+
+	.scheda1contatti {
+		position: absolute;
+		top: 20%;
+		left: 6%;
+	}
+
+	.rectangle {
+		width: 240px;
+	}
+
+}
+
+	/*lg*/
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+
+	.clickC {
+		position: absolute;
+		top: 130px;
+		left: 100px;
+	}
+
+	.circle-button {
+		width: 40px;
+		height: 40px;
+	}
+
+	.scheda1contatti {
+		position: absolute;
+		top: 18%;
+		left: 6%;
+	}
+
+	.rectangle {
+		width: 240px;
+	}
+
+}
+
+	/*md*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	.clickC {
+		position: absolute;
+		top: 164px;
+		left: 116px;
+	}
+
+	.circle-button {
+		width: 44px;
+		height: 44px;
+	}
+
+	.scheda1contatti {
+		position: absolute;
+		top: 18%;
+		left: 6%;
+	}
+
+	.rectangle {
+		width: 240px;
+	}
+}
+
+
+
+	/*sm*/
+@media screen and (max-width: 768px) and (min-width: 556px){
+
+	.clickC {
+		position: absolute;
+		top: 128px;
+		left: 90px;
+	}
+
+	.circle-button {
+		width: 33px;
+		height: 33px;
+	}
+
+	#plusicon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.scheda1contatti {
+		position: absolute;
+		top: 18%;
+		left: 6%;
+	}
+
+	.rectangle {
+		width: 230px;
+	}
+}
+
+
+/*xs*/
+@media screen and (max-width: 556px) {
+
+	.clickC {
+		position: absolute;
+		top: 113px;
+		left: 83px;
+	}
+
+	.circle-button {
+		width: 33px;
+		height: 33px;
+	}
+
+	#plusicon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.scheda1contatti {
+		position: absolute;
+		top: 12%;
+		left: 10%;
+	}
+
+	.rectangle {
+		width: 230px;
+	}
+
+}
+
+.circle-button {
+	flex-shrink: 0;
+	background-color: var(--Arancione, #CF3F30);
+	border: none;
+	border-radius: 50%;
+	cursor:pointer ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: #fff;
+	z-index: 1;
+
+}
+
+.circle-button:hover {
+	background-color: var(--tertiary-color);
+}
+
+
+.rectangle {
+	display: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 20px;
+	z-index: 1000;
+	border-radius: 40px ;
+	border: 1px 0px 0px 0px;
+	background: #EAE6E6;
+	transition: visibility 0s, opacity 0.3s linear;
+	visibility: hidden;
+}
+
+.rectangle.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+.close-button {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1;
+	outline: none;
+	z-index: 1001;
+	color: var(--text-color);
+}
+
+.close-button:hover {
+	color: red;
+}
+
+
+
+	/*assistenza*/
 
 .client-ass {
 	margin-bottom: 60px;
@@ -466,17 +581,18 @@ a  {
 	background-repeat: no-repeat;
 }
 
-.showroom-text p{
+.showroom-text p {
 	color: var(--light-color);
 }
 
 .showroom-text h2{
 	color: var(--light-color) !important;
+	margin-bottom: 40px;
+	margin-top: 225px;
 }
 
-.showroom-text{
-	margin-top: 560px;
-}
+
+
 
 /*form contatti*/
 
@@ -514,6 +630,11 @@ a  {
 	background-color: #711D15; /* Cambio colore durante l'hover */
 }
 
+.btn-primary p{
+	margin-top: none;
+	padding: none;
+	color: #FAFAFA;
+}
 
 .col-left p{
 	margin-bottom: 47px;
@@ -544,9 +665,6 @@ a  {
 }
 
 
-.col-right{
-	
-}
 
 
 
