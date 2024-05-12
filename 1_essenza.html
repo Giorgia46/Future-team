@@ -1,98 +1,235 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1_essenza</title>
+    <title>AetherCraft Creations</title>
 
     <!--link-->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="custom.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.8/dist/css/splide.min.css">
+    <script src="https://unpkg.com/@splidejs/splide@3.0.8/dist/js/splide.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/carousel.js"></script>
+ 
     <!--link-->
-
-    <!--link icone-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!--link icone-->
 
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
     <!--font-->
 
     <style>
-        body{
-            background-color: var(--light-color);
-        }
+      body{
+        background-color: var(--light-color);
+      }
     </style>
-
+    
 </head>
 
 
 <body>
 
-<nav>
-    <div class="container-fluid menu">
+<!--menu-->
+<div class="container-fluid menu">
+  <div class="container">
+    <nav class="navbar d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="index.html"><img src="img/logo-menu.svg"></a>
+        <ul class="nav-menu">
 
-        <div class="container">
+          <li class="nav-item voice-menu">
+            <div class="d-flex align-items-center justify-content-between border-menu">
+              <div class="d-flex"><a href="index.html" class="nav-link">HOME</a></div>
+              <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+            </div>
+          </li>
 
-            <div class="menu-mobile d-block d-lg-none">
-                <input type="checkbox" id="active">
-                <label for="active" class="menu-btn"> <i class="fas fa-bars"></i></label>
-                <div class="wrapper">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="1_essenza.html">ESSENZA</a></li>
-                        <li><a href="2_creazioni.html">CREAZIONI</a></li>
-                        <li><a href="4_portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="5_contatti.html">CONTATTI</a></li>
-                    </ul>
+            <li class="nav-item voice-menu">
+              <div class="d-flex align-items-center justify-content-between border-menu">
+                <div class="d-flex"><a href="1_essenza.html" class="nav-link">ESSENZA</a></div>
+                <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+              </div>
+            </li>
+
+            <li class="nav-item voice-menu">
+              <div class="d-flex align-items-center justify-content-between border-menu">
+                <div class="d-flex"><a href="2_creazioni.html" class="nav-link">CREAZIONI</a></div>
+                <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+              </div>
+            </li>
+
+            <li class="nav-item voice-menu">
+              <div class="d-flex align-items-center justify-content-between border-menu">
+                <div class="d-flex"><a href="3_portofolio.html" class="nav-link">PORTFOLIO</a></div>
+                <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+              </div>
+            </li>
+
+            <li class="nav-item voice-menu">
+              <div class="d-flex align-items-center justify-content-between border-menu">
+                <div class="d-flex"><a href="4_contatti.html" class="nav-link">CONTATTI</a></div>
+                <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px" class="d-none align-self-center"></a></div>
+              </div>
+            </li>
+
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+  </div>
+  </div>
+<!--end menu-->
+
+<body>
+    <!-- Sezione La nostra essenza -->
+        <section class="section1 container">
+            <div class="header-es container text-left">
+                <div class="row">
+                    <div class="col-10 col-md-6 col-lg-6" id="headerestext">
+                        <h1>La nostra essenza</h1>
+                        <p>Dalla passione per il design d’arredo alle case e gli spazi di tutto il mondo, un sogno che diventà realtà.</p>
+                        <p class="d-none d-md-block">In un equilibrio tra bizzarro e sofisticato, l’arredo di Aethercraft Creations incarna uno stile stravagante ma raffinato.</p>
+                    </div>
+                    <div class="header-img col-md-2 col-lg-2 d-none d-lg-block">
+                        <img srcset="img/essenza-header-blue-large.png 320w, img/essenza-header-blue-medium.png 230w" alt="es-header" class="img-fluid">
+                        <img srcset="img/essenza-header-green-large.png 220w, img/essenza-header-green-medium.png 160w" alt="es-header-two" class="img-fluid" >
+                    </div>
+                    <div class="header-img2 col-md-4 col-lg-3">
+                        <img srcset="img/essenza-header-red-large.png 500w, img/essenza-header-red-medium.png 375w, img/essenza-header-red-small.png 200w" alt="es-header1" class="img-fluid">
+                    </div> 
                 </div>
-            </div>	<!--end of div mobile menu-->
+            </div>       
+        </section>
 
-            <div class="menu-desktop navbar navbar-expand-lg navbar-light p-0">
-                <a class="navbar-brand pt-3 pb-3" href="index.html"><img src="img/logo.svg" alt="logo"></a>
-
-                <div class="collapse navbar-collapse justify-content-end background" id="navbarSupportedContent">
-
-                    <ul class="navbar-nav text-right">
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="index.html">HOME</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="1_essenza.html">ESSENZA</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="2_creazioni.html">CREAZIONI</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="4_portfolio.html">PORTFOLIO</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2" href="5_contatti.html">CONTATTI</a>
-                        </li>
-                    </ul>
-
+ <!-- Sezione Storia -->
+        <section class="section2">
+            <div class="story-es container text-left" id="storytext">
+                <h2>Storia</h2>
+                <p class="story-p">Fondata nel 2015 da <strong>Luca Bianchi</strong>, nonché nostro direttore operativo, e <strong>Francesca Rizzo, AetherCraft Creations</strong>muove i primi passi all’interno del mondo del design e dell’arredo con l'obiettivo di rivoluzionare il mondo dell’arredamento. L ’intuizione nasce dall’idea che gli oggetti domestici non sono solo semplici oggetti ma possono essere vere e proprie <strong>forme d'arte</strong>.</p>
+                <p id="story-p-two">Come azienda ci impegniamo ogni giorno nella realizzazione di mobili e complementi d’arredo fuori dall’ordinario senza rinunciare a <strong>comfort</strong> e <strong>funzionalità</strong> in cui la stranezza si fonde con l’<strong>innovazione</strong> in uno stile stravagante ma raffinato. Con il tempo lo stile di AetherCraft Creations si è diffuso rapidamente diventando un’ icona dell’arredamento stravagante e unico. I suoi mobili, infatti, oggi adornano gli spazi in tutto il mondo dalle case di artisti famosi ai loft urbani più alla moda trasformando tutti gli spazi in vere e proprie opere d’arte.</p>
+                <p></p>
+            </div>
+        </section>
+    <!-- Sezione Vision e mission -->   
+        <section class="section3" p-5>
+            <div class="vision-es container text-left">
+                <div class="row">
+                    <div class="col-10 col-md-4 col-lg-4">
+                        <img srcset="img/essenza-img-vision-large.png 600w, img/essenza-img-vision-medium.png 450w, img/essenza-img-vision-small.png 300w" alt="visionandmission" class="img-fluid" id="img-vision">
+                    </div>
+                    <div class="col-md-8 col-lg-8" id="visiontext">
+                        <h2>Vision e Mission</h2>
+                        <p class="vision-p">Spinti dalla visione di creare un movimento nell'arredamento, in cui l'eccentricità e la creatività diventano la norma, guardiamo al futuro con la determinazione di essere leader nell'<strong>innovazione del design</strong>, spingendo costantemente i confini della convenzione.</p>
+                        <p>La nostra missione presso AetherCraft Creations è quella di ispirare la <strong>creatività</strong>, superare le aspettative e fornire <strong>soluzioni uniche</strong>per strasformare gli ambienti in spazi espressivi diventando così veri e propri <strong>palcoscenici</strong> per l’arte e testimonianze di passioni e personalità. Vogliamo rendere il nostro negozio il luogo ideale per coloro che cercano pezzi d’arredamento in grado di far vivere esperienze uniche.</p>
+                    </div>
                 </div>
-
-            </div> <!--end of div menu desktop-->
-
-        </div> <!--end of div container-->
-
-    </div> <!--end of div container-fluid-->
-
-</nav>
+            </div>
+        </section>
+    
+    <!-- Sezione i nostri valori --> 
+        <section class="section4" p-5>
+            <div class="values-es container text-left">
+                <div class="row">
+                    <div class="d-md-none col-8 col-md-4">
+                        <img srcset="img/essenza-img-valori-large.png 550w, img/essenza-img-valori-medium.png 425w, img/essenza-img-valori-small.png 300w" alt="values" class="img-fluid" id="img-values">
+                        </div>
+                    <div class="col-md-8" id="valuestext">
+                        <h2>I nostri valori</h2>
+                        <p class="values-p">In AetherCraft Creations crediamo profondamente in valori quali <strong>creatività, innovazione, originalità, eccentricità, stravaganza e passione</strong> come punti di riferimento nella nostra ricerca costante di nuove e stravaganti idee per creare mobili unici e distintivi. Per noi è anche molto importante valorizzare l’inclusività e l’espressione individuale per esprimere la <strong>personalità</strong> e lo <strong>stile unico</strong>di ciascuno accogliendo una diversità di gusti e stili senza confini.</p>
+                        <p>Abbracciamo un approccio audace e avanguardista nel design, sfidando costantemente le convenzioni dell'arredamento tradizionale. Miriamo ad <strong>alti standard di qualità e artigianato</strong> standard di qualità e artigianato nei processi di produzione, assicurandoci che ogni pezzo sia realizzato con cura e attenzione ai dettagli.</p>
+                    </div>
+                    <div class="d-none d-md-block col-8 col-md-4" id="valuesimage">
+                    <img srcset="img/essenza-img-valori-large.png 550w, img/essenza-img-valori-medium.png 425w, img/essenza-img-valori-small.png 300w" alt="values" class="img-fluid" id="img-values">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!-- Sezione il nostro team --> 
+    <section class="section5 container-fluid">
+        <div class="team-es container text-center" id="teamtext">
+            <h2>Il nostro team</h2>
+        </div>
+        <div class="teamimg-es container">
+            <div class="row">
+                <div class="card-team-uno card-overlay bg-light col-4 col-md-2 col-lg-2">
+                    <img srcset="img/essenza-team-marco-large.png 200w, img/essenza-team-marco-medium.png 160w, img/essenza-team-marco-small.png 120w" class="card-img img-fluid" alt="marco-name" >
+                    <div class="card-img-overlay">
+                      <h4 class="card-title-team-one" >Marco Rossi</h4>
+                      <p class="card-text-team-one">Social Media Manager</p>
+                    </div>
+                  </div>
+                <div class="card-team-due card-overlay bg-light col-4 col-md-2 col-lg-2">
+                    <img srcset="img/essenza-team-luca-large.png 200w, img/essenza-team-luca-medium.png 160w, img/essenza-team-luca-small.png 120w" class="card-img img-fluid" alt="luca-name">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title-team-two">Luca Bianchi</h4>
+                        <p class="card-text-team-two">Direttore Operativo</p>
+                    </div>
+                </div>
+                <div class="card-team-uno card-overlay bg-light col-4 col-md-2 col-lg-2">
+                    <img srcset="img/essenza-team-filippo-large.png 200w, img/essenza-team-filippo-medium.png 160pw, img/essenza-team-filippo-small.png 120w" class="card-img img-fluid" alt="filippo-name">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title-team-one">Filippo De Santis</h4>
+                        <p class="card-text-team-one">Designer Senior</p>
+                    </div>
+                </div>
+                <div class="card-team-due card-overlay bg-light col-4 col-md-2 col-lg-2">
+                    <img srcset="img/essenza-team-emily-large.png 200w, img/essenza-team-emily-medium.png 160pw, img/essenza-team-emily-small.png 120w" class="card-img img-fluid" alt="emily-name">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title-team-two">Emily Johnson</h4>
+                        <p class="card-text-team-two">Responsabile Vendite</p>
+                    </div>
+                </div>
+                <div class="card-team-uno card-overlay bg-light col-4 col-md-2 col-lg-2">
+                    <img srcset="img/essenza-team-alessio-large.png 200w, img/essenza-team-alessio-medium.png 160pw, img/essenza-team-alessio-small.png 120w" class="card-img img-fluid" alt="alessio-name">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title-team-one">Alessio Romano</h4>
+                        <p class="card-text-team-one">Coordinatore Logistico</p>
+                    </div>
+                </div>
+                <div class="card-team-due card-overlay bg-light col-4 col-md-2 col-lg-2">
+                    <img srcset="img/essenza-team-elise-large.png 200w, img/essenza-team-elise-medium.png 160pw, img/essenza-team-elise-small.png 120w" class="card-img img-fluid" alt="elise-name">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title-team-two">Élise Dupont</h4>
+                        <p class="card-text-team-two">Responsabile Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        </div>
+    </section>
+        
+    <!-- Sezione vuoi unirti al nostro team --> 
+        <section class="section6">
+            <div class="container text-left" id="join-us">
+                <div class="row">
+                    <div class="joinusimg col-md-4">
+                        <img srcset="img/essenza-img-unisciti-large.png 600w, img/essenza-img-unisciti-medium.png 450w" alt="uniscitianoi" class="img-fluid" id="img-joinus">
+                    </div>
+                    <div class="col-md-8" id="joinustext">
+                        <h2>Vuoi unirti al nostro team?</h2>
+                        <p class="joinus-p" >Sei una persona intraprendente e hai voglia di metterti in gioco per rompere gli schemi del design ordinario e creare qualcosa di unico e travolgente?</p>
+                        <p class="joinus-p-two">Potresti essere la persona giusta per far parte del nostro team! Manda la tua candidatura spontanea.</p>
+                        <button class="custom-button text-light"><a href="mailto:carreers@aethercraftcreation.com">Canditati ora</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+ </body>
 
 
 
