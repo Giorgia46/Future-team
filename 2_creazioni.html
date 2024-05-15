@@ -204,10 +204,11 @@
     <!--inizio card prodotti-->
     <div class="container-fluid">
         <div class="container products-container mt-5">
-            <div class="row">
+            <div class="row prod-row">
                
                 <!--chaise longue stravagante-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">
+                <!--Aggiunta una classe parent-card per permettere la selezione-->
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">
                     <div id="extravagant-chaiselongue" class="card product-card" data-type="armchair" data-collection="extravagant" data-price="2499" data-color="yellow,blue,red">
                         <a href="">
                             <img srcset="img/furniture/extravagant-chaiselongue-yellow-sm.png 160w, img/furniture/extravagant-chaiselongue-yellow-md.png 200w, img/furniture/extravagant-chaiselongue-yellow-lg.png 240w" alt="Chaise Longue Stravagante" class="card-img-top">
@@ -227,7 +228,7 @@
                 </div>
 
                 <!--letto alveare-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5"> 
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card"> 
                     <div id="honeycomb-bed" class="card product-card" data-type="bed" data-collection="honeycomb" data-price="3499" data-color="yellow,white">
                         <a href="">
                             <img srcset="img/furniture/honeycomb-bed-sm.png 160w, img/furniture/honeycomb-bed-md.png 200w, img/furniture/honeycomb-bed-lg.png 240w" alt="Letto Alveare" class="card-img-top">
@@ -242,7 +243,7 @@
                 </div>
 
                 <!--divano fungo-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">
                     <div id="mushroom-sofa" class="card product-card" data-type="sofa" data-collection="mushroom" data-price="5999" data-color="white,blue">
                         <a href="">
                             <img srcset="img/furniture/mushroom-sofa-white-sm.png 160w, img/furniture/mushroom-sofa-white-md.png 200w, img/furniture/mushroom-sofa-white-lg.png 240w" alt="Divano Fungo Bianco" class="card-img-top">
@@ -261,7 +262,7 @@
                 </div>
 
                 <!--poltrona stravagante-->
-                 <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                 <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="extravagant-armchair" class="card product-card" data-type="armchair" data-collection="extravagant" data-price="1499" data-color="multicolor">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/extravagant-armchair-sm.png 160w, img/furniture/extravagant-armchair-md.png 200w, img/furniture/extravagant-armchair-lg.png 240w" alt="Poltrona Stravagante" class="card-img-top">
@@ -275,7 +276,7 @@
                 </div>
 
                 <!--divano geometrico-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="geometric-sofa" class="card product-card" data-type="sofa" data-collection="geometric" data-price="4999" data-color="multicolor">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/geometric-sofa-sm.png 160w, img/furniture/geometric-sofa-md.png 200w, img/furniture/geometric-sofa-lg.png 240w" alt="Divano Geometrico" class="card-img-top">
@@ -288,8 +289,8 @@
                     </div>
                 </div>
 
-                <!--poltrona muschio-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <!--poltrona muschio--> 
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="moss-armchair" class="card product-card" data-type="armchair" data-collection="moss" data-price="1499" data-color="green">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/moss-armchair-sm.png 160w, img/furniture/moss-armchair-md.png 200w, img/furniture/moss-armchair-lg.png 240w" alt="Poltrona Muschio" class="card-img-top">
@@ -303,7 +304,7 @@
                 </div>
 
                 <!--sedia stravagante-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="extravagant-chair" class="card product-card" data-type="chair" data-collection="extravagant" data-price="999" data-color="multicolor">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/extravagant-chair-sm.png 160w, img/furniture/extravagant-chair-md.png 200w, img/furniture/extravagant-chair-lg.png 240w" alt="Sedia Stravagante" class="card-img-top">
@@ -317,7 +318,7 @@
                 </div>
 
                 <!--tavolino geometrico-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="geometric-sidetable" class="card product-card" data-type="table" data-collection="geometric" data-price="699" data-color="green,yellow,orange">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/geometric-sidetable-green-sm.png 160w, img/furniture/geometric-sidetable-green-md.png 200w, img/furniture/geometric-sidetable-green-lg.png 240w" alt="Tavolino Geometrico" class="card-img-top">
@@ -336,7 +337,7 @@
                 </div>
 
                 <!--sedia fungo-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="mushroom-chair" class="card product-card" data-type="chair" data-collection="mushroom" data-price="1499" data-color="white,blue">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/mushroom-chair-white-sm.png 160w, img/furniture/mushroom-chair-white-md.png 200w, img/furniture/mushroom-chair-white-lg.png 240w" alt="Sedia Fungo" class="card-img-top">
@@ -354,7 +355,7 @@
                 </div>
 
                 <!--set vasi geometrici-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="geometric-vases" class="card product-card" data-type="accessory" data-collection="geometric" data-price="499" data-color="multicolor">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/geometric-vases-sm.png 160w, img/furniture/geometric-vases-md.png 200w, img/furniture/geometric-vases-lg.png 240w" alt="Set Vasi Geometrici" class="card-img-top">
@@ -368,7 +369,7 @@
                 </div>
 
                 <!--sedia sospesa alveare-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="hoenycomb-chair" class="card product-card" data-type="chair" data-collection="honeycomb" data-price="1999" data-color="yellow,white">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/honeycomb-chair-sm.png 160w, img/furniture/honeycomb-chair-md.png 200w, img/furniture/honeycomb-chair-lg.png 240w" alt="Sedia Sospesa Alveare" class="card-img-top">
@@ -382,7 +383,7 @@
                 </div>
 
                 <!--tavolo stravagante-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="extravagant-table" class="card product-card" data-type="table" data-collection="extravagant" data-price="2499" data-color="multicolor">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/extravagant-table-sm.png 160w, img/furniture/extravagant-table-md.png 200w, img/furniture/extravagant-table-lg.png 240w" alt="Tavolo Stravagante" class="card-img-top">
@@ -396,7 +397,7 @@
                 </div>
 
                 <!--lampadario muschio-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="moss-chandelier" class="card product-card" data-type="accessory" data-collection="moss" data-price="799" data-color="green">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/moss-chandelier-sm.png 160w, img/furniture/moss-chandelier-md.png 200w, img/furniture/moss-chandelier-lg.png 240w" alt="Lampadario Muschio" class="card-img-top">
@@ -410,7 +411,7 @@
                 </div>
 
                 <!--letto fungo-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="mushroom-bed" class="card product-card" data-type="bed" data-collection="mushroom" data-price="4499" data-color="white,blue">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/mushroom-bed-white-sm.png 160w, img/furniture/mushroom-bed-white-md.png 200w, img/furniture/mushroom-bed-white-lg.png 240w" alt="Letto Fungo" class="card-img-top">
@@ -428,7 +429,7 @@
                 </div>
 
                 <!--poltrona geometrica-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="geometric-armchair" class="card product-card" data-type="armchair" data-collection="geometric" data-price="1599" data-color="multicolor">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/geometric-armchair-sm.png 160w, img/furniture/geometric-armchair-md.png 200w, img/furniture/geometric-armchair-lg.png 240w" alt="Poltrona Geometrica" class="card-img-top">
@@ -442,7 +443,7 @@
                 </div>
 
                 <!--divano alveare-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="honeycomb-sofa" class="card product-card" data-type="sofa" data-collection="honeycomb" data-price="5499" data-color="yellow,white">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/honeycomb-sofa-sm.png 160w, img/furniture/honeycomb-sofa-md.png 200w, img/furniture/honeycomb-sofa-lg.png 240w" alt="Divano Alveare" class="card-img-top">
@@ -456,7 +457,7 @@
                 </div>
 
                 <!--divano stravagante-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">
                     <div id="extravagant-sofa" class="card product-card" data-type="sofa" data-collection="extravagant" data-price="4999" data-color="blue,green,yellow">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/extravagant-sofa-blue-sm.png 160w, img/furniture/extravagant-sofa-blue-md.png 200w, img/furniture/extravagant-sofa-blue-lg.png 240w" alt="Divano Stravagante" class="card-img-top">
@@ -475,7 +476,7 @@
                 </div>
                 
                 <!--specchio muschio-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="moss-mirror" class="card product-card" data-type="accessory" data-collection="moss" data-price="199" data-color="green">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/moss-mirror-sm.png 160w, img/furniture/moss-mirror-md.png 200w, img/furniture/moss-mirror-lg.png 240w" alt="Specchio Muschio" class="card-img-top">
@@ -489,7 +490,7 @@
                 </div>
 
                 <!--tavolo fungo-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="mushroom-table" class="card product-card" data-type="table" data-collection="mushroom" data-price="3499" data-color="white,blue">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/mushroom-table-white-sm.png 160w, img/furniture/mushroom-table-white-md.png 200w, img/furniture/mushroom-table-white-lg.png 240w" alt="Tavolo Fungo" class="card-img-top">
@@ -507,7 +508,7 @@
                 </div>
                 
                 <!--sedia muschio-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="moss-chair" class="card product-card" data-type="chair" data-collection="moss" data-price="999" data-color="green">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/moss-chair-sm.png 160w, img/furniture/moss-chair-md.png 200w, img/furniture/moss-chair-lg.png 240w" alt="Sedia Muschio" class="card-img-top">
@@ -521,7 +522,7 @@
                 </div>
 
                 <!--poltrona alveare-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="honeycomb-armchair" class="card product-card" data-type="armchair" data-collection="honeycomb" data-price="1499" data-color="yellow,white">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/honeycomb-armchair-sm.png 160w, img/furniture/honeycomb-armchair-md.png 200w, img/furniture/honeycomb-armchair-lg.png 240w" alt="Poltrona Alveare" class="card-img-top">
@@ -535,7 +536,7 @@
                 </div>
 
                 <!--tavolino stravagante-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">
                     <div id="extravagant-sidetable" class="card product-card" data-type="table" data-collection="extravagant" data-price="1699" data-color="multicolor,red,blue">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/extravagant-sidetable-multicolor-sm.png 160w, img/furniture/extravagant-sidetable-multicolor-md.png 200w, img/furniture/extravagant-sidetable-multicolor-lg.png 240w" alt="Tavolino Stravagante" class="card-img-top">
@@ -554,7 +555,7 @@
                 </div>
 
                 <!--letto muschio-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="moss-bed" class="card product-card" data-type="bed" data-collection="moss" data-price="3999" data-color="green">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/moss-bed-sm.png 160w, img/furniture/moss-bed-md.png 200w, img/furniture/moss-bed-lg.png 240w" alt="Letto Muschio" class="card-img-top">
@@ -568,7 +569,7 @@
                 </div>
 
                 <!--lampadario fungo-->
-                <div class="col col-6 col-lg-4 col-xl-3 mb-5">   
+                <div class="col col-6 col-lg-4 col-xl-3 mb-5 parent-card">   
                     <div id="mushroom-chandelier" class="card product-card" data-type="accessory" data-collection="mushroom" data-price="1299" data-color="white,blue">
                         <span class="sold-out">ESAURITO</span>
                         <img srcset="img/furniture/mushroom-chandelier-white-sm.png 160w, img/furniture/mushroom-chandelier-white-md.png 200w, img/furniture/mushroom-chandelier-white-lg.png 240w" alt="Lampadario Fungo" class="card-img-top">
@@ -587,10 +588,8 @@
                 
             </div>
             <button id="load-more" class="call-to-action">Carica altri</button>
-
-           
         </div>
-
+        
     </div>
     <!--fine card prodotti-->
 

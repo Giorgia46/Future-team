@@ -75,7 +75,7 @@ $(document).ready(function() {
         var selectedColor = $('#color').val();
 
         // Nasconde tutti i prodotti
-        $('.product-card').css('display', 'none');
+        $('.parent-card').css('display', 'none');
 
         // Filtra i prodotti in base ai criteri selezionati
         $('.product-card').each(function() {
@@ -89,19 +89,21 @@ $(document).ready(function() {
                 (priceRange === 'default' || isPriceInRange(productPrice, priceRange)) &&
                 (selectedFurniture === 'default' || selectedFurniture === productType) &&
                 (selectedColor === 'default' || productColors.includes(selectedColor))) {
-                $(this).css('display', 'block');
+                //Qui viene selezionato il "padre" della card del prodotto per visualizzarlo nella maniera corretta
+                $(this).closest('.parent-card').css('display', 'block');
             }
         });
 
         // Ordina i prodotti
         if (sortBy === 'price-asc') {
-            $('.product-card:visible').sort(function(a, b) {
-                return $(a).data('price') - $(b).data('price');
-            }).appendTo('.products-container');
+            $('.parent-card:visible').sort(function(a, b) {
+                console.log(a)
+                return $(a).children('.product-card').data('price') - $(b).children('.product-card').data('price');
+            }).appendTo('.prod-row');
         } else if (sortBy === 'price-desc') {
-            $('.product-card:visible').sort(function(a, b) {
-                return $(b).data('price') - $(a).data('price');
-            }).appendTo('.products-container');
+            $('.parent-card:visible').sort(function(a, b) {
+                return $(b).children('.product-card').data('price') - $(a).children('.product-card').data('price');
+            }).appendTo('.prod-row');
         }
     }
 
