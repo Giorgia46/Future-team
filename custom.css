@@ -728,7 +728,7 @@ p strong{
 /****PRODOTTI CORRELATI******/
 
 #related-furniture-container {
-	background-image: url('img/related-bg-desktop.svg');
+	background-image: url('img/related-bg-mobile.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
