@@ -56,29 +56,22 @@ table {
 	--tertiary-color: #1E9EA1;
 }
 
-.call-to-action {
-	width: 214px;
-	height: 50px;
-	border-radius: 80px!important;
-	background-color: var(--primary-color);
-	border: none!important;
-	transition: background-color 0.3s ease;
-}
-
-.call-to-action a {
+.custom-button {
+	background-color: var(--primary-color); /* Colore di base */
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
 	text-decoration: none;
-	font-size: 1rem;
-	color: var(--light-color);
-	font-weight: 600;
-	font-family: "Poppins", sans-serif;
-	
-}
-
-.call-to-action:hover {
-	background-color: #9C3025;
-	transition: 1s;
-	
-}
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 80px;
+	transition: background-color 0.8s; 
+  }
+  
+.custom-button:hover {
+	background-color: #9C3025; 
+  }
 
 .text-light p{
 	color: var(--light-color)!important;
@@ -100,7 +93,6 @@ h2 {
 	line-height: 120%;
 	color: var(--secondary-color)!important;
 }
-
 
 h3 {
 	font-family: "Righteous", sans-serif;
@@ -131,6 +123,36 @@ p  {
 
 a  {
 	font-family: "Poppins", sans-serif;
+	font-size: 1.125rem;
+}
+
+p strong {
+	font-weight: 600;
+}
+
+button {
+	font-family: "Poppins", sans-serif!important;
+	font-weight: 600;
+}
+
+/*lg*/
+@media screen and (max-width: 992px) and (min-width: 766px) {
+	h2 {font-size:2.5rem;}
+	h4{font-size: 1.25rem;}
+}
+
+/*md*/
+@media screen and (max-width: 765px) and (min-width: 577px) {
+	h1 {font-size:3.125rem;}
+	h2 {font-size:2.25rem;}
+	h4{font-size: 1.125rem;}
+}
+
+/*sm*/
+@media screen and (max-width: 576px) {
+	h1 {font-size:2.25rem;}
+	h2 {font-size:1.75rem;}
+	a {font-size: 0.75rem;}
 }
 
 /***************************MENU*****************************/
@@ -271,9 +293,8 @@ a  {
 
 }
 
-  /*********FOOTER********/
-
-footer{
+ /***********************************************FOOTER************************************************/
+ footer{
 	background-image: url('img/footer-bg-mobile.svg'); 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -291,21 +312,33 @@ footer{
 }
 
 .newsletter{
-	height: 50px;
+	height: 3.1rem;
 	background-color: var(--light-color);
 	z-index: 0;
 }
 
-.footer-link a{
-	color: var(--light-color);
-	text-decoration: none;
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
+.footer-link a {
+    position: relative;
+    color: var(--light-color);
+    text-decoration: none;
 }
 
-.footer-link a:hover{
-	color: var(--secondary-color);
+.footer-link a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: var(--light-color);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
 }
+
+.footer-link a:hover::after {
+    width: 100%;
+}
+
 
 .round-btn{
 	width: 50px;
@@ -345,22 +378,28 @@ footer{
 	z-index: 2;
 }
 
-footer ul{
-	line-height: 160%;
+footer ul li{
+	line-height: 1.5rem;
 }
 
+
+
 footer h5{
+	padding-bottom: 8%;
+}
+
+.social-icon{
+	height: 1.5rem;
+	width: auto;
 	padding-bottom: 5%;
 }
 
-.social-icon path{
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
-}
 
-.social-icon:hover path {
-	fill: var(--secondary-color);
-}
+
+
+
+
+
 
 
 
@@ -376,7 +415,7 @@ p strong {
 
 @media screen and (max-width:992px) {       /*dai 992x in giu*/
 	
-	#immagine_iniziale {
+	#starting_img {
 		display: none;
 	}
 
@@ -390,12 +429,6 @@ p strong {
 	
 	}
 	
-
-
-	.anteprima_progetti_carousel {
-		display: block;
-	}
-
 	
 }
 
@@ -407,10 +440,6 @@ p strong {
 	
 	}
 
-	.anteprima_progetti_carousel {
-		display: none;
-	}
-
 }
 
 
@@ -420,7 +449,7 @@ p strong {
 		font-size:3.125rem;
 	}
 
-	.portfolio_progetti h2{
+	.portfolio_projects h2{
 		font-size:2.375rem;
 	}
 }
@@ -432,12 +461,12 @@ p strong {
 		font-size:2.25rem;
 	}
 
-	.portfolio_progetti h2{
+	.portfolio_projects h2{
 		font-size:1.75rem;
 	}
 }
 
-.portfolio_progetti{
+.portfolio_projects{
 	background-image: url(img/bgimg_portfolio1.svg);
 	height: 700px;
 	background-repeat: no-repeat;
@@ -448,7 +477,7 @@ p strong {
 	
 }
 
-.portfolio_progetti h2 {
+.portfolio_projects h2 {
 	color: #FAFAFA !important; 
 	margin-top: 30px;
 
@@ -465,6 +494,11 @@ p strong {
 .txtwave h3 {
 	color:#FAFAFA !important;
 }
+
+
+
+
+
 
 
 
@@ -501,7 +535,7 @@ p strong {
 
 /*******bubble2020*********/
 
-#id_anno {
+#id_year {
 	color: #C5D3D4; 
 	font-family: Righteous ;
 	font-size: 4.375rem; 
@@ -511,14 +545,15 @@ p strong {
 }
 
 
+
 /*md*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
 	
-	#id_anno {
+	#id_year {
 		font-size:3.063rem;
 	}
 	
-	#id_progetto {
+	#id_project {
 		font-size: 2.375rem;
 	}
 }
@@ -526,11 +561,11 @@ p strong {
 /*sm*/
 @media screen and (max-width: 576px) {
 
-	#id_anno {
+	#id_year {
 		font-size:1.75rem;
 	}
 
-	#id_progetto {
+	#id_project {
 		font-size: 1.75rem;
 	}
 
@@ -564,6 +599,8 @@ p strong {
 	
 }
 
+
+
 /*******luminescence2021*********/
 
 
@@ -583,7 +620,6 @@ p strong {
 
 
 }
-
 
 
 
@@ -668,6 +704,12 @@ p strong {
 
 
 
+
+
+
+
+
+
 /***BOTTONE e RETTANGOLI IMG***/
 
 
@@ -728,49 +770,49 @@ p strong {
 	}
 
 
-	.scheda1 {
+	.tab1 {
 		position: absolute;
 		top: 20%;
 		left: 6%;
 	}
 
-	.scheda2 {
+	.tab2 {
 		position: absolute;
 		top: 21%;
 		left: 52%;
 	}
 
-	.scheda3 {
+	.tab3 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda4 {
+	.tab4 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
 
-	.scheda5 {
+	.tab5 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda6 {
+	.tab6 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
 
-	.scheda7 {
+	.tab7 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda8 {
+	.tab8 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
@@ -780,9 +822,9 @@ p strong {
 		width: 240px;
 	}
 
-
-
 }
+
+
 
 
 /*lg*/
@@ -841,50 +883,50 @@ p strong {
 		height: 40px;
 	}
 
-	.scheda1 {
+	.tab1 {
 		position: absolute;
 		top: 18%;
 		left: 6%;
 	}
 
-	.scheda2 {
+	.tab2 {
 		position: absolute;
 		top: 21%;
 		left: 52%;
 	}
 
 
-	.scheda3 {
+	.tab3 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda4 {
+	.tab4 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
 
-	.scheda5 {
+	.tab5 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda6 {
+	.tab6 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
 
-	.scheda7 {
+	.tab7 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda8 {
+	.tab8 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
@@ -897,6 +939,7 @@ p strong {
 	
 
 }
+
 
 
 /*md*/
@@ -951,60 +994,59 @@ p strong {
 
 
 	.circle-button {
-		width: 44px;
-		height: 44px;
+		width: 40px;
+		height: 40px;
 	}
 
-	.scheda1 {
+	.tab1 {
 		position: absolute;
 		top: 18%;
 		left: 6%;
 	}
 
-	.scheda2 {
+	.tab2 {
 		position: absolute;
 		top: 21%;
 		left: 52%;
 	}
 
-	.scheda3{
+	.tab3{
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda4 {
+	.tab4 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
 
-	.scheda5{
+	.tab5{
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda6 {
+	.tab6 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
 
-	.scheda7{
+	.tab7{
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
 
-	.scheda8 {
+	.tab8 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
 
 
-	
 
 	.rectangle {
 		width: 240px;
@@ -1017,7 +1059,7 @@ p strong {
 
 
 /*sm*/
-@media screen and (max-width: 768px) and (min-width: 556px){
+@media screen and (max-width: 768px) and (min-width: 576px){
 
 	.click {
 		position: absolute;
@@ -1084,50 +1126,50 @@ p strong {
         height: 16px;
     }
 
-	.scheda1 {
+	.tab1 {
 		position: absolute;
 		top: 18%;
 		left: 6%;
 	}
 
-	.scheda2 {
+	.tab2 {
 		position: absolute;
 		top: 21%;
 		left: 52%;
 	}
 
-	.scheda3 {
+	.tab3 {
 		position: absolute;
 		top: 6%;
 		left: 6%;
 	}
 
-	.scheda4 {
+	.tab4 {
 		position: absolute;
 		top: 6%;
 		left: 52%;
 	}
 
-	.scheda5 {
+	.tab5 {
 		position: absolute;
 		top: 6%;
 		left: 6%;
 	}
 
-	.scheda6 {
+	.tab6 {
 		position: absolute;
 		top: 6%;
 		left: 52%;
 	}
 
 
-	.scheda7 {
+	.tab7 {
 		position: absolute;
 		top: 6%;
 		left: 6%;
 	}
 
-	.scheda8 {
+	.tab8 {
 		position: absolute;
 		top: 6%;
 		left: 52%;
@@ -1138,12 +1180,14 @@ p strong {
 		width: 230px;
 	}
 
-	
-	
+
 }
 
+
+
+
 /*xs*/
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 576px) {
 
 	.click {
 		position: absolute;
@@ -1204,54 +1248,54 @@ p strong {
         height: 16px;
     }
 
-	.scheda1 {
+	.tab1 {
 		position: absolute;
 		top: 12%;
 		left: 10%;
 	}
 
 
-	.scheda2 {
+	.tab2 {
 		position: absolute;
 		top: 21%;
 		left: 55%;
 	}
 
 
-	.scheda3 {
+	.tab3 {
 		position: absolute;
 		top: 6%;
 		left: 6%;
 	}
 
 
-	.scheda4 {
+	.tab4 {
 		position: absolute;
 		top: 6%;
 		left: 52%;
 	}
 
-	.scheda5 {
+	.tab5 {
 		position: absolute;
 		top: 6%;
 		left: 6%;
 	}
 
 
-	.scheda6 {
+	.tab6 {
 		position: absolute;
 		top: 6%;
 		left: 52%;
 	}
 
-	.scheda7 {
+	.tab7 {
 		position: absolute;
 		top: 6%;
 		left: 6%;
 	}
 
 
-	.scheda8 {
+	.tab8 {
 		position: absolute;
 		top: 6%;
 		left: 52%;
@@ -1265,6 +1309,259 @@ p strong {
 
 }
 
+
+
+/*XXS*/
+@media screen and (max-width: 500px) {
+
+	.click {
+		position: absolute;
+		top: 89px;
+		left: 68px;
+	}
+
+	.click2 {
+		position: absolute;
+		top: 100px;
+		left: 280px;
+	}
+
+	.click3 {
+		position: absolute;
+		top: 96px;
+		left: 95px;
+	}
+
+	.click4 {
+		position: absolute;
+		top: 111px;
+		left: 254px;
+	}
+
+	.click5 {
+		position: absolute;
+		top: 80px;
+		left: 68px;
+	}
+
+	.click6 {
+		position: absolute;
+		top: 100px;
+		left: 340px;
+	}
+
+	.click7 {
+		position: absolute;
+		top: 80px;
+		left: 60px;
+	}
+
+	.click8 {
+		position: absolute;
+		top: 104px;
+		left: 290px;
+	}
+
+	
+	.circle-button {
+		width: 33px;
+		height: 33px;
+	}
+	
+	#plusicon {
+        width: 16px;
+        height: 16px;
+    }
+
+	.tab1 {
+		position: absolute;
+		top: 6%;
+		left: 5%;
+	}
+
+
+	.tab2 {
+		position: absolute;
+		top: 6%;
+		left: 46%;
+	}
+
+
+	.tab3 {
+		position: absolute;
+		top: -8%;
+		left: 2%;
+	}
+
+
+	.tab4 {
+		position: absolute;
+		top: -8%;
+		left: 46%;  
+	}
+
+
+
+	.tab5 {
+		position: absolute;
+		top: 0%;
+		left: 2%;
+	}
+
+
+	.tab6 {
+		position: absolute;
+		top: 0%;
+		left: 46%;
+	}
+
+	.tab7 {
+		position: absolute;
+		top: -1%;
+		left: 4%;
+	}
+
+
+	.tab8 {
+		position: absolute;
+		top: 1%;
+		left: 46%;
+	}
+
+
+	
+	.rectangle {
+		width: 230px;
+	}
+
+}
+
+
+
+/*XXXS*/
+@media screen and (max-width: 400px) {
+
+	.click {
+		position: absolute;
+		top: 89px;
+		left: 68px;
+	}
+
+	.click2 {
+		position: absolute;
+		top: 87px;
+		left: 240px;
+	}
+
+	.click3 {
+		position: absolute;
+		top: 67px;
+		left: 59px;
+	}
+
+	.click4 {
+		position: absolute;
+		top: 79px;
+		left: 215px;
+	}
+
+	.click5 {
+		position: absolute;
+		top: 80px;
+		left: 68px;
+	}
+
+	.click6 {
+		position: absolute;
+		top: 74px;
+		left: 280px;
+	}
+
+	.click7 {
+		position: absolute;
+		top: 80px;
+		left: 60px;
+	}
+
+	.click8 {
+		position: absolute;
+		top: 85px;
+		left: 234px;
+	}
+
+	
+	.circle-button {
+		width: 33px;
+		height: 33px;
+	}
+	
+	#plusicon {
+        width: 16px;
+        height: 16px;
+    }
+
+	.tab1 {
+		position: absolute;
+		top: -5%;
+		left: 2%;
+	}
+
+
+	.tab2 {
+		position: absolute;
+		top: 0%;
+		left: 38%;
+	}
+
+
+	.tab3 {
+		position: absolute;
+		top: -14%;
+		left: 2%;
+	}
+
+
+	.tab4 {
+		position: absolute;
+		top: -16%;
+		left: 36%;  
+	}
+
+
+
+	.tab5 {
+		position: absolute;
+		top: -9%;
+		left: 3%;
+	}
+
+
+	.tab6 {
+		position: absolute;
+		top: -9%;
+		left: 34%;
+	}
+
+	.tab7 {
+		position: absolute;
+		top: -12%;
+		left: 2%;
+	}
+
+
+	.tab8 {
+		position: absolute;
+		top: -12%;
+		left: 34%;
+	}
+
+
+	
+	.rectangle {
+		width: 230px;
+	}
+
+}
 
 
 
@@ -1291,12 +1588,10 @@ p strong {
 
 .rectangle {
     display: none;
-    background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
     z-index: 1000;
 	border-radius: 40px ;
-	border: 1px 0px 0px 0px;
 	background: #EAE6E6;
 	transition: visibility 0s, opacity 0.3s linear;
 	visibility: hidden;
