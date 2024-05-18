@@ -57,6 +57,25 @@ document.addEventListener("DOMContentLoaded", function () {
         rect3C.classList.remove("visible");
     });
 
+     // Bottone e rettangolo 4
+
+     const featuresBtn4C = document.getElementById("featuresBtn4C");
+     const rect4C = document.getElementById("rect4C");
+     const closeBtn4C = document.getElementById("closeBtn4C");
+ 
+     featuresBtn4C.addEventListener("click", function () {
+         featuresBtn4C.style.display = "none"; // Nasconde il bottone quando viene cliccato
+         rect4C.style.display = "block"; // Mostra il rettangolo
+         rect4C.classList.add("visible");
+ 
+     });
+ 
+     closeBtn4C.addEventListener("click", function () {
+         featuresBtn4C.style.display = "block"; // Riappare il bottone quando viene chiuso il rettangolo
+         rect4C.style.display = "none"; // Nasconde il rettangolo
+         rect4C.classList.remove("visible");
+     });
+
 });
 
 
