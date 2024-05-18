@@ -445,7 +445,7 @@ button {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: bold;
 	line-height: 1;
 	outline: none;
@@ -460,7 +460,7 @@ button {
 .rectangleC {
 	display: none;
 	background-color: var(--secondary-color);
-	padding: 25px;
+	padding: 18px;
 	z-index: 1000;
 	border-radius: 30px ;
 	transition: visibility 0s, opacity 0.3s linear;
@@ -479,7 +479,6 @@ button {
 .rectangleC mail {
 	font-size: small;
 }
-
 
 .rectangleC.visible {
 	visibility: visible;
@@ -507,13 +506,19 @@ button {
 	right: 71%;
 }
 
+.clickC4 {
+	position: absolute;
+    top: 48%;
+    right: 18%;
+}
+
 
 /*POSITION TAB*/
 
 .tab1C {
 	position: absolute;
-	top: 39%;
-	right: 49%;
+	top: 41%;
+	right: 50%;
 }
 
 .tab2C {
@@ -528,13 +533,19 @@ button {
     right: 70%;
 }
 
+.tab4C {
+	position: absolute;
+	top: 44%;
+    right: 72%;
+}
+
 
 
 /*xxl*/
 @media screen and (min-width: 1200px) {
 	.rectangleC {
 		width: 270px;
-		height: 354px;
+        height: 317px;
 	}
 
 	.circle-buttonC {
@@ -576,15 +587,14 @@ button {
 @media screen and (max-width: 992px) and (min-width: 768px) {
 
 	.circle-buttonC {
-		width: 30px;
-		height: 30px;
+		width: 25px;
+		height: 25px;
 	}
 
 	#plusiconC {
-		width: 15px;
-		height: 15px;
+		width: 12px;
+		height: 12px;
 	}
-
 
 	.rectangleC{
 		width: 226px;
@@ -608,15 +618,13 @@ button {
 /*sm*/
 @media screen and (max-width: 768px) and (min-width: 556px){
     .circle-buttonC {
-		width: 30px;
-		height: 30px;
-	}
-
-	#plusiconC {
 		width: 15px;
 		height: 15px;
 	}
-
+	#plusiconC {
+		width: 9px;
+		height: 9px;
+	}
 
 	.rectangleC{
 		width: 191px;
@@ -634,6 +642,24 @@ button {
 	.rectangleC mail {
 		font-size: 0.55rem;
 	}
+
+	.tab1C {
+		position: absolute;
+		top: 35%;
+		right: 46%;
+	}
+	
+	.tab2C {
+		position: absolute;
+		top: 39%;
+		right: 52%;
+	}
+	
+	.tab3C {
+		position: absolute;
+		top: 40%;
+		right: 70%;
+	}
 }
 
 /*xs*/
@@ -642,27 +668,39 @@ button {
 		width: 13px;
 		height: 13px;
 	}
+
+	.close-buttonC{
+		top: 6px;
+    	right: 6px;
+		font-size: 0.875rem;
+	}
+
 	#plusiconC {
 		width: 10px;
 		height: 10px;
 	}
 
-
 	.rectangleC{
-		width: 191px;
-        height: 254px;
+		width: 123px;
+        height: 159px;
 	}
 
 	.rectangleC h2 {
-		font-size: 1.4rem;
+		font-size: 1rem;
 	}
 
 	.rectangleC p {
-		font-size: 0.8rem;
+		font-size: 0.5rem;
 	}
 
 	.rectangleC mail {
-		font-size: 0.55rem;
+		font-size: 0.33rem;
+	}
+
+	.tab1C {
+		position: absolute;
+		top: 35%;
+		right: 46%;
 	}
 
 }
@@ -688,110 +726,129 @@ button {
 
 
 /*showroom contatti*/
-
 .showroom {
-	background-image: url('img/onda-contatti.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
+    background-image: url('img/onda-contatti.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.showroom-sx{
-	align-content: center;
+.showroom-sx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.showroom-text{
-	height: 668px;
+.showroom-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-start; /* Allinea a sinistra orizzontalmente */
+    text-align: left; /* Allinea il testo a sinistra */
+    height: 100%;
+	margin-top: 15%;
 }
 
 .showroom-text p {
-	color: var(--light-color);
+    color: var(--light-color);
 }
 
-.showroom-text h2{
-	color: var(--light-color) !important;
-	margin-bottom: 40px;
-	margin-top: 220px;
+.showroom-text strong {
+    font-size: 1.2rem;
+}
+
+.showroom-text h2 {
+    color: var(--light-color) !important;
+    font-size: 3rem;
+    margin-bottom: 5%;
 }
 
 /*lg*/
 @media screen and (max-width: 1200px) and (min-width: 992px) {
     .showroom-text p {
-		color: var(--light-color);
-		font-size: 1rem;
-	}
-	
-	.showroom-text h2{
-		color: var(--light-color) !important;
-		font-size:3rem;
-		margin-bottom: 40px;
-		margin-top: 225px;
+        font-size: 1rem;
+    }
+
+	.showroom-text strong {
+		font-size: 1.2rem;
 	}
 
-
+	.showroom-text {
+		margin-top: 10%;
+	}
 }
 
 /*md*/
 @media screen and (max-width: 992px) and (min-width: 768px) {
-	.showroom-text p {
-		color: var(--light-color);
-		font-size: 0.90rem;
+    .showroom-text p {
+        font-size: 0.90rem;
+    }
+
+	.showroom-text strong {
+		font-size: 1rem;
 	}
 
-	.showroom-text h2{
-		color: var(--light-color) !important;
-		font-size:2rem;
-		margin-bottom: 40px;
-		margin-top: 225px;
+    .showroom-text h2 {
+        font-size: 2rem;
+    }
+
+	.showroom-text {
+		margin-top: 10%;
 	}
-	
 
 }
 
 /*sm*/
-@media screen and (max-width: 768px) and (min-width: 556px){
-	 .showroom-text p {
-		color: var(--light-color);
-		font-size: 1.3rem;
+@media screen and (max-width: 768px) and (min-width: 556px) {
+    .showroom-text p {
+        font-size: 0.90rem;
+    }
+
+	.showroom-text strong {
+		font-size: 1rem;
 	}
 
-	.showroom-text h2{
-		color: var(--light-color) !important;
-		font-size: 2.5rem;
-		margin-bottom: 40px;
-		margin-top: 150px;
-	}
+    .showroom-text h2 {
+        font-size: 2.5rem;
+    }
 
-	.showroom-sx img{
-		display: none;
-	}
+    .showroom-sx {
+        order: 2; /* Sposta l'immagine sotto il testo */
+		margin-top: 10%;
+    }
 
-	.showroom-text{
-		width: 100%;
-	}
+    .showroom-text {
+        order: 1; /* Sposta il testo sopra l'immagine */
+        width: 100%;
+		margin-top: 10%;
+    }
 }
 
 /*xs*/
 @media screen and (max-width: 556px) {
-	.showroom-text p {
-		color: var(--light-color);
-		font-size: 1.1rem;
-	}
-	
-	.showroom-text h2{
-		color: var(--light-color) !important;
-		font-size: 2.5rem;
-		margin-bottom: 20px;
-		margin-top: 150px;
-	}
-	
-	.showroom-sx img{
-		display: none;
+    .showroom-text p {
+        font-size: 0.90rem;
+    }
+
+	.showroom-text strong {
+		font-size: 1rem;
 	}
 
-	.showroom-text{
-		width: 100%;
-	}
+    .showroom-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .showroom-sx {
+        order: 2; /* Sposta l'immagine sotto il testo */
+		margin-top: 15%;
+    }
+
+    .showroom-text {
+        order: 1; /* Sposta il testo sopra l'immagine */
+        width: 100%;
+		margin-top: 10%;
+    }
 }
+
 
 
 /*form contatti*/
@@ -801,16 +858,32 @@ button {
 	margin-bottom: 81px;
 }
 
+/*md*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	.col-right img{
+		display: none;
+	}
+}
+
+/*sm*/
+@media screen and (max-width: 768px) and (min-width: 556px) {
+	.col-right img{
+		display: none;
+	}
+
+}
+
 /*xs*/
 @media screen and (max-width: 556px) {
 	.col-right img{
-		margin-top: 50px;
+		display: none;
 	}
 
 	.col-right h3{
 		font-size: 1rem;
 	}
 }
+
 
 .col-left h3{
 	margin-bottom: 10px;
