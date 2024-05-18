@@ -131,7 +131,7 @@ p strong {
 }
 
 button {
-	font-family: "Poppins", sans-serif!important;
+	font-family: "Poppins", sans-serif !important;
 	font-weight: 600;
 }
 
@@ -324,7 +324,7 @@ button {
 }
 
 .header-telephon-wrapper img {
-    margin-top: 70px;
+    margin-top: 108px;
 }
 
 @media screen and (max-width: 976px){
@@ -366,9 +366,6 @@ button {
 		font-size: 3.125rem;
 	}
 
-	.header-contatti p{
-		font-size: 0.90rem;
-	}
 	
 }
 
@@ -385,9 +382,7 @@ button {
 		font-size: 2.75rem;
 	}
 
-	.header-contatti p{
-		font-size: 0.75rem;
-	}
+
 	
 }
 
@@ -403,9 +398,7 @@ button {
 		font-size: 2.25rem;
 	}
 
-	.header-contatti p{
-		font-size: 0.75rem;
-	}
+
 }
 
 
@@ -459,7 +452,7 @@ button {
 
 .rectangleC {
 	display: none;
-	background-color: var(--secondary-color);
+	background-color: rgba(9, 74, 76, 97%);;
 	padding: 18px;
 	z-index: 1000;
 	border-radius: 30px ;
@@ -470,15 +463,23 @@ button {
 
 .rectangleC h2 {
 	color: var(--light-color)!important;
+	font-size: 2.75rem !important;
+	padding:0 !important;
 }
 
 .rectangleC p {
 	color: var(--light-color)!important;
 }
 
-.rectangleC mail {
-	font-size: small;
+.rectangleC a {
+	font-size: small !important;
+	color: var(--light-color)!important;
 }
+
+.rectangleC a:hover {
+	color: #CF3F30 !important;
+}
+
 
 .rectangleC.visible {
 	visibility: visible;
@@ -491,7 +492,7 @@ button {
 .clickC {
 	position: absolute;
 	top: 41%;
-	right: 50%;
+	right: 49%;
 }
 
 .clickC2 {
@@ -508,8 +509,8 @@ button {
 
 .clickC4 {
 	position: absolute;
-    top: 48%;
-    right: 18%;
+    top: 44%;
+    right: 21%;
 }
 
 
@@ -517,8 +518,8 @@ button {
 
 .tab1C {
 	position: absolute;
-	top: 41%;
-	right: 50%;
+	top: 40%;
+    right: 48%;
 }
 
 .tab2C {
@@ -535,8 +536,8 @@ button {
 
 .tab4C {
 	position: absolute;
-	top: 44%;
-    right: 72%;
+	top: 43%;
+    right: 21%;
 }
 
 
@@ -544,8 +545,8 @@ button {
 /*xxl*/
 @media screen and (min-width: 1200px) {
 	.rectangleC {
-		width: 270px;
-        height: 317px;
+		width: 260px;
+        height: 335px;
 	}
 
 	.circle-buttonC {
@@ -566,9 +567,10 @@ button {
 @media screen and (max-width: 1200px) and (min-width: 992px) {
     
 	.rectangleC {
-		width: 270px;
-        height: 330px;
+		width: 260px;
+        height: 323px;
 	}
+
 
 	.circle-buttonC {
 		width: 30px;
@@ -597,21 +599,24 @@ button {
 	}
 
 	.rectangleC{
-		width: 226px;
-        height: 280px;
-	}
+		width: 214px;
+        height: 262px;
+    }
+	
 
 	.rectangleC h2 {
-		font-size: 2rem;
+		font-size: 2rem  !important;
+		padding: 10px;
 	}
 
-	.rectangleC p {
-		font-size: small;
+	.rectangleC p{
+		font-size: small !important;
 	}
 
-	.rectangleC mail {
-		font-size: smaller;
+	.rectangleC a {
+		font-size: x-small !important;
 	}
+
 
 }
 
@@ -628,19 +633,20 @@ button {
 
 	.rectangleC{
 		width: 191px;
-        height: 254px;
+        height: 243px;
 	}
 
 	.rectangleC h2 {
-		font-size: 1.7rem;
+		font-size: 1.7rem !important;
+		padding: 10px;
 	}
 
 	.rectangleC p {
-		font-size: 0.8rem;
+		font-size: 0.8rem !important;
 	}
 
-	.rectangleC mail {
-		font-size: 0.55rem;
+	.rectangleC a {
+		font-size: 0.55rem !important;
 	}
 
 	.tab1C {
@@ -686,15 +692,15 @@ button {
 	}
 
 	.rectangleC h2 {
-		font-size: 1rem;
+		font-size: 1rem !important;
 	}
 
 	.rectangleC p {
-		font-size: 0.5rem;
+		font-size: 0.5rem !important;
 	}
 
-	.rectangleC mail {
-		font-size: 0.33rem;
+	.rectangleC a {
+		font-size: 0.33rem !important;
 	}
 
 	.tab1C {
@@ -722,6 +728,7 @@ button {
 
 .client-ass p{
 	margin: 0;
+	font-size: 1rem !important;
 }
 
 
@@ -911,7 +918,7 @@ button {
 }
 
 .col-left button:hover {
-	background-color: #711D15; /* Cambio colore durante l'hover */
+	background-color: #711D15 !important; /* Cambio colore durante l'hover */
 }
 
 .btn-primary p{
