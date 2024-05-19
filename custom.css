@@ -301,7 +301,7 @@ button {
 	position: relative;
 	height: auto;
 	margin-top: 110px;
-	margin-bottom: 226px;
+	margin-bottom: 168px;
 }
 
 .header-contatti p{
@@ -730,6 +730,16 @@ button {
 	margin: 0;
 	font-size: 1rem !important;
 }
+
+.client-ass a{
+	font-size: 0.90rem !important;
+	color: var(--text-color)!important;
+}
+
+.client-ass a:hover {
+	color: #CF3F30 !important;
+}
+
 
 
 /*showroom contatti*/
