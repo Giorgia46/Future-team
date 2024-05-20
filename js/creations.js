@@ -74,8 +74,8 @@ $(document).ready(function() {
         var selectedFurniture = $('#furniture-type').val();
         var selectedColor = $('#color').val();
 
-        // Nasconde tutti i prodotti
-        $('.parent-card').css('display', 'none');
+        // Mostra tutti i prodotti
+        $('.parent-card').show();
 
         // Filtra i prodotti in base ai criteri selezionati
         $('.product-card').each(function() {
@@ -84,25 +84,27 @@ $(document).ready(function() {
             var productColors = $(this).data('color').split(',');
             var productType = $(this).data('type');
 
-            // Mostra i prodotti che soddisfano i criteri di filtro
-            if ((selectedCollection === 'default' || selectedCollection === productCollection) &&
+            // Nascondi i prodotti che non soddisfano i criteri di filtro
+            if (!((selectedCollection === 'default' || selectedCollection === productCollection) &&
                 (priceRange === 'default' || isPriceInRange(productPrice, priceRange)) &&
                 (selectedFurniture === 'default' || selectedFurniture === productType) &&
-                (selectedColor === 'default' || productColors.includes(selectedColor))) {
+                (selectedColor === 'default' || productColors.includes(selectedColor)))) {
                 //Qui viene selezionato il "padre" della card del prodotto per visualizzarlo nella maniera corretta
-                $(this).closest('.parent-card').css('display', 'block');
+                $(this).closest('.parent-card').css('display', 'none');
             }
         });
+
+        // Nascondi il pulsante "Carica Altri" quando si applicano i filtri
+        $('#load-more').hide();
 
         // Ordina i prodotti
         if (sortBy === 'price-asc') {
             $('.parent-card:visible').sort(function(a, b) {
-                console.log(a)
-                return $(a).children('.product-card').data('price') - $(b).children('.product-card').data('price');
+                return $(a).find('.product-card').data('price') - $(b).find('.product-card').data('price');
             }).appendTo('.prod-row');
         } else if (sortBy === 'price-desc') {
             $('.parent-card:visible').sort(function(a, b) {
-                return $(b).children('.product-card').data('price') - $(a).children('.product-card').data('price');
+                return $(b).find('.product-card').data('price') - $(a).find('.product-card').data('price');
             }).appendTo('.prod-row');
         }
     }
@@ -146,17 +148,17 @@ $(document).ready(function() {
         filterAndSortProducts();
         
         // Nasconde tutti gli elementi con indice maggiore di 11
-        $('.product-card:gt(11)').hide();
+        $('.parent-card:gt(11)').hide();
 
         // Mostra il pulsante "Carica Altri" se ci sono ancora elementi nascosti
-        if ($('.product-card:hidden').length > 0) {
+        if ($('.parent-card:hidden').length > 0) {
             $('#load-more').show();
         }
         
         // Riassegna l'evento click al pulsante "Carica Altri"
         $('#load-more').off('click').on('click', function() {
-            $('.product-card:hidden').slice(0, 12).slideDown(); // Mostra i successivi 12 elementi nascosti
-            if ($('.product-card:hidden').length === 0) { // Nasconde il pulsante se non ci sono più elementi nascosti
+            $('.parent-card:hidden').slice(0, 12).slideDown(); // Mostra i successivi 12 elementi nascosti
+            if ($('.parent-card:hidden').length === 0) { // Nasconde il pulsante se non ci sono più elementi nascosti
                 $('#load-more').hide();
             }
         });
@@ -167,13 +169,12 @@ $(document).ready(function() {
 
     //////////////////////// CARICA ALTRI PRODOTTI //////////////////////
 
-    $('.product-card:gt(11)').hide(); // Nasconde tutti gli elementi con indice maggiore di 11
+    $('.parent-card:gt(11)').hide(); // Nasconde tutti gli elementi con indice maggiore di 11
 
-    $('#load-more').on('click', function() {
-        $('.product-card:hidden').slice(0, 12).slideDown(); // Mostra i successivi 12 elementi nascosti
-        if ($('.product-card:hidden').length === 0) { // Nasconde il pulsante se non ci sono più elementi nascosti
+    $('#load-more').show().on('click', function() {
+        $('.parent-card:hidden').slice(0, 12).slideDown(); // Mostra i successivi 12 elementi nascosti
+        if ($('.parent-card:hidden').length === 0) { // Nasconde il pulsante se non ci sono più elementi nascosti
             $('#load-more').hide();
         }
     });
 });
-
