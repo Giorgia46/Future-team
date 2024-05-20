@@ -725,19 +725,19 @@ p strong {
 	.click2 {
 		position: absolute;
 		top: 160px;
-		left: 390px;
+		left: 440px;
 	}
 
 	.click3 {
 		position: absolute;
-		top: 150px;
-		left: 110px;
+		top: 160px;
+		left: 145px;
 	}
 
 	.click4 {
 		position: absolute;
-		top: 160px;
-		left: 390px;
+		top: 189px;
+		left: 425px;
 	}
 
 	.click5 {
@@ -749,7 +749,7 @@ p strong {
 	.click6 {
 		position: absolute;
 		top: 160px;
-		left: 503px;
+		left: 580px;
 	}
 
 	.click7 {
@@ -760,8 +760,8 @@ p strong {
 
 	.click8 {
 		position: absolute;
-		top: 160px;
-		left: 430px;
+		top: 200px;
+		left: 490px;
 	}
 
 	.circle-button {
