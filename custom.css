@@ -304,10 +304,6 @@ button {
 	margin-bottom: 168px;
 }
 
-.header-contatti p{
-	margin-top: 20px;
-}
-
 .header-telephon-wrapper {
     height: auto;
     position: absolute;
@@ -554,10 +550,27 @@ button {
 		height: 30px;
 	}
 
-	#plusiconC {
+	#plusiconC1 {
 		width: 15px;
 		height: 15px;
 	}
+
+	#plusiconC2 {
+		width: 15px;
+		height: 15px;
+	}
+
+	#plusiconC3 {
+		width: 15px;
+		height: 15px;
+	}
+
+
+	#plusiconC4 {
+		width: 15px;
+		height: 15px;
+	}
+
 
 }
 
@@ -577,12 +590,25 @@ button {
 		height: 30px;
 	}
 
-	#plusiconC {
+	#plusiconC1 {
 		width: 15px;
 		height: 15px;
 	}
 
+	#plusiconC2 {
+		width: 15px;
+		height: 15px;
+	}
 
+	#plusiconC3 {
+		width: 15px;
+		height: 15px;
+	}
+
+	#plusiconC4 {
+		width: 15px;
+		height: 15px;
+	}
 }
 
 /*md*/
@@ -593,7 +619,22 @@ button {
 		height: 25px;
 	}
 
-	#plusiconC {
+	#plusiconC1 {
+		width: 12px;
+		height: 12px;
+	}
+
+	#plusiconC2 {
+		width: 12px;
+		height: 12px;
+	}
+
+	#plusiconC3 {
+		width: 12px;
+		height: 12px;
+	}
+	
+	#plusiconC4 {
 		width: 12px;
 		height: 12px;
 	}
@@ -626,7 +667,23 @@ button {
 		width: 15px;
 		height: 15px;
 	}
-	#plusiconC {
+
+	#plusiconC1 {
+		width: 9px;
+		height: 9px;
+	}
+
+	#plusiconC2 {
+		width: 9px;
+		height: 9px;
+	}
+
+	#plusiconC3 {
+		width: 9px;
+		height: 9px;
+	}
+
+	#plusiconC4 {
 		width: 9px;
 		height: 9px;
 	}
@@ -681,7 +738,22 @@ button {
 		font-size: 0.875rem;
 	}
 
-	#plusiconC {
+	#plusiconC1 {
+		width: 10px;
+		height: 10px;
+	}
+
+	#plusiconC2 {
+		width: 10px;
+		height: 10px;
+	}
+
+	#plusiconC3 {
+		width: 10px;
+		height: 10px;
+	}
+
+	#plusiconC4 {
 		width: 10px;
 		height: 10px;
 	}
@@ -932,8 +1004,8 @@ button {
 }
 
 .btn-primary p{
-	margin-top: none;
-	padding: none;
+	margin-top: 0%;
+	padding: 0%;
 	color: #FAFAFA;
 }
 

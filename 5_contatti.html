@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5_contatti</title>
 
     <!--link-->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link href="custom.css" rel="stylesheet" type="text/css">
+    <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/contatti_button.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.8/dist/css/splide.min.css">
     <script src="https://unpkg.com/@splidejs/splide@3.0.8/dist/js/splide.min.js"></script>
 
-    <!-- Link che apre il client di posta predefinito -->
-    <a
-        href="mailto:info@aethercraftcreations.com?subject=Richiesta%20Informazioni&body=Salve%2C%20vorrei%20richiedere%20informazioni%20su...">Contattaci</a>
-
-
     <!--link-->
-
-    <!--link icone-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!--link icone-->
 
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,12 +38,19 @@
         rel="stylesheet">
     <!--font-->
 
+    <!-- Link contatti -->
+    <a
+        href="mailto:info@aethercraftcreations.com?subject=Richiesta%20Informazioni&body=Salve%2C%20vorrei%20richiedere%20informazioni%20su...">Contattaci</a>
+    <script src="js/contatti_button.js"></script>
+    <script src="js/form.js"></script>
+    <!--link contatti-->
 
     <style>
         body {
             background-color: var(--light-color);
         }
     </style>
+
 
 </head>
 
@@ -62,46 +61,52 @@
     <div class="container-fluid menu">
         <div class="container">
             <nav class="navbar d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="index.html"><img src="img/logo-menu.svg"></a>
+                <a class="navbar-brand" href="index.html"><img src="img/logo-menu.svg"
+                        alt="logo AetherCraft Creations"></a>
                 <ul class="nav-menu">
 
                     <li class="nav-item voice-menu">
                         <div class="d-flex align-items-center justify-content-between border-menu">
-                            <div class="d-flex"><a href="#" class="nav-link">HOME</a></div>
-                            <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px"
-                                        class="d-none align-self-center"></a></div>
+                            <div class="d-flex"><a href="index.html" class="nav-link">HOME</a></div>
+                            <div><a href="#"><img src="img/arrow.svg" width="24" height="24"
+                                        class="d-none align-self-center" alt="freccia"></a>
+                            </div>
                         </div>
                     </li>
 
                     <li class="nav-item voice-menu">
                         <div class="d-flex align-items-center justify-content-between border-menu">
-                            <div class="d-flex"><a href="#" class="nav-link">ESSENZA</a></div>
-                            <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px"
-                                        class="d-none align-self-center"></a></div>
+                            <div class="d-flex"><a href="1_essenza.html" class="nav-link">ESSENZA</a></div>
+                            <div><a href="#"><img src="img/arrow.svg" width="24" height="24"
+                                        class="d-none align-self-center" alt="freccia"></a>
+                            </div>
                         </div>
                     </li>
 
                     <li class="nav-item voice-menu">
                         <div class="d-flex align-items-center justify-content-between border-menu">
-                            <div class="d-flex"><a href="#" class="nav-link">CREAZIONI</a></div>
-                            <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px"
-                                        class="d-none align-self-center"></a></div>
+                            <div class="d-flex"><a href="2_creazioni.html" class="nav-link">CREAZIONI</a></div>
+                            <div><a href="#"><img src="img/arrow.svg" width="24" height="24"
+                                        class="d-none align-self-center" alt="freccia"></a>
+                            </div>
                         </div>
                     </li>
 
                     <li class="nav-item voice-menu">
                         <div class="d-flex align-items-center justify-content-between border-menu">
-                            <div class="d-flex"><a href="#" class="nav-link">PORTFOLIO</a></div>
-                            <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px"
-                                        class="d-none align-self-center"></a></div>
+                            <div class="d-flex"><a href="4_portfolio.html" class="nav-link">PORTFOLIO</a></div>
+                            <div><a href="#"><img src="img/arrow.svg" width="24" height="24"
+                                        class="d-none align-self-center" alt="freccia"></a>
+                            </div>
                         </div>
                     </li>
 
                     <li class="nav-item voice-menu">
                         <div class="d-flex align-items-center justify-content-between border-menu">
-                            <div class="d-flex"><a href="#" class="nav-link">CONTATTI</a></div>
-                            <div><a href="#"><img src="img/arrow.svg" width="24px" height="24px"
-                                        class="d-none align-self-center"></a></div>
+                            <div class="d-flex"><a href="5_contatti.html" class="nav-link">CONTATTI</a></div>
+                            <div><a href="#"><img src="img/arrow.svg" width="24" height="24"
+                                        class="d-none align-self-center" alt="freccia"></a>
+                            </div>
                         </div>
                     </li>
 
@@ -118,329 +123,334 @@
 
 
     <!--CONTATTI-->
-    <!--header contatti-->
-    <div class="container">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-6 mt-5 col-12 header-contatti">
-                    <h1 class="mt-5">Contatti</h1>
-                    <p class="mt-3">Abbiamo team e uffici distribuiti in tutto il mondo, pronti ad assisterti <strong>ovunque tu
-                            sia</strong>. La tua <strong> soddisfazione</strong> è la nostra priorità.</p>
-                    <p>Contattaci oggi stesso per qualsiasi domanda o esigenza, siamo qui per aiutarti a realizzare i
-                        tuoi sogni.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-telephon-wrapper d-flex justify-content-end">
-        <img class="header-telephone-img img-fluid" src="img/telephone-large.png" alt="telefono"
-            srcset="img/telephone-large.png 693w, img/telephone-medium.png 640w, img/telephone-small.png 320w"
-            sizes="(min-width: 1200px) 620px, (min-width: 1055px) 540px, (min-width: 862px) 420px, (min-width: 768px) 390px, (min-width: 570px) 340px, (min-width: 390px) 300px">
-    </div>
-    <!--end header contatti-->
-
-
-    <!--mappa contatti-->
-    <div class="container-fluid map">
-        <div class="container map-intern">
-
-            <img src="img/map.svg" class="img-fluid">
-
-
-            <!-- Bottone 1 -->
-            <div class="clickC">
-                <button id="featuresBtn1C" class="circle-buttonC">
-                    <svg id="plusiconC" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
-            <!--Fine Bottone 1 -->
-
-            <!-- Rettangolo nascosto-->
-            <div class="tab1C">
-                <div id="rect1C" class="rectangleC">
-                    <button id="closeBtn1C" class="close-buttonC">×</button>
-                    <h2 style="color: var(--secondary-color)"> <strong>Italia</strong></h2>
-                    <p><br><strong>Assistenza ordini</strong>
-                        <br>
-                        <a href="mailto:OrdIt@aethercraftcreations.com">OrdMI@aethercraftcreations.com</a><br>
-                        <br><strong>Assistenza legale</strong>
-                        <br>
-                        <a href="mailto:LegIt@aethercraftcreations.com">LegMI@aethercraftcreations.com</a><br>
-                        <br><strong>Assistenza spedizioni</strong>
-                        <br>
-                        <a href="mailto:SpeIt@aethercraftcreations.com">SpeMI@aethercraftcreations.com</a>
-                    </p>
-
-                    </h2>
-                </div>
-            </div>
-            <!-- End Rettangolo nascosto-->
-
-
-            <!-- Bottone 2 -->
-            <div class="clickC2">
-                <button id="featuresBtn2C" class="circle-buttonC">
-                    <svg id="plusiconC" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
-            <!--Fine Bottone 2 -->
-
-            <!-- Rettangolo nascosto 2-->
-            <div class="tab2C">
-                <div id="rect2C" class="rectangleC">
-                    <button id="closeBtn2C" class="close-buttonC">×</button>
-                    <h2 style="color: var(--secondary-color)"> <strong>Francia</strong></h2>
-                    <p><br><strong>Assistenza ordini</strong>
-                        <a href="mailto:OrdFr@aethercraftcreations.com">OrdPA@aethercraftcreations.com</a><br>
-                        <br><strong>Assistenza legale</strong>
-                        <br>
-                        <a href="mailto:LegFr@aethercraftcreations.com">LegPA@aethercraftcreations.com</a><br>
-                        <br><strong>Assistenza spedizioni</strong>
-                        <br>
-                        <a href="mailto:SpeFr@aethercraftcreations.com">SpePA@aethercraftcreations.com</a>
-                    </p>
-                    </h2>
-                </div>
-            </div>
-            <!-- End Rettangolo nascosto-->
-
-
-            <!-- Bottone 3 -->
-            <div class="clickC3">
-                <button id="featuresBtn3C" class="circle-buttonC">
-                    <svg id="plusiconC" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
-            <!--Fine Bottone 3 -->
-
-            <!-- Rettangolo nascosto 3 -->
-            <div class="tab3C">
-                <div id="rect3C" class="rectangleC">
-                    <button id="closeBtn3C" class="close-buttonC">×</button>
-                    <h2 style="color: var(--secondary-color)"> <strong>America</strong></h2>
-                    <p><br><strong>Assistenza ordini</strong>
-                        <br>
-                        <a href="mailto:OrdUsa@aethercraftcreations.com">OrdNK@aethercraftcreations.com</a><br>
-                        <br><strong>Assistenza legale</strong>
-                        <br>
-                        <a href="mailto:LegUsa@aethercraftcreations.com">LegNK@aethercraftcreations.com</a><br>
-                        <br><strong>Assistenza spedizioni</strong>
-                        <br>
-                        <a href="mailto:SpeUsa@aethercraftcreations.com">SpeNK@aethercraftcreations.com</a>
-                    </p>
-
-                    </h2>
-                </div>
-            </div>
-            <!-- End Rettangolo nascosto-->
-
-
-            <!-- Bottone 4 -->
-            <div class="clickC4">
-                <button id="featuresBtn4C" class="circle-buttonC">
-                    <svg id="plusiconC" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
-            <!--Fine Bottone 4 -->
-
-            <!-- Rettangolo nascosto 4 -->
-            <div class="tab4C">
-                <div id="rect4C" class="rectangleC">
-                    <button id="closeBtn4C" class="close-buttonC">×</button>
-                    <h2 style="color: var(--secondary-color)"> <strong>Cina</strong></h2>
-                    <p><br><strong>Assistenza ordini</strong>
-                        <br>
-                        <a href="mailto:OrdCh@aethercraftcreations.com">OrdPE@aethercraftcreations.com</a><br>
-                        <br><strong>Assistenza legale</strong>
-                        <br>
-                        <a href="mailto:LegCh@aethercraftcreations.com">LegPE@aethercraftcreations.com</a><br>
-                        <br><strong>Assistenza spedizioni</strong>
-                        <br>
-                        <a href="mailto:SpeCh@aethercraftcreations.com">SpePE@aethercraftcreations.com</a>
-                    </p>
-
-                    </h2>
-                </div>
-            </div>
-            <!-- End Rettangolo nascosto-->
-
-        </div>
-    </div>
-    <!--end mappa contatti-->
-
-    <div class="container client-ass">
-        <div class="row">
-            <div class="col-12 col-lg-4 mt-5 mt-lg-0 text-center">
-                <h4>Assistenza</h4>
-                <p>Risponderemo a tutte le tue domande</p>
-                <a href="mailto:OAss@aethercraftcreations.com">Ass@aethercraftcreations.com</a>
-            </div>
-
-            <div class="col-12 col-lg-4 mt-5 mt-lg-0 text-center">
-                <h4>Vendita</h4>
-                <p>Problemi con un acquisto? Scrivi alla sede centrale</p>
-                <a href="mailto:Shop@aethercraftcreations.com">Shop@aethercraftcreations.com</a>
-            </div>
-
-            <div class="col-12 col-lg-4 mt-5 mt-lg-0 mb-5 text-center">
-                <h4>Contatti</h4>
-                <p>Per parlare con la sede centrale</p>
-                <a href="mailto:Info@aethercraftcreations.com">Info@aethercraftcreations.com</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid showroom">
+    <main>
+        <!--header contatti-->
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 showroom-sx align-self-center">
-                    <img class="img-fluid" src="img/showroom.png" alt="foto showroom" max-width="628px"
-                        srcset="img/showroom.png, 628w, img/showroom-md.png, 410w">
-                </div>
-                <div class="col-12 col-md-5 offset-md-1 showroom-text order-1 order-md-2">
-                    <h2>Sedi e showroom</h2>
-                    <p><strong>Sede legale:</strong> Strada Provinciale Almisano 7, Milano (MI), Italy
-                        <br>&emsp;&emsp;T. +39 0444/696349
-                        <br>&emsp;&emsp;info@aethercraftcreations.com
-                    </p>
-                    <p style="margin-top:16px"><strong>Uffici:</strong> Milano, Roma, New York</p>
-                    <p style="margin-top:16px"><strong>Showroom:</strong> Milano, Roma, Parigi, New York, Georgetown,
-                        Pechino
-                    </p>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6 mt-5 col-12 header-contatti">
+                        <h1 class="mt-5">Contatti</h1>
+                        <p class="mt-3">Abbiamo team e uffici distribuiti in tutto il mondo, pronti ad assisterti
+                            <strong>ovunque tu
+                                sia</strong>. La tua <strong> soddisfazione</strong> è la nostra priorità.
+                        </p>
+                        <p>Contattaci oggi stesso per qualsiasi domanda o esigenza, siamo qui per aiutarti a realizzare
+                            i
+                            tuoi sogni.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="header-telephone-wrapper d-flex justify-content-end">
+            <img class="header-telephone-img img-fluid" src="img/telephone-large.png" alt="telefono"
+                srcset="img/telephone-large.png 693w, img/telephone-medium.png 640w, img/telephone-small.png 320w"
+                sizes="(min-width: 1200px) 620px, (min-width: 1055px) 540px, (min-width: 862px) 420px, (min-width: 768px) 390px, (min-width: 570px) 340px, (min-width: 390px) 300px">
+        </div>
+        <!--end header contatti-->
 
 
+        <!--mappa contatti-->
+        <div class="container-fluid map">
+            <div class="container map-intern">
 
-    <div class="container form-contatti">
-        <div class="row">
-            <div class="col-lg-6 col-12 col-left">
-                <h3>Prendi un appuntamento</h3>
-                <p>Prenota una consulenza con i nostri esperti per personalizzare il tuo ambiente secondo i tuoi gusti.
-                </p>
+                <img src="img/map.svg" class="img-fluid" alt="map">
 
-                <form class="needs-validation" novalidate>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="formNome" placeholder="NOME*" style="height:48px"
-                            required>
-                        <div class="valid-feedback">
-                            Ok!
-                        </div>
-                        <div class="invalid-feedback">
-                            Per favore, inserisci il tuo nome.
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="text" class="form-control" id="formCognome" placeholder="COGNOME*"
-                            style="height:48px" required>
-                        <div class="valid-feedback">
-                            Ok!
-                        </div>
-                        <div class="invalid-feedback">
-                            Per favore, inserisci il tuo cognome.
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="EMAIL*"
-                            style="height:48px" required>
-                        <div class="valid-feedback">
-                            Ok!
-                        </div>
-                        <div class="invalid-feedback">
-                            Per favore, inserisci un indirizzo email valido.
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="tel" class="form-control" id="Telefono" placeholder="TELEFONO*" style="height:48px"
-                            required pattern="[0-9]{10}">
-                        <div class="valid-feedback">
-                            Ok!
-                        </div>
-                        <div class="invalid-feedback">
-                            Per favore, inserisci un numero di telefono valido (massimo 10 cifre).
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <input type="text" class="form-control" id="Azienda" placeholder="AZIENDA" style="height:48px">
-                    </div>
-                    <div class="form-group mt-3 mb-4">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MESSAGGIO*"
-                            rows="3" style="height:120px; padding:15px" required></textarea>
-                        <div class="valid-feedback">
-                            Ok!
-                        </div>
-                        <div class="invalid-feedback">
-                            Per favore, inserisci un messaggio.
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary mt-3">
-                        INVIA
+
+                <!-- Bottone 1 -->
+                <div class="clickC">
+                    <button id="featuresBtn1C" class="circle-buttonC">
+                        <svg id="plusiconC1" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
                     </button>
-                </form>
-                <div id="successMessageForm" class="alert alert-success d-none">
-                    Grazie per averci scritto, il nostro team le risponderà presto
                 </div>
+                <!--Fine Bottone 1 -->
 
-            </div>
-            <div class="col-6 col-right">
-                <img class="img-fluid img-form" max-width="613px" max-height="761px" src="img/photo-form.png"
-                    srcset="img/photo-form.png 820w, img/photo-form.png 814w, img/photo-form.png 409w"
-                    sizes="(max-width: 767px) 340px, (max-width: 861px) 450px, (max-width: 890px) 580px, (max-width: 987px) 600px, 800px"
-                    alt="foto form">
+                <!-- Rettangolo nascosto-->
+                <div class="tab1C">
+                    <div id="rect1C" class="rectangleC">
+                        <button id="closeBtn1C" class="close-buttonC">×</button>
+                        <h2 style="color: var(--secondary-color)"> <strong>Italia</strong></h2>
+                        <p><br><strong>Assistenza ordini</strong>
+                            <br>
+                            <a href="mailto:OrdIt@aethercraftcreations.com">OrdMI@aethercraftcreations.com</a><br>
+                            <br><strong>Assistenza legale</strong>
+                            <br>
+                            <a href="mailto:LegIt@aethercraftcreations.com">LegMI@aethercraftcreations.com</a><br>
+                            <br><strong>Assistenza spedizioni</strong>
+                            <br>
+                            <a href="mailto:SpeIt@aethercraftcreations.com">SpeMI@aethercraftcreations.com</a>
+                        </p>
+
+                    </div>
+                </div>
+                <!-- End Rettangolo nascosto-->
+
+
+                <!-- Bottone 2 -->
+                <div class="clickC2">
+                    <button id="featuresBtn2C" class="circle-buttonC">
+                        <svg id="plusiconC2" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <!--Fine Bottone 2 -->
+
+                <!-- Rettangolo nascosto 2-->
+                <div class="tab2C">
+                    <div id="rect2C" class="rectangleC">
+                        <button id="closeBtn2C" class="close-buttonC">×</button>
+                        <h2 style="color: var(--secondary-color)"> <strong>Francia</strong></h2>
+                        <p><br><strong>Assistenza ordini</strong>
+                            <a href="mailto:OrdFr@aethercraftcreations.com">OrdPA@aethercraftcreations.com</a><br>
+                            <br><strong>Assistenza legale</strong>
+                            <br>
+                            <a href="mailto:LegFr@aethercraftcreations.com">LegPA@aethercraftcreations.com</a><br>
+                            <br><strong>Assistenza spedizioni</strong>
+                            <br>
+                            <a href="mailto:SpeFr@aethercraftcreations.com">SpePA@aethercraftcreations.com</a>
+                        </p>
+                        </h2>
+                    </div>
+                </div>
+                <!-- End Rettangolo nascosto-->
+
+
+                <!-- Bottone 3 -->
+                <div class="clickC3">
+                    <button id="featuresBtn3C" class="circle-buttonC">
+                        <svg id="plusiconC3" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <!--Fine Bottone 3 -->
+
+                <!-- Rettangolo nascosto 3 -->
+                <div class="tab3C">
+                    <div id="rect3C" class="rectangleC">
+                        <button id="closeBtn3C" class="close-buttonC">×</button>
+                        <h2 style="color: var(--secondary-color)"> <strong>America</strong></h2>
+                        <p><br><strong>Assistenza ordini</strong>
+                            <br>
+                            <a href="mailto:OrdUsa@aethercraftcreations.com">OrdNK@aethercraftcreations.com</a><br>
+                            <br><strong>Assistenza legale</strong>
+                            <br>
+                            <a href="mailto:LegUsa@aethercraftcreations.com">LegNK@aethercraftcreations.com</a><br>
+                            <br><strong>Assistenza spedizioni</strong>
+                            <br>
+                            <a href="mailto:SpeUsa@aethercraftcreations.com">SpeNK@aethercraftcreations.com</a>
+                        </p>
+
+
+                    </div>
+                </div>
+                <!-- End Rettangolo nascosto-->
+
+
+                <!-- Bottone 4 -->
+                <div class="clickC4">
+                    <button id="featuresBtn4C" class="circle-buttonC">
+                        <svg id="plusiconC4" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1V19" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 10H19" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <!--Fine Bottone 4 -->
+
+                <!-- Rettangolo nascosto 4 -->
+                <div class="tab4C">
+                    <div id="rect4C" class="rectangleC">
+                        <button id="closeBtn4C" class="close-buttonC">×</button>
+                        <h2 style="color: var(--secondary-color)"> <strong>Cina</strong></h2>
+                        <p><br><strong>Assistenza ordini</strong>
+                            <br>
+                            <a href="mailto:OrdCh@aethercraftcreations.com">OrdPE@aethercraftcreations.com</a><br>
+                            <br><strong>Assistenza legale</strong>
+                            <br>
+                            <a href="mailto:LegCh@aethercraftcreations.com">LegPE@aethercraftcreations.com</a><br>
+                            <br><strong>Assistenza spedizioni</strong>
+                            <br>
+                            <a href="mailto:SpeCh@aethercraftcreations.com">SpePE@aethercraftcreations.com</a>
+                        </p>
+
+
+                    </div>
+                </div>
+                <!-- End Rettangolo nascosto-->
+
             </div>
         </div>
-    </div>
+        <!--end mappa contatti-->
 
-    <script>
-        // Funzione per gestire la convalida del form
-        (function () {
-            'use strict';
+        <div class="container client-ass">
+            <div class="row">
+                <div class="col-12 col-lg-4 mt-5 mt-lg-0 text-center">
+                    <h4>Assistenza</h4>
+                    <p>Risponderemo a tutte le tue domande</p>
+                    <a href="mailto:OAss@aethercraftcreations.com">Ass@aethercraftcreations.com</a>
+                </div>
 
-            var forms = document.querySelectorAll('.needs-validation');
+                <div class="col-12 col-lg-4 mt-5 mt-lg-0 text-center">
+                    <h4>Vendita</h4>
+                    <p>Problemi con un acquisto? Scrivi alla sede centrale</p>
+                    <a href="mailto:Shop@aethercraftcreations.com">Shop@aethercraftcreations.com</a>
+                </div>
 
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
+                <div class="col-12 col-lg-4 mt-5 mt-lg-0 mb-5 text-center">
+                    <h4>Contatti</h4>
+                    <p>Per parlare con la sede centrale</p>
+                    <a href="mailto:Info@aethercraftcreations.com">Info@aethercraftcreations.com</a>
+                </div>
+            </div>
+        </div>
 
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-        })();
-    </script>
+        <div class="container-fluid showroom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 showroom-sx align-self-center">
+                        <img class="img-fluid" src="img/showroom.png" alt="foto showroom">
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 showroom-text order-1 order-md-2">
+                        <h2>Sedi e showroom</h2>
+                        <p><strong>Sede legale:</strong> Strada Provinciale Almisano 7, Milano (MI), Italy
+                            <br>&emsp;&emsp;T. +39 0444/696349
+                            <br>&emsp;&emsp;info@aethercraftcreations.com
+                        </p>
+                        <p style="margin-top:16px"><strong>Uffici:</strong> Milano, Roma, New York</p>
+                        <p style="margin-top:16px"><strong>Showroom:</strong> Milano, Roma, Parigi, New York,
+                            Georgetown,
+                            Pechino
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container form-contatti">
+            <div class="row">
+                <div class="col-lg-6 col-12 col-left">
+                    <h3>Prendi un appuntamento</h3>
+                    <p>Prenota una consulenza con i nostri esperti per personalizzare il tuo ambiente secondo i tuoi
+                        gusti.
+                    </p>
+
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formNome" placeholder="NOME*"
+                                style="height:48px" required>
+                            <div class="valid-feedback">
+                                Ok!
+                            </div>
+                            <div class="invalid-feedback">
+                                Per favore, inserisci il tuo nome.
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" id="formCognome" placeholder="COGNOME*"
+                                style="height:48px" required>
+                            <div class="valid-feedback">
+                                Ok!
+                            </div>
+                            <div class="invalid-feedback">
+                                Per favore, inserisci il tuo cognome.
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="EMAIL*"
+                                style="height:48px" required>
+                            <div class="valid-feedback">
+                                Ok!
+                            </div>
+                            <div class="invalid-feedback">
+                                Per favore, inserisci un indirizzo email valido.
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="tel" class="form-control" id="Telefono" placeholder="TELEFONO*"
+                                style="height:48px" required pattern="[0-9]{10}">
+                            <div class="valid-feedback">
+                                Ok!
+                            </div>
+                            <div class="invalid-feedback">
+                                Per favore, inserisci un numero di telefono valido (massimo 10 cifre).
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" id="Azienda" placeholder="AZIENDA"
+                                style="height:48px">
+                        </div>
+                        <div class="form-group mt-3 mb-4">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MESSAGGIO*"
+                                rows="3" style="height:120px; padding:15px" required></textarea>
+                            <div class="valid-feedback">
+                                Ok!
+                            </div>
+                            <div class="invalid-feedback">
+                                Per favore, inserisci un messaggio.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">
+                            INVIA
+                        </button>
+                    </form>
+                    <div id="successMessageForm" class="alert alert-success d-none">
+                        Grazie per averci scritto, il nostro team le risponderà presto
+                    </div>
+
+                </div>
+                <div class="col-6 col-right">
+                    <img class="img-fluid img-form" src="img/photo-form.png"
+                        srcset="img/photo-form.png 820w, img/photo-form.png 814w, img/photo-form.png 409w"
+                        sizes="(max-width: 767px) 340px, (max-width: 861px) 450px, (max-width: 890px) 580px, (max-width: 987px) 600px, 800px"
+                        alt="foto form">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Funzione per gestire la convalida del form
+            (function () {
+                'use strict';
+
+                var forms = document.querySelectorAll('.needs-validation');
+
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+            })();
+        </script>
+
 
     </main>
-
     <!--fine CONTATTI-->
 
 
