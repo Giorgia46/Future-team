@@ -12,7 +12,7 @@ function inviaModulo(event) {
     var telefonoInput = $("#Telefono");
     var aziendaInput = $("#Azienda");
     var messaggioInput = $("#exampleFormControlTextarea1");
-    var successMessage = $("#successMessage1");
+    var successMessageForm = $("#successMessageForm");
 
     // Verifica se tutti i campi sono stati compilati correttamente
     if (nomeInput.val() && cognomeInput.val() && emailInput.val() && telefonoInput.val() && messaggioInput.val()) {
@@ -20,7 +20,7 @@ function inviaModulo(event) {
         // Ad esempio, puoi utilizzare AJAX per inviare i dati al server
 
         // Una volta inviato con successo, visualizza il messaggio di ringraziamento
-        successMessage1.text("Grazie per averci scritto, il nostro team le risponderà presto");
+        successMessageForm.text("Grazie per averci scritto, il nostro team le risponderà presto");
 
         // Dopo l'invio del modulo, puoi anche resettare i valori dei campi
         nomeInput.val("");
