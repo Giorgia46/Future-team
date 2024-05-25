@@ -1,19 +1,87 @@
 @charset "utf-8";
 /* CSS Document */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -21,25 +89,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -323,99 +410,99 @@ p strong {
 /**********************FOOTER*************************/
 /*****************************************************/
 
-footer{
-	background-image: url('img/footer-bg-mobile.svg'); 
+footer {
+	background-image: url('img/footer-bg-mobile.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 @media (min-width: 768px) {
-	footer{
-		background-image: url('img/footer-bg-desktop.svg'); 
+	footer {
+		background-image: url('img/footer-bg-desktop.svg');
 	}
-	
+
 }
 
 .form-control::placeholder {
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
-.newsletter{
+.newsletter {
 	height: 3.1rem;
 	background-color: var(--light-color);
 	z-index: 0;
 }
 
 .footer-link a {
-    position: relative;
-    color: var(--light-color);
-    text-decoration: none;
+	position: relative;
+	color: var(--light-color);
+	text-decoration: none;
 }
 
 .footer-link a::after {
-    content: '';
-    display: block;
-    width: 0%;
-    height: 1px;
-    background-color: var(--light-color);
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    transition: width 0.3s ease;
+	content: '';
+	display: block;
+	width: 0%;
+	height: 1px;
+	background-color: var(--light-color);
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	transition: width 0.3s ease;
 }
 
 .footer-link a:hover::after {
-    width: 100%;
+	width: 100%;
 }
 
 
-.round-btn{
+.round-btn {
 	width: 50px;
 	height: 50px;
 	background-color: var(--tertiary-color);
 	border: none;
 	cursor: pointer;
 	border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
 	transition-duration: 0.2s;
 	transition-timing-function: ease-in-out;
 }
 
-.round-btn:hover{
+.round-btn:hover {
 	background-color: var(--secondary-color);
 }
 
-.input-group .form-control:focus{
+.input-group .form-control:focus {
 	z-index: 0;
-    box-shadow: 0 0 0 0.25rem rgba(141, 25, 4, 0.25);
+	box-shadow: 0 0 0 0.25rem rgba(141, 25, 4, 0.25);
 }
 
 .input-group input[type="email"] {
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: var(--text-color);
 }
 
 .input-group .round-btn {
-    z-index: 1;
+	z-index: 1;
 }
-  
+
 .alert-success {
-    color: var(--light-color);
-    background-color: var(--tertiary-color);
-    border-color: var(--tertiary-color);
+	color: var(--light-color);
+	background-color: var(--tertiary-color);
+	border-color: var(--tertiary-color);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	z-index: 2;
 }
 
-footer ul li{
+footer ul li {
 	line-height: 1.5rem;
 }
 
-footer h5{
+footer h5 {
 	padding-bottom: 8%;
 }
 
-.social-icon{
+.social-icon {
 	height: 1.5rem;
 	width: auto;
 	padding-bottom: 5%;
@@ -767,6 +854,7 @@ footer h5{
 }
 
 @media screen and (max-width:992px) {
+
 	/*dai 992px in giu*/
 	.imgbubble1 {
 		display: none;
@@ -814,11 +902,13 @@ footer h5{
 }
 
 @media screen and (max-width:992px) {
+
 	/*dai 992px in giu*/
 	.imgcloud1 {
 		display: none;
 	}
 }
+
 .imgfluidcloud1 {
 	height: auto;
 	position: absolute;
@@ -1036,6 +1126,7 @@ footer h5{
 		top: 21%;
 		left: 52%;
 	}
+
 	.tab3 {
 		position: absolute;
 		top: 14%;
@@ -1059,20 +1150,24 @@ footer h5{
 		top: 14%;
 		left: 52%;
 	}
+
 	.tab7 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
+
 	.tab8 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
+
 	.rectangle {
 		width: 240px;
 	}
 }
+
 /*md*/
 @media screen and (max-width: 992px) and (min-width: 768px) {
 	.click {
@@ -1080,85 +1175,102 @@ footer h5{
 		top: 164px;
 		left: 116px;
 	}
+
 	.click2 {
 		position: absolute;
 		top: 175px;
 		left: 427px;
 	}
+
 	.click3 {
 		position: absolute;
 		top: 164px;
 		left: 116px;
 	}
+
 	.click4 {
 		position: absolute;
 		top: 175px;
 		left: 427px;
 	}
+
 	.click5 {
 		position: absolute;
 		top: 164px;
 		left: 116px;
 	}
+
 	.click6 {
 		position: absolute;
 		top: 175px;
 		left: 540px;
 	}
+
 	.click7 {
 		position: absolute;
 		top: 164px;
 		left: 116px;
 	}
+
 	.click8 {
 		position: absolute;
 		top: 175px;
 		left: 470px;
 	}
+
 	.circle-button {
 		width: 40px;
 		height: 40px;
 	}
+
 	.tab1 {
 		position: absolute;
 		top: 18%;
 		left: 6%;
 	}
+
 	.tab2 {
 		position: absolute;
 		top: 21%;
 		left: 52%;
 	}
+
 	.tab3 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
+
 	.tab4 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
+
 	.tab5 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
+
 	.tab6 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
+
 	.tab7 {
 		position: absolute;
 		top: 14%;
 		left: 6%;
 	}
+
 	.tab8 {
 		position: absolute;
 		top: 14%;
 		left: 52%;
 	}
+
 	.rectangle {
 		width: 240px;
 	}
@@ -1172,64 +1284,77 @@ footer h5{
 		top: 128px;
 		left: 90px;
 	}
+
 	.click2 {
 		position: absolute;
 		top: 130px;
 		left: 317px;
 	}
+
 	.click3 {
 		position: absolute;
 		top: 128px;
 		left: 90px;
 	}
+
 	.click4 {
 		position: absolute;
 		top: 130px;
 		left: 317px;
 	}
+
 	.click5 {
 		position: absolute;
 		top: 128px;
 		left: 90px;
 	}
+
 	.click6 {
 		position: absolute;
 		top: 130px;
 		left: 405px;
 	}
+
 	.click7 {
 		position: absolute;
 		top: 128px;
 		left: 90px;
 	}
+
 	.click8 {
 		position: absolute;
 		top: 130px;
 		left: 355px;
 	}
+
 	.circle-button {
 		width: 33px;
 		height: 33px;
 	}
+
 	.plusicon {
 		width: 16px;
 		height: 16px;
 	}
+
 	.tab1 {
 		position: absolute;
 		top: 18%;
 		left: 6%;
 	}
+
 	.tab2 {
 		position: absolute;
 		top: 21%;
 		left: 52%;
 	}
+
 	.tab3 {
 		position: absolute;
 		top: 6%;
 		left: 6%;
 	}
+
 	.tab4 {
 		position: absolute;
 		top: 6%;
@@ -1247,16 +1372,19 @@ footer h5{
 		top: 6%;
 		left: 52%;
 	}
+
 	.tab7 {
 		position: absolute;
 		top: 6%;
 		left: 6%;
 	}
+
 	.tab8 {
 		position: absolute;
 		top: 6%;
 		left: 52%;
 	}
+
 	.rectangle {
 		width: 230px;
 	}
@@ -1694,33 +1822,33 @@ footer h5{
 }
 
 .header-telephon-wrapper {
-    height: auto;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 100%;
+	height: auto;
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 100%;
 }
 
 .header-telephon {
-    position: relative;
-    height: auto;
-    margin-top: 160px;
-    margin-bottom: 400px;
+	position: relative;
+	height: auto;
+	margin-top: 160px;
+	margin-bottom: 400px;
 }
 
 .header-telephon-wrapper img {
-    margin-top: 108px;
+	margin-top: 108px;
 }
 
-@media screen and (max-width: 976px){
-	.header-contatti{
+@media screen and (max-width: 976px) {
+	.header-contatti {
 		margin-bottom: 100px;
 	}
 }
 
-@media screen and (max-width:767px){
-	.header-telephone-img{
-		display:none;
+@media screen and (max-width:767px) {
+	.header-telephone-img {
+		display: none;
 	}
 }
 
@@ -1735,6 +1863,7 @@ footer h5{
 		width: 100%;
 	}
 }
+
 /*map contatti*/
 
 .map-intern {
@@ -1746,7 +1875,7 @@ footer h5{
 	background-color: var(--Arancione, #CF3F30);
 	border: none;
 	border-radius: 50%;
-	cursor:pointer ;
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1784,27 +1913,28 @@ footer h5{
 
 .rectangleC {
 	display: none;
-	background-color: rgba(9, 74, 76, 97%);;
+	background-color: rgba(9, 74, 76, 97%);
+	;
 	padding: 18px;
 	z-index: 1000;
-	border-radius: 30px ;
+	border-radius: 30px;
 	transition: visibility 0s, opacity 0.3s linear;
 	visibility: hidden;
-	color:var(--light-color)!important;
+	color: var(--light-color) !important;
 }
 
 .rectangleC h3 {
-	color: var(--light-color)!important;
-	padding:0 !important;
+	color: var(--light-color) !important;
+	padding: 0 !important;
 }
 
 .rectangleC p {
-	color: var(--light-color)!important;
-} 
+	color: var(--light-color) !important;
+}
 
 .rectangleC a {
-	color: var(--light-color)!important;
-	font-size: 1rem!important;
+	color: var(--light-color) !important;
+	font-size: 1rem !important;
 }
 
 .rectangleC a:hover {
@@ -1841,8 +1971,8 @@ footer h5{
 
 .clickC4 {
 	position: absolute;
-    top: 44%;
-    right: 21%;
+	top: 44%;
+	right: 21%;
 }
 
 /*POSITION TAB*/
@@ -1850,7 +1980,7 @@ footer h5{
 .tab1C {
 	position: absolute;
 	top: 40%;
-    right: 48%;
+	right: 48%;
 }
 
 .tab2C {
@@ -1862,13 +1992,13 @@ footer h5{
 .tab3C {
 	position: absolute;
 	top: 40%;
-    right: 65%;
+	right: 65%;
 }
 
 .tab4C {
 	position: absolute;
 	top: 43%;
-    right: 21%;
+	right: 21%;
 }
 
 #plusiconC {
@@ -1881,20 +2011,30 @@ footer h5{
 	height: 40px;
 }
 
+
 /*xxl*/
 @media screen and (min-width: 1200px) {
 	.rectangleC {
 		width: 310px;
-        height: 300px;
+		height: 300px;
 	}
+
+	.circle {
+		display: none;
+	}
+
 }
 
 /*lg*/
 @media screen and (max-width: 1200px) and (min-width: 992px) {
-    
+
 	.rectangleC {
 		width: 310px;
-        height: 305px;
+		height: 305px;
+	}
+
+	.circle {
+		display: none;
 	}
 }
 
@@ -1927,6 +2067,39 @@ footer h5{
 	.clickC4 {
 		display: none;
 	}
+
+}
+
+
+/*Circle mobile map*/
+
+.circle {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.circle1 {
+	top: 41%;
+    right: 51%;
+}
+
+.circle2 {
+	top: 41%;
+    right: 53%;
+}
+
+.circle3 {
+	top: 42%;
+    right: 72%;
+}
+
+.circle4 {
+	top: 45%;
+    right: 22%;
 }
 
 /*Specifiche*/
@@ -1967,7 +2140,7 @@ footer h5{
 }
 
 .accordion-bodyC a {
-	color:var(--secondary-color);
+	color: var(--secondary-color);
 	font-size: 1rem;
 	text-decoration: none;
 }
@@ -1989,8 +2162,8 @@ footer h5{
 }
 
 .accordion-button:not(.collapsed) {
-	color: var(--secondary-color)!important;
-    background-color: #E1EEEF!important;
+	color: var(--secondary-color) !important;
+	background-color: #E1EEEF !important;
 }
 
 .accordion-button:focus {
@@ -2017,13 +2190,13 @@ footer h5{
 	margin-bottom: 100px;
 }
 
-.client-ass h4{
+.client-ass h4 {
 	color: var(--secondary-color);
 	font-weight: 600;
 	font-size: 1.5rem;
 }
 
-.client-ass a{
+.client-ass a {
 	font-size: 1rem !important;
 	color: var(--secondary-color);
 }
@@ -2034,17 +2207,17 @@ footer h5{
 
 /*showroom contatti*/
 .showroom-wrapper {
-    background-image: url('img/onda-contatti.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-image: url('img/onda-contatti.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .showroom-wrapper h2 {
-	color: var(--light-color)!important;
+	color: var(--light-color) !important;
 }
 
 .showroom-wrapper p {
-	color: var(--light-color)!important;
+	color: var(--light-color) !important;
 }
 
 
@@ -2078,33 +2251,33 @@ footer h5{
 }
 
 @media screen and (max-width: 992px) {
-	.col-right img{
+	.col-right img {
 		display: none;
 	}
 }
 
-.form-specific button{
+.form-specific button {
 	background-color: #CF3F30;
 	border: none;
 	border-radius: 30px;
 	color: #FAFAFA;
 	height: 42px;
 	width: 182px;
-	font-family: "Poppins", sans-serif!important;
+	font-family: "Poppins", sans-serif !important;
 	font-weight: 600;
 }
 
 .form-specific button:hover {
-	background-color: #711D15 !important; 
+	background-color: #711D15 !important;
 }
 
-.btn-primary p{
+.btn-primary p {
 	margin-top: 0%;
 	padding: 0%;
 	color: #FAFAFA;
 }
 
-.col-left p{
+.col-left p {
 	margin-bottom: 47px;
 }
 
@@ -2121,16 +2294,13 @@ footer h5{
 	background-color: #094A4C;
 	border: none;
 	border-radius: 30px;
-	color: #FAFAFA; 
+	color: #FAFAFA;
 }
 
 .form-group textarea:not(:placeholder-shown) {
-	color: #FAFAFA; 
+	color: #FAFAFA;
 }
 
 .form-group textarea:focus {
-	background-color: #094A4C; 
+	background-color: #094A4C;
 }
-
-
-
