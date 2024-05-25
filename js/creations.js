@@ -47,7 +47,7 @@ $(document).ready(function() {
         card.find('.card-img-top').attr('srcset', imageUrl);
     }
 
-    // Evento click sulle opzioni di colore
+    // Click sui colori disponibili
     $(document).on('click', '.variant-option', function() {
         var variant = $(this).data('variant');
         var card = $(this).closest('.card');
@@ -89,7 +89,7 @@ $(document).ready(function() {
                 (priceRange === 'default' || isPriceInRange(productPrice, priceRange)) &&
                 (selectedFurniture === 'default' || selectedFurniture === productType) &&
                 (selectedColor === 'default' || productColors.includes(selectedColor)))) {
-                //Qui viene selezionato il "padre" della card del prodotto per visualizzarlo nella maniera corretta
+                //Qui viene selezionato il parent della card del prodotto per visualizzarlo nella maniera corretta
                 $(this).closest('.parent-card').css('display', 'none');
             }
         });
@@ -157,8 +157,8 @@ $(document).ready(function() {
         
         // Riassegna l'evento click al pulsante "Carica Altri"
         $('#load-more').off('click').on('click', function() {
-            $('.parent-card:hidden').slice(0, 12).slideDown(); // Mostra i successivi 12 elementi nascosti
-            if ($('.parent-card:hidden').length === 0) { // Nasconde il pulsante se non ci sono più elementi nascosti
+            $('.parent-card:hidden').slice(0, 12).slideDown(); 
+            if ($('.parent-card:hidden').length === 0) { 
                 $('#load-more').hide();
             }
         });
@@ -167,8 +167,7 @@ $(document).ready(function() {
     // Filtra e ordina i prodotti all'avvio della pagina
     filterAndSortProducts();
 
-    //////////////////////// CARICA ALTRI PRODOTTI //////////////////////
-
+    //Carica altri prodotti
     $('.parent-card:gt(11)').hide(); // Nasconde tutti gli elementi con indice maggiore di 11
 
     $('#load-more').show().on('click', function() {

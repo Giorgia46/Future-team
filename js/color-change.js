@@ -47,7 +47,7 @@ $(document).ready(function() {
         card.find('.card-img-top').attr('srcset', imageUrl);
     }
 
-    // Evento click sulle opzioni di colore
+    // Evento click sui colori disponibili
     $(document).on('click', '.variant-option', function() {
         var variant = $(this).data('variant');
         var card = $(this).closest('.card');
