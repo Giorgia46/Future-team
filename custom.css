@@ -749,30 +749,6 @@ footer h5 {
 	height: auto;
 }
 
-@media screen and (max-width:992px) {
-	/*dai 992x in giu*/
-
-	#starting_img {
-		display: none;
-	}
-
-	#large {
-		display: none;
-	}
-
-	#small {
-		display: block;
-	}
-}
-
-@media screen and (min-width:993px) {
-	/*dai 993px in su*/
-
-	#small {
-		display: none;
-	}
-}
-
 .portfolio_projects {
 	background-image: url(img/bgimg_portfolio1.svg);
 	height: 700px;
@@ -853,14 +829,6 @@ footer h5 {
 	}
 }
 
-@media screen and (max-width:992px) {
-
-	/*dai 992px in giu*/
-	.imgbubble1 {
-		display: none;
-	}
-}
-
 .imgfluidbubble1 {
 	height: auto;
 	position: absolute;
@@ -870,20 +838,12 @@ footer h5 {
 }
 
 .designer {
-	color: #CF3F30;
+	color: var(--primary-color);
 }
 
 /*******luminescence2021*********/
 .luminescence_2021 {
 	margin-bottom: 6.25rem;
-}
-
-@media screen and (max-width:992px) {
-	/*dai 992px in giu*/
-
-	.imgluminescence1 {
-		display: none;
-	}
 }
 
 .imgfluidluminescence1 {
@@ -901,14 +861,6 @@ footer h5 {
 	margin-bottom: 6.25rem;
 }
 
-@media screen and (max-width:992px) {
-
-	/*dai 992px in giu*/
-	.imgcloud1 {
-		display: none;
-	}
-}
-
 .imgfluidcloud1 {
 	height: auto;
 	position: absolute;
@@ -920,17 +872,8 @@ footer h5 {
 
 /*******eccentricproject2023*********/
 
-
 .eccentric_2023 {
 	margin-bottom: 6.25rem;
-}
-
-@media screen and (max-width:992px) {
-	/*dai 992px in giu*/
-
-	.imgeccentric1 {
-		display: none;
-	}
 }
 
 .imgfluideccentric1 {
@@ -948,809 +891,172 @@ footer h5 {
 
 /***BOTTONE e RETTANGOLI IMG***/
 
-/*xl*/
-@media screen and (min-width: 1200px) {
-
-	.click {
-		position: absolute;
-		top: 150px;
-		left: 110px;
-	}
-
-	.click2 {
-		position: absolute;
-		top: 160px;
-		left: 440px;
-	}
-
-	.click3 {
-		position: absolute;
-		top: 160px;
-		left: 145px;
-	}
-
-	.click4 {
-		position: absolute;
-		top: 189px;
-		left: 425px;
-	}
-
-	.click5 {
-		position: absolute;
-		top: 150px;
-		left: 110px;
-	}
-
-	.click6 {
-		position: absolute;
-		top: 160px;
-		left: 580px;
-	}
-
-	.click7 {
-		position: absolute;
-		top: 150px;
-		left: 110px;
-	}
-
-	.click8 {
-		position: absolute;
-		top: 200px;
-		left: 490px;
-	}
-
-	.circle-button {
-		width: 44px;
-		height: 44px;
-	}
-
-
-	.tab1 {
-		position: absolute;
-		top: 20%;
-		left: 6%;
-	}
-
-	.tab2 {
-		position: absolute;
-		top: 21%;
-		left: 52%;
-	}
-
-	.tab3 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
-
-	.tab4 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
-
-	.tab5 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
-
-	.tab6 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
-
-	.tab7 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
-
-	.tab8 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
-
-	.rectangle {
-		width: 240px;
-	}
-
+.plusicon {
+	width: 15px;
+	height: 15px;
 }
 
-/*lg*/
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-
-	.click {
-		position: absolute;
-		top: 130px;
-		left: 100px;
-	}
-
-	.click2 {
-		position: absolute;
-		top: 130px;
-		left: 335px;
-	}
-
-	.click3 {
-		position: absolute;
-		top: 130px;
-		left: 100px;
-	}
-
-	.click4 {
-		position: absolute;
-		top: 130px;
-		left: 335px;
-	}
-
-	.click5 {
-		position: absolute;
-		top: 130px;
-		left: 100px;
-	}
-
-	.click6 {
-		position: absolute;
-		top: 130px;
-		left: 425px;
-	}
-
-	.click7 {
-		position: absolute;
-		top: 130px;
-		left: 100px;
-	}
-
-	.click8 {
-		position: absolute;
-		top: 130px;
-		left: 360px;
-	}
-
-	.circle-button {
-		width: 40px;
-		height: 40px;
-	}
-
-	.tab1 {
-		position: absolute;
-		top: 18%;
-		left: 6%;
-	}
-
-	.tab2 {
-		position: absolute;
-		top: 21%;
-		left: 52%;
-	}
-
-	.tab3 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
-
-	.tab4 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
-
-	.tab5 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
-
-	.tab6 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
-
-	.tab7 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
-
-	.tab8 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
-
-	.rectangle {
-		width: 240px;
-	}
+.circle-button {
+	width: 40px;
+	height: 40px;
 }
 
-/*md*/
-@media screen and (max-width: 992px) and (min-width: 768px) {
-	.click {
-		position: absolute;
-		top: 164px;
-		left: 116px;
-	}
+.rectangle {
+	width: 240px;
+}
 
-	.click2 {
-		position: absolute;
-		top: 175px;
-		left: 427px;
-	}
+.click {
+	position: absolute;
+	top: 45%;
+	left: 15%;
+}
 
-	.click3 {
-		position: absolute;
-		top: 164px;
-		left: 116px;
-	}
+.click2 {
+	position: absolute;
+	top: 45%;
+	left: 70%;
+}
 
-	.click4 {
-		position: absolute;
-		top: 175px;
-		left: 427px;
-	}
+.click3 {
+	position: absolute;
+	top: 60%;
+	left: 22%;
+}
 
-	.click5 {
-		position: absolute;
-		top: 164px;
-		left: 116px;
-	}
+.click4 {
+	position: absolute;
+	top: 70%;
+	left: 65%;
+}
 
-	.click6 {
-		position: absolute;
-		top: 175px;
-		left: 540px;
-	}
+.click5 {
+	position: absolute;
+	top: 38%;
+	left: 20%;
+}
 
-	.click7 {
-		position: absolute;
-		top: 164px;
-		left: 116px;
-	}
+.click6 {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+}
 
-	.click8 {
-		position: absolute;
-		top: 175px;
-		left: 470px;
-	}
+.click7 {
+	position: absolute;
+	top: 65%;
+	left: 20%;
+}
 
-	.circle-button {
-		width: 40px;
-		height: 40px;
-	}
+.click8 {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+}
 
-	.tab1 {
-		position: absolute;
-		top: 18%;
-		left: 6%;
-	}
+.tab1 {
+	position: absolute;
+	top: 18%;
+	left: 4%;
+}
 
-	.tab2 {
-		position: absolute;
-		top: 21%;
-		left: 52%;
-	}
+.tab2 {
+	position: absolute;
+	top: 18%;
+	left: 52%;
+}
 
-	.tab3 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
+.tab3 {
+	position: absolute;
+	top: 14%;
+	left: 5%;
+}
 
-	.tab4 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
+.tab4 {
+	position: absolute;
+	top: 14%;
+	left: 52%;
+}
 
-	.tab5 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
+.tab5 {
+	position: absolute;
+	top: 14%;
+	left: 3%;
+}
 
-	.tab6 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
+.tab6 {
+	position: absolute;
+	top: 14%;
+	left: 50%;
+}
 
-	.tab7 {
-		position: absolute;
-		top: 14%;
-		left: 6%;
-	}
+.tab7 {
+	position: absolute;
+	top: 9%;
+	left: 6%;
+}
 
-	.tab8 {
-		position: absolute;
-		top: 14%;
-		left: 52%;
-	}
-
-	.rectangle {
-		width: 240px;
-	}
+.tab8 {
+	position: absolute;
+	top: 9%;
+	left: 52%;
 }
 
 /*sm*/
-@media screen and (max-width: 768px) and (min-width: 576px) {
-
-	.click {
-		position: absolute;
-		top: 128px;
-		left: 90px;
-	}
-
-	.click2 {
-		position: absolute;
-		top: 130px;
-		left: 317px;
-	}
-
-	.click3 {
-		position: absolute;
-		top: 128px;
-		left: 90px;
-	}
-
-	.click4 {
-		position: absolute;
-		top: 130px;
-		left: 317px;
-	}
-
-	.click5 {
-		position: absolute;
-		top: 128px;
-		left: 90px;
-	}
-
-	.click6 {
-		position: absolute;
-		top: 130px;
-		left: 405px;
-	}
-
-	.click7 {
-		position: absolute;
-		top: 128px;
-		left: 90px;
-	}
-
-	.click8 {
-		position: absolute;
-		top: 130px;
-		left: 355px;
-	}
-
-	.circle-button {
-		width: 33px;
-		height: 33px;
-	}
-
-	.plusicon {
-		width: 16px;
-		height: 16px;
-	}
-
-	.tab1 {
-		position: absolute;
-		top: 18%;
-		left: 6%;
-	}
-
-	.tab2 {
-		position: absolute;
-		top: 21%;
-		left: 52%;
-	}
-
-	.tab3 {
-		position: absolute;
-		top: 6%;
-		left: 6%;
-	}
-
-	.tab4 {
-		position: absolute;
-		top: 6%;
-		left: 52%;
-	}
-
-	.tab5 {
-		position: absolute;
-		top: 6%;
-		left: 6%;
-	}
-
-	.tab6 {
-		position: absolute;
-		top: 6%;
-		left: 52%;
-	}
-
-	.tab7 {
-		position: absolute;
-		top: 6%;
-		left: 6%;
-	}
-
-	.tab8 {
-		position: absolute;
-		top: 6%;
-		left: 52%;
-	}
-
+@media screen and (max-width: 768px) {
 	.rectangle {
 		width: 230px;
 	}
 }
 
-/*xs*/
-@media screen and (max-width: 576px) {
-
-	.click {
-		position: absolute;
-		top: 113px;
-		left: 83px;
-	}
-
-	.click2 {
-		position: absolute;
-		top: 132px;
-		left: 310px;
-	}
-
-	.click3 {
-		position: absolute;
-		top: 113px;
-		left: 83px;
-	}
-
-	.click4 {
-		position: absolute;
-		top: 132px;
-		left: 310px;
-	}
-
-	.click5 {
-		position: absolute;
-		top: 113px;
-		left: 83px;
-	}
-
-	.click6 {
-		position: absolute;
-		top: 132px;
-		left: 405px;
-	}
-
-	.click7 {
-		position: absolute;
-		top: 113px;
-		left: 83px;
-	}
-
-	.click8 {
-		position: absolute;
-		top: 132px;
-		left: 355px;
-	}
-
-
-	.circle-button {
-		width: 33px;
-		height: 33px;
-	}
-
-	.plusicon {
-		width: 16px;
-		height: 16px;
-	}
-
+@media screen and (max-width: 490px) {
+	
 	.tab1 {
 		position: absolute;
-		top: 12%;
-		left: 10%;
-	}
-
-
-	.tab2 {
-		position: absolute;
-		top: 21%;
-		left: 55%;
-	}
-
-
-	.tab3 {
-		position: absolute;
-		top: 6%;
-		left: 6%;
-	}
-
-
-	.tab4 {
-		position: absolute;
-		top: 6%;
-		left: 52%;
-	}
-
-	.tab5 {
-		position: absolute;
-		top: 6%;
-		left: 6%;
-	}
-
-
-	.tab6 {
-		position: absolute;
-		top: 6%;
-		left: 52%;
-	}
-
-	.tab7 {
-		position: absolute;
-		top: 6%;
-		left: 6%;
-	}
-
-
-	.tab8 {
-		position: absolute;
-		top: 6%;
-		left: 52%;
-	}
-
-	.rectangle {
-		width: 230px;
-	}
-
-}
-
-/*XXS*/
-@media screen and (max-width: 500px) {
-
-	.click {
-		position: absolute;
-		top: 89px;
-		left: 68px;
-	}
-
-	.click2 {
-		position: absolute;
-		top: 100px;
-		left: 280px;
-	}
-
-	.click3 {
-		position: absolute;
-		top: 96px;
-		left: 95px;
-	}
-
-	.click4 {
-		position: absolute;
-		top: 111px;
-		left: 254px;
-	}
-
-	.click5 {
-		position: absolute;
-		top: 80px;
-		left: 68px;
-	}
-
-	.click6 {
-		position: absolute;
-		top: 100px;
-		left: 340px;
-	}
-
-	.click7 {
-		position: absolute;
-		top: 80px;
-		left: 60px;
-	}
-
-	.click8 {
-		position: absolute;
-		top: 104px;
-		left: 290px;
-	}
-
-
-	.circle-button {
-		width: 33px;
-		height: 33px;
-	}
-
-	.plusicon {
-		width: 16px;
-		height: 16px;
-	}
-
-	.tab1 {
-		position: absolute;
-		top: 6%;
+		top: -5%;
 		left: 5%;
 	}
 
 	.tab2 {
 		position: absolute;
-		top: 6%;
-		left: 46%;
+		top: 22%;
+        left: 49%;
 	}
-
-
+	
 	.tab3 {
 		position: absolute;
-		top: -8%;
-		left: 2%;
+		top: -18%;
+        left: 2%;
 	}
-
 
 	.tab4 {
 		position: absolute;
-		top: -8%;
-		left: 46%;
+		top: 7%;
+		left: 50%;
 	}
 
 	.tab5 {
 		position: absolute;
-		top: 0%;
-		left: 2%;
-	}
-
-	.tab6 {
-		position: absolute;
-		top: 0%;
-		left: 46%;
-	}
-
-	.tab7 {
-		position: absolute;
-		top: -1%;
+		top: -18%;
 		left: 4%;
 	}
 
-
-	.tab8 {
-		position: absolute;
-		top: 1%;
-		left: 46%;
-	}
-
-	.rectangle {
-		width: 230px;
-	}
-
-}
-
-/*XXXS*/
-@media screen and (max-width: 400px) {
-
-	.click {
-		position: absolute;
-		top: 89px;
-		left: 68px;
-	}
-
-	.click2 {
-		position: absolute;
-		top: 87px;
-		left: 240px;
-	}
-
-	.click3 {
-		position: absolute;
-		top: 67px;
-		left: 59px;
-	}
-
-	.click4 {
-		position: absolute;
-		top: 79px;
-		left: 215px;
-	}
-
-	.click5 {
-		position: absolute;
-		top: 80px;
-		left: 68px;
-	}
-
-	.click6 {
-		position: absolute;
-		top: 74px;
-		left: 280px;
-	}
-
-	.click7 {
-		position: absolute;
-		top: 80px;
-		left: 60px;
-	}
-
-	.click8 {
-		position: absolute;
-		top: 85px;
-		left: 234px;
-	}
-
-
-	.circle-button {
-		width: 33px;
-		height: 33px;
-	}
-
-	.plusicon {
-		width: 16px;
-		height: 16px;
-	}
-
-	.tab1 {
-		position: absolute;
-		top: -5%;
-		left: 2%;
-	}
-
-
-	.tab2 {
-		position: absolute;
-		top: 0%;
-		left: 38%;
-	}
-
-
-	.tab3 {
-		position: absolute;
-		top: -14%;
-		left: 2%;
-	}
-
-
-	.tab4 {
-		position: absolute;
-		top: -16%;
-		left: 36%;
-	}
-
-	.tab5 {
-		position: absolute;
-		top: -9%;
-		left: 3%;
-	}
-
-
 	.tab6 {
 		position: absolute;
-		top: -9%;
-		left: 34%;
+		top: 13%;
+		left: 50%;
 	}
 
 	.tab7 {
 		position: absolute;
-		top: -12%;
+		top: 5%;
 		left: 2%;
 	}
 
-
 	.tab8 {
 		position: absolute;
-		top: -12%;
-		left: 34%;
+		top: 5%;
+		left: 52%;
 	}
-
-
-
-	.rectangle {
-		width: 230px;
-	}
-
 }
 
 .circle-button {
@@ -1787,6 +1093,10 @@ footer h5 {
 	opacity: 1;
 }
 
+.rectangle p {
+	color: var(--secondary-color);
+}
+
 .close-button {
 	position: absolute;
 	top: 10px;
@@ -1796,16 +1106,16 @@ footer h5 {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-	font-size: 30px;
+	font-size: 2.25rem;
 	font-weight: bold;
 	line-height: 1;
 	outline: none;
 	z-index: 1001;
-	color: var(--text-color);
+	color: var(--secondary-color);
 }
 
 .close-button:hover {
-	color: red;
+	color: var(--primary-color);
 }
 
 /******************************************************************************/
@@ -2000,10 +1310,6 @@ footer h5 {
 	right: 21%;
 }
 
-.plusiconC {
-	width: 15px;
-	height: 15px;
-}
 
 .circle-buttonC {
 	width: 40px;
