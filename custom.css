@@ -360,7 +360,7 @@ button {
 	padding-bottom: 250px;
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 	#es-header{
 		padding-bottom: 0px;
 	}
@@ -375,7 +375,7 @@ button {
 	max-width: 500px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	#es-header-img{
 		transform: translateX(20%);
 	}
@@ -393,7 +393,7 @@ button {
 }
 
 
-@media (min-width: 768px) and (max-width: 991px)  {
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
 	#story-section{
 		background-image: url('img/story-bg-md.svg');
 		padding-bottom: 100px;
@@ -401,14 +401,14 @@ button {
 	
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 	#story-section{
 		background-image: url('img/story-bg-lg.svg');
 		padding-bottom: 100px;
 	}
 }
 
-@media (min-width: 992px) and (max-width:1199px){
+@media only screen and (min-width: 992px) and (max-width:1199px){
 	#story-section{
 		margin-top: 50px;
 		padding-top: 200px;
@@ -416,14 +416,14 @@ button {
 	
 }
 
-@media (min-width: 1200px) and (max-width:1399px){
+@media only screen and (min-width: 1200px) and (max-width:1399px){
 	#story-section{
 		margin-top: -50px;
 	}
 	
 }
 
-@media (min-width:1399px){
+@media only screen and (min-width:1399px){
 	#story-section{
 		margin-top: -100px;
 		padding-top: 200px;
@@ -437,7 +437,7 @@ button {
 	transform: translateY(-20%);
 }
 
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
 	#img-vision{
 		transform: translateY(0);
 	}
@@ -446,7 +446,7 @@ button {
 /**********VALORI**********/
 
 
-@media (min-width: 992px){
+@media only screen and (min-width: 992px){
 	#img-values{
 		transform:translateY(-10%);
 	}
@@ -490,7 +490,7 @@ button {
 
 
 
-@media (max-width:1119px) and (min-width:768px){
+@media only screen and (max-width:1119px) and (min-width:768px){
 	.card-text-team p{
 		font-size:0.75rem;}
 	.card-title-team h4{
@@ -498,7 +498,7 @@ button {
 }
 
 
-@media (max-width: 767px) and (min-width: 576px) {
+@media only screen and (max-width: 767px) and (min-width: 576px) {
 	.card-text-team{
 		font-size: 1rem;}
 	.card-title-team h4{
@@ -507,7 +507,7 @@ button {
 }
 
 
-@media (max-width: 575px) {
+@media only screen and (max-width: 575px) {
 	.card-text-team p{
 		font-size: 0.50rem;}
 	.card-title-team h4{
@@ -523,7 +523,7 @@ button {
 	margin-bottom: -5px;
 
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	#join-us{
 		background-image: url('img/essenza-bg-desktop-uniscitianoi.svg'); 
 	}
@@ -774,7 +774,7 @@ button {
 	margin-bottom: -5px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	#custom-furniture{
 		background-image: url('img/custom-furniture-bg-desktop.svg'); 
 	}
@@ -786,7 +786,7 @@ button {
 	margin-bottom: 20%;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	#custom-furniture-text{
 		margin-top: 20%;
 		margin-bottom: 10%;
@@ -871,7 +871,7 @@ button {
 	padding: 40% 0 20% 0;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	#showroom-container{
 		background-image: url('img/showroom-bg-desktop.svg');
 		padding: 30% 0 10% 0;
@@ -879,7 +879,7 @@ button {
 
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 	#showroom-container{
 		padding: 20% 0 10% 0;
 	}
@@ -963,20 +963,20 @@ button {
 	margin-bottom: -5px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	#related-furniture-container{
 		background-image: url('img/related-bg-desktop.svg');
 	}
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.related-card{
 		background-image: url('img/product-card-bg-sm.svg')!important; 
 	}
 	
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.related-card .dot-group{
 		top: 52%!important;
 	}
@@ -992,7 +992,7 @@ footer{
 	background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	footer{
 		background-image: url('img/footer-bg-desktop.svg'); 
 	}
