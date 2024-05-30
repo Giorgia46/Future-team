@@ -1,106 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AetherCraft Creations</title>
 
-    <!--link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="custom.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
-    <!--link-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AetherCraft Creations</title>
 
-    <!--link icone-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!--link icone-->
+  <!--link-->
 
-    <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="custom.css" rel="stylesheet" type="text/css">
+  <script src="js/footer.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.8/dist/css/splide.min.css">
+  <script src="https://unpkg.com/@splidejs/splide@3.0.8/dist/js/splide.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
-    <!--font-->
+  <!--link-->
 
-    <style>
-        body{
-            background-color: var(--light-color);
-        }
-    </style>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+    rel="stylesheet">
+  <!--font-->
+
+  <style>
+    body {
+      background-color: var(--light-color);
+    }
+  </style>
 
 </head>
 
 
 <body>
 
-<nav>
-    <div class="container-fluid menu">
+  <!--menu-->
+  <div class="container-fluid menu">
+    <div class="container">
+      <nav class="navbar d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html"><img src="img/logo-menu.svg" alt="logo AetherCraft Creations"></a>
+        <ul class="nav-menu">
 
-        <div class="container">
+          <li class="nav-item voice-menu">
+            <div class="d-flex align-items-center justify-content-between border-menu">
+              <div class="d-flex"><a href="index.html" class="nav-link">HOME</a></div>
+              <div><a href="#"><img src="img/arrow.svg" width="24" height="24" class="d-none align-self-center" alt="freccia"></a>
+              </div>
+            </div>
+          </li>
 
-            <div class="menu-mobile d-block d-lg-none">
-                <input type="checkbox" id="active">
-                <label for="active" class="menu-btn"> <i class="fas fa-bars"></i></label>
-                <div class="wrapper">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="1_essenza.html">ESSENZA</a></li>
-                        <li><a href="2_creazioni.html">CREAZIONI</a></li>
-                        <li><a href="4_portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="5_contatti.html">CONTATTI</a></li>
-                    </ul>
+          <li class="nav-item voice-menu">
+            <div class="d-flex align-items-center justify-content-between border-menu">
+              <div class="d-flex"><a href="1_essenza.html" class="nav-link">ESSENZA</a></div>
+              <div><a href="#"><img src="img/arrow.svg" width="24" height="24" class="d-none align-self-center" alt="freccia"></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item voice-menu">
+            <div class="d-flex align-items-center justify-content-between border-menu">
+              <div class="d-flex"><a href="2_creazioni.html" class="nav-link">CREAZIONI</a></div>
+              <div><a href="#"><img src="img/arrow.svg" width="24" height="24" class="d-none align-self-center" alt="freccia"></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item voice-menu">
+            <div class="d-flex align-items-center justify-content-between border-menu">
+              <div class="d-flex"><a href="4_portfolio.html" class="nav-link">PORTFOLIO</a></div>
+              <div><a href="#"><img src="img/arrow.svg" width="24" height="24" class="d-none align-self-center" alt="freccia"></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item voice-menu">
+            <div class="d-flex align-items-center justify-content-between border-menu">
+              <div class="d-flex"><a href="5_contatti.html" class="nav-link">CONTATTI</a></div>
+              <div><a href="#"><img src="img/arrow.svg" width="24" height="24" class="d-none align-self-center" alt="freccia"></a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--end menu-->
+  
+  <main>
+  <!--header-home-->
+  <div class="header-home-wrapper d-flex justify-content-end">
+
+    <img class="header-img" src="img/header-img-large.png" alt="divano header home" srcset="img/header-img-large.png 740w,
+            img/header-img-medium.png 560w,
+            img/header-img-small.png 416w,
+            img/header-img-xsmall.png 340w,
+            img/header-img-xxsmall.png 240w" sizes="(min-width: 1200px) 720px,
+           (min-width: 992px) 700px,
+           (min-width: 768px) 560px,
+           (min-width: 576px) 416px,
+           (min-width: 375px) 340px,
+           240px">
+
+  </div>
+
+  <div class="container-fluid header-home">
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <h1 class="mb-3 mb-lg-4">AetherCraft <br>Creations</h1>
+        </div>
+        <div>
+          <h4 class="d-none d-sm-block">Su misura dei tuoi sogni.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end header-home-->
+
+  <!--essence-home-->
+  <div class="container-fluid">
+    <div class="container essence-home">
+      <div class="row">
+        <div class="offset-6 col-6 col-md-7 offset-md-5">
+
+          <h2 class="mb-4">La nostra essenza</h2>
+          <p class="mb-3 d-none d-md-block">Fondata nel 2015, da Luca Bianchi e <strong>Francesca Rizzo</strong>,
+            AetherCraft Creatios si basa su valori come creatività, eccentricità, stravaganza, innovazione e passione.
+          </p>
+
+          <p class="mb-5 d-none d-lg-block">Il nostro obiettivo è quello di trasformare le case dei nostri clienti in
+            <strong> opere d’arte </strong>, con arredi unici e anticonvenzionali, ma allo stesso tempo confortevoli e
+            funzionali.
+            La nostra azienda è diventata una vera e propria <strong> icona rivoluzionando </strong> tutto il mondo del
+            design d’arredo.</p>
+
+          <a href="1_essenza.html" class="custom-button">Leggi la storia</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="essence-home-wrapper d-flex justify-content-start">
+    <img src="img/essenza-home-large.png" alt="poltrona essenza home" srcset="img/essenza-home-large.png 585w,
+            img/essenza-home-medium.png 460w,
+            img/essenza-home-small.png 318w,
+            img/essenza-home-xsmall.png 242w,
+            img/essenza-home-xxsmall.png 220w" sizes="(min-width: 1200px) 530px,
+           (min-width: 992px) 420px,
+           (min-width: 768px) 350px,
+           (min-width: 576px) 305px,
+           (min-width: 375px) 280px,
+           220px">
+  </div>
+  <!--essence-home-->
+
+  <!--carousel home-->
+  <div class="carousel-home text-center">
+    <h2 class="mb-5">Prodotti in evidenza</h2>
+
+    <div
+      class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-standard-image splide mb-5"
+      data-bs-carousel-splide>
+      <div class="splide__track">
+        <ul class="splide__list">
+
+          <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+              <div class="card-wrapper">
+                <div class="card card-img no-after">
+                  <div class="img-responsive-wrapper">
+                    <div class="img-responsive">
+                      <div class="img-wrapper">
+                        <img src="img/prodotto-home-1.png" alt="foto del prodotto 1">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>	<!--end of div mobile menu-->
+              </div>
+            </div>
+          </li>
 
-            <div class="menu-desktop navbar navbar-expand-lg navbar-light p-0">
-                <a class="navbar-brand pt-3 pb-3" href="index.html"><img src="img/logo.svg" alt="logo"></a>
-
-                <div class="collapse navbar-collapse justify-content-end background" id="navbarSupportedContent">
-
-                    <ul class="navbar-nav text-right">
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="index.html">HOME</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="1_essenza.html">ESSENZA</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="2_creazioni.html">CREAZIONI</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2 space-menu" href="4_portfolio.html">PORTFOLIO</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link pt-2" href="5_contatti.html">CONTATTI</a>
-                        </li>
-                    </ul>
-
+          <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+              <div class="card-wrapper">
+                <div class="card card-img no-after">
+                  <div class="img-responsive-wrapper">
+                    <div class="img-responsive">
+                      <div class="img-wrapper img-fluid"><img src="img/prodotto-home-2.png" alt="foto del prodotto 2">
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </li>
 
-            </div> <!--end of div menu desktop-->
+          <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+              <div class="card-wrapper">
+                <div class="card card-img no-after">
+                  <div class="img-responsive-wrapper">
+                    <div class="img-responsive">
+                      <div class="img-wrapper img-fluid"><img src="img/prodotto-home-3.png" alt="foto del prodotto 3">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        </div> <!--end of div container-->
+          <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+              <div class="card-wrapper">
+                <div class="card card-img no-after">
+                  <div class="img-responsive-wrapper">
+                    <div class="img-responsive">
+                      <div class="img-wrapper img-fluid"><img src="img/prodotto-home-4.png" alt="foto del prodotto 4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-    </div> <!--end of div container-fluid-->
+          <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+              <div class="card-wrapper">
+                <div class="card card-img no-after">
+                  <div class="img-responsive-wrapper">
+                    <div class="img-responsive">
+                      <div class="img-wrapper img-fluid"><img src="img/prodotto-home-5.png" alt="foto del prodotto 5">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-</nav>
+          <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+              <div class="card-wrapper">
+                <div class="card card-img no-after">
+                  <div class="img-responsive-wrapper">
+                    <div class="img-responsive">
+                      <div class="img-wrapper img-fluid"><img src="img/prodotto-home-6.png" alt="foto del prodotto 6">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+              <div class="card-wrapper">
+                <div class="card card-img no-after">
+                  <div class="img-responsive-wrapper">
+                    <div class="img-responsive">
+                      <div class="img-wrapper img-fluid"><img src="img/prodotto-home-7.png" alt="foto del prodotto 7">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <a href="2_creazioni.html" class="custom-button-home mt-5">Vedi tutto</a>
+
+  </div> <!--end id carousel-home-->
+
+  <!--inizio portfolio-home-->
+  <div class="container-fluid d-flex portfolio-home-wrapper">
+    <div class="container align-self-center portfolio-home">
+      <div class="row">
+
+        <div class="col-12 col-md-6 align-self-center">
+          <h2 class="mb-4">I nostri progetti</h2>
+          <p class="mb-5 mb-md-3">AetherCraft Creations entra a casa tua per creare degli ambienti unici completamente
+            <strong>misura delle tue richieste.</strong></p>
+          <p class="mb-5 d-none d-md-block">Disegniamo e produciamo mobili e complementi d’arredo solo per te e per il
+            tuo immobile,
+            in modo che diventi un vero e proprio <strong>scrigno di opere d’arte uniche al mondo.</strong></p>
+
+          <a href="4_portfolio.html" class="custom-button mb-5 mb-md-0">Sfoglia il portfolio</a>
+        </div>
+
+        <div class="col-12 align-self-center col-md-6">
+          <img src="img/portfolio-home.png" alt="portfolio home" class="img-fluid"
+               srcset="img/portfolio-home-lg.png 628w, img/portfolio-home-md.png 410w"
+               sizes="(max-width: 768px) 100vw, 50vw">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--fine portfolio-home-->
+  </main>
 
 
-
-
-
-
-<!--inizio footer-->
-<footer class="pt-5 pb-5 container-fluid footer-link">
+  <!--inizio footer-->
+  <footer class="pt-5 pb-5 container-fluid bg-secondary">
     <div class="container pt-5">
         <div>
             <a href="index.html"><img src="img/logo-footer.svg" alt="Logo AertherCraft Creations" class="img-fluid col-6 col-md-4 col-lg-3 mt-5"></a>
@@ -110,7 +340,7 @@
                 <p>
                     Iscriviti alla newsletter e ricevi consigli d'arredo personalizzati
                 </p>
-                <div class="input-group pt-4 mb-4 position-relative">
+                <div class="input-group pt-4 mb-5 position-relative">
                     <button class="round-btn rounded-circle position-absolute end-0 top-4" type="button" id="button-addon2" onclick="subscribe()">
                         <img src="img/right-arrow.svg" alt="Invia">
                     </button>
@@ -121,29 +351,29 @@
                 </div>
 
             </div>
-            <div class="col-6 col-md-4 col-lg-2 offset-lg-2 text-light mb-5">
+            <div class="col-6 col-md-4 col-lg-2 offset-lg-1 text-light mb-5 footer-link">
                 <h5>Company</h5>
                 <ul>
-                    <li class="nav-item"><a href="1_essenza.html">Essenza</a></li>
-                    <li class="nav-item"><a href="4_portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a href="1_essenza.html#join_us" >Lavora con noi</a></li>
+                    <li class="nav-item mb-2"><a href="1_essenza.html">Essenza</a></li>
+                    <li class="nav-item mb-2"><a href="4_portfolio.html">Portfolio</a></li>
+                    <li class="nav-item mb-2"><a href="1_essenza.html#join-us" >Lavora con noi</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-4 col-lg-2 text-light mb-5">
+            <div class="col-6 col-md-4 col-lg-2 text-light mb-5 footer-link">
                 <h5>Servizi</h5>
                 <ul>
-                    <li class="nav-item"><a href="2_creazioni.html">Creazioni</a></li>
-                    <li class="nav-item"><a href="2_creazioni.html#custom_furniture">Su misura</a></li>
+                    <li class="nav-item mb-2"><a href="2_creazioni.html">Creazioni</a></li>
+                    <li class="nav-item mb-2"><a href="2_creazioni.html#custom-furniture-container">Su misura</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-4 col-lg-2 text-light mb-5">
+            <div class="col-6 col-md-4 col-lg-3 text-light mb-5 footer-link">
                 <h5>Contatti</h5>
                 <ul>
-                    <li class="nav-item mb-3"><a href="https://www.google.com/maps">Via Roma 24 <br> 20122 Milano</a></li>
-                    <li class="nav-item mb-3"><p>+39 02 22 44 000</p></li>
+                    <li class="nav-item mb-2"><a href="https://www.google.com/maps">Via Roma 24 <br> 20122 Milano</a></li>
+                    <li class="nav-item mb-2"><p>+39 02 22 44 000</p></li>
                     <li class="nav-item"><a href="mailto:info@aethercraft.com">info@aethercraft.com</a></li>
                 </ul>
-                <div class="d-flex gap-3 mt-4">
+                <div class="d-flex gap-4 mt-4">
                     <a href="https://www.pinterest.it/" target="_blank">
                         <svg aria-label="Pinterest" class="social-icon" width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 6.10168C0 5.38784 0.15033 4.67909 0.452699 3.97714C0.755067 3.27519 1.18727 2.62253 1.751 2.02256C2.31474 1.42259 3.05444 0.934798 3.97179 0.560879C4.88915 0.18696 5.90558 0 7.0211 0C8.8319 0 10.3181 0.55578 11.4798 1.66564C12.6414 2.7755 13.2222 4.08422 13.2222 5.59179C13.2222 7.52937 12.7302 9.13043 11.7445 10.3933C10.7589 11.6561 9.48618 12.2883 7.9265 12.2883C7.41401 12.2883 6.93227 12.1694 6.48299 11.9314C6.03371 11.6935 5.71767 11.4045 5.53488 11.0646L4.85156 13.75C4.79519 13.9659 4.72003 14.1834 4.62949 14.4044C4.53895 14.6253 4.43816 14.8378 4.33053 15.0417C4.22291 15.2457 4.11358 15.4378 4.00596 15.6196C3.89833 15.8015 3.789 15.9714 3.68138 16.1295C3.57376 16.2876 3.4798 16.4219 3.39951 16.5289C3.31922 16.636 3.24577 16.7295 3.17743 16.8094L3.07494 16.9453C3.04077 16.9912 2.99465 17.0082 2.93827 16.9963C2.8819 16.9844 2.84773 16.9504 2.83577 16.8943C2.83577 16.8825 2.82723 16.8043 2.81015 16.6564C2.79307 16.5085 2.77598 16.3539 2.7589 16.189C2.74182 16.0241 2.72473 15.8117 2.70765 15.5516C2.69057 15.2916 2.68544 15.0383 2.69057 14.7953C2.69569 14.5523 2.71278 14.282 2.74182 13.988C2.77086 13.6939 2.81357 13.422 2.86994 13.1722C2.99465 12.6402 3.41659 10.8658 4.13408 7.8523C4.04354 7.67044 3.96837 7.45289 3.912 7.19794C3.85563 6.943 3.82659 6.73564 3.82659 6.57758L3.8095 6.32263C3.8095 5.59689 3.994 4.99352 4.3647 4.51252C4.7354 4.03153 5.18127 3.79018 5.70571 3.79018C6.12766 3.79018 6.45395 3.92955 6.68798 4.20659C6.92202 4.48363 7.03819 4.83206 7.03819 5.25186C7.03819 5.51191 6.99035 5.83314 6.89298 6.21216C6.79561 6.59118 6.66748 7.02798 6.50861 7.52087C6.34974 8.01377 6.23529 8.41318 6.16695 8.71912C6.0525 9.229 6.15329 9.67091 6.46591 10.0448C6.77852 10.4187 7.19706 10.6057 7.7215 10.6057C8.62178 10.6057 9.36489 10.0992 9.95083 9.08454C10.5368 8.06986 10.8306 6.84442 10.8306 5.40483C10.8306 4.30517 10.4719 3.40776 9.75438 2.71091C9.03689 2.01406 8.03412 1.66564 6.74778 1.66564C5.31281 1.66564 4.14775 2.12454 3.25431 3.04234C2.36087 3.96014 1.91329 5.05981 1.91329 6.33963C1.91329 7.09937 2.13025 7.73843 2.56245 8.26021C2.71107 8.43018 2.75548 8.61204 2.69911 8.8041C2.6769 8.86018 2.64274 8.99106 2.59661 9.19501C2.55049 9.39897 2.51632 9.52984 2.49411 9.58593C2.47191 9.71 2.41382 9.79328 2.32328 9.83237C2.23274 9.87147 2.13025 9.86977 2.01579 9.82388C1.34443 9.55194 0.840482 9.08454 0.503948 8.42168C0.167413 7.75882 0 6.98549 0 6.10168Z" fill="#FAFAFA"/>
@@ -168,11 +398,13 @@
             </div>
         </div>
         <div class="text-light text-center pt-4">
-            <p>©2023 AetherCraft Creations</p>
+            <p>©2024 AetherCraft Creations</p>
         </div>
     </div>
 </footer>
 <!--fine footer-->
 
+
 </body>
+
 </html>
