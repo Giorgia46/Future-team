@@ -1098,20 +1098,6 @@ footer h5{
 	box-shadow: 0 0 0 0.15rem rgba(3, 74, 76, 0.5);
   }
 
-  @media (max-width: 500px) {
-    .product-filter {
-        flex: 0 0 40%;
-        max-width: 40%;
-    }
-}
-
-@media (max-width: 400px) {
-    .product-filter {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
  
 
 .overflow-auto {
@@ -1180,32 +1166,7 @@ footer h5{
 	align-content: space-between;
 }
 
-
-/*una colonna sola per schermi molto piccoli*/
-@media only screen and (max-width: 500px) {
-	.col{
-		flex: 0 0 80%;
-        max-width: 80%;
-		margin-left: 10%;
-
-
-	}
-
-}
-
-@media only screen and (max-width: 400px) {
-	.col{
-		flex: 0 0 90%;
-        max-width: 90%;
-		margin-left: 5%;
-
-
-	}
-
-	
-}
-
-@media only screen and (max-width: 500px), (min-width: 768px) and (max-width: 1199px), (min-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px), (min-width: 1400px) {
 	.product-card{
 		background-image: url('img/product-card-bg-lg.svg'); 
 	}
@@ -1266,8 +1227,14 @@ footer h5{
 	top: 52.2%;
 }
 
+@media only screen and (min-width: 1400px) {
+	.dot-group{
+		top: 60%; 
+	}
+	
+}
 
-@media only screen and (max-width: 500px), (min-width: 768px) and (max-width: 1199px), (min-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
 	.dot-group{
 		top: 60%; 
 	}
@@ -1385,14 +1352,9 @@ footer h5{
 
 .portfolio_projects h2 {
 	color: #FAFAFA !important;
-	margin-top: 30px;
 }
 
 .portfolio-desktop {
-	margin-top: 50px;
-}
-
-.portfolio-mobile {
 	margin-top: 50px;
 }
 
