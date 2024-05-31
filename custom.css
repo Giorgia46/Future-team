@@ -231,7 +231,7 @@ p {
 
 a {
 	font-family: "Poppins", sans-serif;
-	font-size: 1.125rem;
+	font-size: /*1.125rem;*/ 1rem;
 }
 
 p strong {
@@ -286,9 +286,10 @@ p strong {
 		font-size: 1.5rem;
 	}
 
-	a {
+
+	/*a {
 		font-size: 0.75rem;
-	}
+	}*/
 }
 
 /***************************MENU*****************************/
@@ -529,6 +530,71 @@ footer h5{
 	width: auto;
 	padding-bottom: 5%;
 }
+
+/*******************FORM*********************/
+/*******************************************/
+
+@media screen and (max-width: 992px) {
+	.col-right img {
+		display: none;
+	}
+}
+
+.form-specific button {
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: 30px;
+	color: var(--light-color);
+	height: 42px;
+	width: 182px;
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 600;
+}
+
+.alert, .invalid-feedback, .valid-feedback, .form-control, #errorMessageForm{
+    font-family: 'Poppins', sans-serif;
+}
+
+#successMessageForm{
+	transform: translateY(-60px);
+}
+
+.form-specific button:hover {
+	background-color: #711D15 !important;
+}
+
+.btn-primary p {
+	margin-top: 0%;
+	padding: 0%;
+	color: var(--light-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+	background-color: var(--secondary-color);
+	border: none;
+	border-radius: 30px;
+	color: var(--light-color);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+	color: var(--light-color);
+}
+
+.form-group textarea:not(:placeholder-shown) {
+	color: var(--light-color); 
+}
+
+.form-group textarea:focus {
+	background-color: var(--secondary-color); 
+}
+
+
+/*******************ACCORDION*********************/
+/*******************************************/
 
 /******************************************************************************/
 /**********************************HOME****************************************/
@@ -938,7 +1004,7 @@ footer h5{
 /**********************************CREAZIONI*************************************/
 /******************************************************************************/
 
- /**********BANNER PAGINA CREAZIONI*****************/
+ /**********HEADER PAGINA CREAZIONI*****************/
  #floating-chairs{
 	float: right;
 	width: 100%;
@@ -948,7 +1014,7 @@ footer h5{
 
  }
 
- #creations-banner{
+ #creations-header{
 	overflow-x: hidden;
  }
 
@@ -2003,43 +2069,6 @@ footer h5{
 	}
 }
 
-/*form contatti*/
-
-.form-contatti {
-	margin-top: 87px;
-	margin-bottom: 81px;
-}
-
-@media screen and (max-width: 992px) {
-	.col-right img {
-		display: none;
-	}
-}
-
-.form-specific button {
-	background-color: #CF3F30;
-	border: none;
-	border-radius: 30px;
-	color: #FAFAFA;
-	height: 42px;
-	width: 182px;
-	font-family: "Poppins", sans-serif !important;
-	font-weight: 600;
-}
-
-.form-specific button:hover {
-	background-color: #711D15 !important;
-}
-
-.btn-primary p {
-	margin-top: 0%;
-	padding: 0%;
-	color: #FAFAFA;
-}
-
-.col-left p {
-	margin-bottom: 47px;
-}
 
 /******************************************************************************/
 /**********************************PRODOTTO*************************************/
@@ -2124,67 +2153,7 @@ footer h5{
 	}
 }
 
-/**********FORM PAGINA PRODOTTO********/
-.form {
-	margin-top: 87px;
-	margin-bottom: 81px;
-}
 
-.col-left h3{
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"],
-.form-group textarea {
-	background-color: var(--secondary-color);
-	border: none;
-	border-radius: 30px;
-}
-
-.col-left button{
-	background-color: var(--primary-color);
-	border: none;
-	border-radius: 30px;
-	color: var(--light-color);
-	height: 42px;
-	width: 182px;
-	font-family: "Poppins", sans-serif;
-	font-weight: 600;
-}
-
-.col-left button:hover {
-	background-color: #711D15; /* Cambio colore durante l'hover */
-}
-
-.col-left p{
-	margin-bottom: 47px;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-	color: var(--light-color);
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"],
-.form-group textarea {
-	background-color: var(--secondary-color);
-	border: none;
-	border-radius: 30px;
-	color: var(--light-color); /* Testo scritto dall'utente */
-}
-
-.form-group textarea:not(:placeholder-shown) {
-	color: var(--light-color); /* Testo scritto dall'utente */
-}
-
-.form-group textarea:focus {
-	background-color: var(--secondary-color); /* Cambia il colore di sfondo quando il campo è in focus */
-}
 
 /****PRODOTTI CORRELATI******/
 

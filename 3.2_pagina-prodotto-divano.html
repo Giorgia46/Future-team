@@ -298,73 +298,73 @@
 
 <!--fine sezione showroom-->
 
-<!--inizio sezione form-->
-<div class="container form">
+<!--form prodotto-->
+<div class="container pt-5">
     <div class="row">
-        <div class="col-12 col-lg-6 col-left">
-            <h3>Prendi un appuntamento</h3>
-            <p>Prenota una consulenza con i nostri esperti per personalizzare il tuo ambiente secondo i tuoi gusti.</p>
+        <div class="col-lg-6 col-12 form-specific">
+            <h3 class="mb-4">Prendi un appuntamento</h3>
+            <p class="mb-4">Prenota una consulenza con i nostri esperti per personalizzare il tuo ambiente
+                secondo i tuoi gusti.
+            </p>
 
             <form class="needs-validation" novalidate>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="formNome" placeholder="NOME*" style="height:48px" required>
-                    <div class="valid-feedback">
-                        Ok!
-                    </div>
-                    <div class="invalid-feedback">
-                        Per favore, inserisci il tuo nome.
-                    </div>
+                    <input type="text" class="form-control" id="formName" placeholder="NOME*"
+                        style="height:48px" required>
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Per favore, inserisci il tuo nome.</div>
                 </div>
-                <div class="form-group mt-3">
-                    <input type="text" class="form-control" id="formCognome" placeholder="COGNOME*" style="height:48px" required>
-                    <div class="valid-feedback">
-                        Ok!
-                    </div>
-                    <div class="invalid-feedback">
-                        Per favore, inserisci il tuo cognome.
-                    </div>
-                </div>
-                <div class="form-group mt-3">
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="EMAIL*" style="height:48px" required>
-                    <div class="valid-feedback">
-                        Ok!
-                    </div>
-                    <div class="invalid-feedback">
-                        Per favore, inserisci un indirizzo email valido.
-                    </div>
-                </div>
-                <div class="form-group mt-3">
-                    <input type="tel" class="form-control" id="Telefono" placeholder="TELEFONO*" style="height:48px" required pattern="[0-9]{10}">
-                    <div class="valid-feedback">
-                        Ok!
-                    </div>
-                    <div class="invalid-feedback">
-                        Per favore, inserisci un numero di telefono valido (massimo 10 cifre).
-                    </div>
-                </div>
-                <div class="form-group mt-3">
-                    <input type="text" class="form-control" id="Azienda" placeholder="AZIENDA" style="height:48px">
-                </div>
-                <div class="form-group mt-3 mb-4">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MESSAGGIO*" rows="3" style="height:120px; padding:15px" required></textarea>
-                    <div class="valid-feedback">
-                        Ok!
-                    </div>
-                    <div class="invalid-feedback">
-                        Per favore, inserisci un messaggio.
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary mt-3">Invia</button>
-                <span id="successMessageForm" class="text-success ml-2 d-none">Grazie per averci scritto, il nostro team le risponderà presto</span>
-            </form>
-        </div>
 
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" id="formSurname" placeholder="COGNOME*"
+                        style="height:48px" required>
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Per favore, inserisci il tuo cognome.</div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="email" class="form-control" id="formEmail" placeholder="EMAIL*"
+                        style="height:48px" required>
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Per favore, inserisci un indirizzo email valido.</div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="tel" class="form-control" id="formPhone" placeholder="TELEFONO*"
+                        style="height:48px" required pattern="[0-9]{10}">
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Per favore, inserisci un numero di telefono valido (massimo 10 cifre).</div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" id="formCompany" placeholder="AZIENDA"
+                        style="height:48px">
+                </div>
+
+                <div class="form-group mt-3 mb-4">
+                    <textarea class="form-control" id="formMessage" placeholder="MESSAGGIO*"
+                        rows="3" style="height:120px; padding:15px" required></textarea>
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Per favore, inserisci un messaggio.</div>
+                </div>
+
+                <div id="errorMessageForm" class="text-danger mb-3 d-none">
+                    Per favore, compila tutti i campi richiesti.
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3 mb-5">Invia</button>
+
+                <div id="successMessageForm" class="alert alert-success rounded-pill d-none mt-3">
+                    Grazie per averci scritto, il nostro team ti risponderà presto
+                </div>
+            </form>
+        </div> <!--end prima colonna-->
+        <!--foto form-->
         <div class="d-none d-lg-block col-lg-6 col-right">
             <img class="img-fluid img-form" src="img/photo-form-md.png" srcset="img/photo-form-md.png 450w, img/photo-form-lg.png 600w" sizes="(max-width: 1199px) 450px, 600px" alt="Appuntamento con consulenti">
         </div>
-    </div>
-</div>
-<!--fine sezione form-->
+    </div> <!--end of row-->
+</div> <!--end of form prodotto-->
 
 <!--inizio sezione prodotti correlati-->
 <div class="container-fluid" id="related-furniture-container">
