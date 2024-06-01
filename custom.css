@@ -679,7 +679,7 @@ footer h5{
 	position: relative;
 	height: auto;
 	margin-top: 160px;
-	margin-bottom: 400px;
+	margin-bottom: 350px;
 }
 
 .header-home h1 {
@@ -746,13 +746,13 @@ footer h5{
 
 .essence-home {
 	position: relative;
-	margin-bottom: 250px;
+	margin-bottom: 200px;
 	z-index: 10;
 }
 
 .essence-home-wrapper {
 	position: absolute;
-	top: 740px;
+	top: 735px;
 	left: 0;
 	width: 100%;
 	z-index: 1;
@@ -762,7 +762,7 @@ footer h5{
 @media screen and (max-width: 992px) and (min-width: 766px) {
 	.essence-home-wrapper {
 		position: absolute;
-		top: 645px;
+		top: 605px;
 		left: 0px;
 		width: 100%;
 	}
@@ -771,8 +771,8 @@ footer h5{
 @media screen and (max-width: 765px) and (min-width: 577px) {
 	.essence-home-wrapper {
 		position: absolute;
-		top: 560px;
-		left: 0px;
+		top: 525px;
+		left: -25px;
 		width: 100%;
 	}
 }
@@ -781,7 +781,7 @@ footer h5{
 
 	.essence-home-wrapper {
 		position: absolute;
-		top: 515px;
+		top: 460px;
 		left: -60px;
 		width: 100%;
 	}
@@ -790,7 +790,7 @@ footer h5{
 @media screen and (max-width: 393px) {
 	.essence-home-wrapper {
 		position: absolute;
-		top: 555px;
+		top: 490px;
 		left: -75px;
 		width: 100%;
 	}
