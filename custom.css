@@ -1179,7 +1179,7 @@ footer h5{
 	align-content: space-between;
 }
 
-@media only screen and (max-width: 500px), (min-width: 768px) and (max-width: 1199px), (min-width: 1400px) {
+@media only screen and (max-width: 500px), (min-width: 768px) and (max-width: 991px), (min-width: 1400px) {
 	.product-card{
 		background-image: url('img/product-card-bg-lg.svg'); 
 	}
@@ -1221,7 +1221,7 @@ footer h5{
     height: auto;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px), (min-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (min-width: 1400px) {
 	.card-img-top {
 		margin-bottom: 20%; 
 	}
@@ -1258,7 +1258,7 @@ footer h5{
 }
 
 
-@media only screen and (max-width: 500px), (min-width: 768px) and (max-width: 1199px), (min-width: 1400px) {
+@media only screen and (max-width: 500px), (min-width: 768px) and (max-width: 991px), (min-width: 1400px) {
 	.dot-group{
 		top: 60%; 
 	}
